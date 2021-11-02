@@ -1,0 +1,660 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9040380443492603159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e41f9d9faab4e44ab5a4af44ab0d059, type: 3}
+  m_Name: DebugNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 8b9ef4e9f6d63e94bb75fc9b581fc674
+  position: {x: 1317.7755, y: 894.5209}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  message: Idle
+--- !u!114 &-8690075543078195994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4712110d96276c74bbb2aedfe956fefd, type: 3}
+  m_Name: PerformAttackMelee
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 338fdb9ac05b44c418ef045699e6c6ba
+  position: {x: 28, y: 1278}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+--- !u!114 &-7239088033421087692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66436396ddef6624a8885dc18d17101e, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5d1ea89d4e896184083ad13ddf9f1e09
+  position: {x: -373.00006, y: 1118.5001}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  duration: 1
+--- !u!114 &-6190701385495680639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966030ac7f7552443b0e93bc7347b870, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 08862f39ab38f594c95526cd008629b0
+  position: {x: 596.9999, y: 1121}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNodes:
+  - {fileID: 1652134827945942036}
+  - {fileID: 7423981825872806958}
+--- !u!114 &-5019779712605922879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fcadf9e14a31444bd14ca401cef8b8, type: 3}
+  m_Name: ParalellNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 1d1eb0a2bae26f345a9ca2a493671d67
+  position: {x: -65.99998, y: 1041}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNodes:
+  - {fileID: 6000331103983885720}
+  - {fileID: 2600637633131998034}
+--- !u!114 &-4810152210574421725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ad35fe90fb87d4bab6dc67b2479cd9, type: 3}
+  m_Name: IsStunned
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 05565938482ae594d881489b94bbe1e2
+  position: {x: -320.26825, y: 890.99994}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: -4113088050315320866}
+--- !u!114 &-4113088050315320866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966030ac7f7552443b0e93bc7347b870, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: d0996fc333fb8e3448d9c735065fbeec
+  position: {x: -395.00018, y: 1014}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNodes:
+  - {fileID: -7239088033421087692}
+  - {fileID: -1714255863951450342}
+--- !u!114 &-4005584875997156653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d5a958af349b514cb19e37ddfc8f439, type: 3}
+  m_Name: RepeatNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 02d640917e8cf5340bbe749f4804134b
+  position: {x: 642.99994, y: 461.01126}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: -3391553899636788393}
+--- !u!114 &-3882071247754098198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 787478274a773644ca090a3d3241e65b, type: 3}
+  m_Name: GoToNextPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 7159822c129854e45a72eab58f958e13
+  position: {x: 1064.7754, y: 1038.5209}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+--- !u!114 &-3391553899636788393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48be9b3fc64acfd489fd409c721cce2f, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5e387b77dcf6359479399836019d11dc
+  position: {x: 633, y: 672.85486}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNodes:
+  - {fileID: -4810152210574421725}
+  - {fileID: 8785810890809832847}
+  - {fileID: -2969614589412849968}
+  - {fileID: 5206616853479569755}
+  - {fileID: 239827433608509151}
+  - {fileID: -9040380443492603159}
+--- !u!114 &-2969614589412849968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413d625e149f8b044a013063348d6202, type: 3}
+  m_Name: IsInAttackDistance
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 3298bdf75ffb5df41bc6af5553e7ca4d
+  position: {x: 487.90002, y: 891.0001}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: 8842565920990846066}
+--- !u!114 &-1714255863951450342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b555e94fae12d41b000ee2e4992c5f, type: 3}
+  m_Name: StunnedNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 7c9991f56074d2b4da5735a6a0c085e8
+  position: {x: -561.75006, y: 1124.0001}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0955cad4acc78f46b22e512acdcf0ee, type: 3}
+  m_Name: LizardTree
+  m_EditorClassIdentifier: 
+  RootNode: {fileID: 7899578557138334162}
+  TreeState: 0
+  Nodes:
+  - {fileID: 7899578557138334162}
+  - {fileID: -4005584875997156653}
+  - {fileID: 5206616853479569755}
+  - {fileID: -9040380443492603159}
+  - {fileID: -3882071247754098198}
+  - {fileID: 239827433608509151}
+  - {fileID: -2969614589412849968}
+  - {fileID: 9034306589478446184}
+  - {fileID: -3391553899636788393}
+  - {fileID: 1652134827945942036}
+  - {fileID: 2824522725470461667}
+  - {fileID: -6190701385495680639}
+  - {fileID: 7423981825872806958}
+  - {fileID: 8842565920990846066}
+  - {fileID: -8690075543078195994}
+  - {fileID: 8785810890809832847}
+  - {fileID: -5019779712605922879}
+  - {fileID: 6000331103983885720}
+  - {fileID: -4810152210574421725}
+  - {fileID: -1714255863951450342}
+  - {fileID: 5870003385936379292}
+  - {fileID: 2600637633131998034}
+  - {fileID: -7239088033421087692}
+  - {fileID: -4113088050315320866}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+--- !u!114 &239827433608509151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00ad8c5f1a45082419e3cb19917ffd72, type: 3}
+  m_Name: IsInRange
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: a1b151b7f55170b4f8da19ef85dd52d9
+  position: {x: 1058.7754, y: 894.5209}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: -3882071247754098198}
+--- !u!114 &1652134827945942036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2e3ec08dfaaad448ae76b55471a9664, type: 3}
+  m_Name: PerformAttackRanged
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e93c14e308a67a942a3177b0bcee3012
+  position: {x: 470, y: 1296}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+--- !u!114 &2600637633131998034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966030ac7f7552443b0e93bc7347b870, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: eb84948d74d31b646b95b33d2e48c0fe
+  position: {x: 77, y: 1124}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNodes:
+  - {fileID: -8690075543078195994}
+  - {fileID: 5870003385936379292}
+--- !u!114 &2824522725470461667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e68543142d27444ac23a2e62f6316d, type: 3}
+  m_Name: GoToDistancePlayerPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 6aeb4f655a1bda449996a0208b1b8476
+  position: {x: 227, y: 1146}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+--- !u!114 &5206616853479569755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d02420e357e9248b1866bcc0007551, type: 3}
+  m_Name: IsInSight
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: dcf51cb96fe2ebb438a03d6111f0e09a
+  position: {x: 854.7754, y: 890.5209}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: 9034306589478446184}
+--- !u!114 &5870003385936379292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66436396ddef6624a8885dc18d17101e, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ca879b085041c0a4690ffd2695b089ab
+  position: {x: 183, y: 1278}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  duration: 1
+--- !u!114 &6000331103983885720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e68543142d27444ac23a2e62f6316d, type: 3}
+  m_Name: GoToDistancePlayerPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 5f5522bf5211a5748876c014019f7797
+  position: {x: -222.83751, y: 1173.5}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+--- !u!114 &7423981825872806958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66436396ddef6624a8885dc18d17101e, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9b909bb6d3675794f963c1af4317defa
+  position: {x: 680, y: 1296}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  duration: 2.5
+--- !u!114 &7899578557138334162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a64bfbb904f810f42b67914acc1377d0, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: eff2160259cb8fd49a037ad9c0d896b4
+  position: {x: 642.99994, y: 277.77277}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: -4005584875997156653}
+--- !u!114 &8785810890809832847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fbfc7975c753394583d4c16490b6474, type: 3}
+  m_Name: IsInMeleeAttackDistance
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ddea29851fc238348a6e0ba38ea6bbf2
+  position: {x: -99.18499, y: 910}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: -5019779712605922879}
+--- !u!114 &8842565920990846066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fcadf9e14a31444bd14ca401cef8b8, type: 3}
+  m_Name: ParalellNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 44d11ad647c83e04683a3f52ec78adac
+  position: {x: 522, y: 999}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNodes:
+  - {fileID: 2824522725470461667}
+  - {fileID: -6190701385495680639}
+--- !u!114 &9034306589478446184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e68543142d27444ac23a2e62f6316d, type: 3}
+  m_Name: GoToDistancePlayerPosition
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: e4a7d8ab01e5bd84c8438307d7f1117d
+  position: {x: 829.7755, y: 1038.5209}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0

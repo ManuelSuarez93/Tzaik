@@ -1,0 +1,301 @@
+#node-border {
+    background-color: rgb(72, 65, 58);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#input {
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    left: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    min-width: 100px;
+    min-height: 25px;
+}
+
+#output {
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-top-width: 1px;
+}
+
+#selection-border {
+    border-left-color: rgba(9, 0, 255, 0);
+    border-right-color: rgba(9, 0, 255, 0);
+    border-top-color: rgba(9, 0, 255, 0);
+    border-bottom-color: rgba(9, 0, 255, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+:hover > #selection-border {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 150, 255, 0.59);
+    border-right-color: rgba(0, 150, 255, 0.59);
+    border-top-color: rgba(0, 150, 255, 0.59);
+    border-bottom-color: rgba(0, 150, 255, 0.59);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+:selected > #selection-border {
+    border-left-width: 1.5px;
+    border-right-width: 1.5px;
+    border-top-width: 1.5px;
+    border-bottom-width: 1.5px;
+    border-left-color: rgba(0, 100, 255, 0.61);
+    border-right-color: rgba(0, 100, 255, 0.61);
+    border-top-color: rgba(0, 100, 255, 0.61);
+    border-bottom-color: rgba(0, 100, 255, 0.61);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+:hover:selected > #selection-border {
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-color: rgba(0, 150, 255, 0.59);
+    border-right-color: rgba(0, 150, 255, 0.59);
+    border-top-color: rgba(0, 150, 255, 0.59);
+    border-bottom-color: rgba(0, 150, 255, 0.59);
+}
+
+.node {
+    width: auto;
+    height: auto;
+    min-width: 150px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#title {
+    font-size: 14px;                                         
+    opacity: 1;
+}
+
+#description {
+    font-size: 10px;
+}
+
+#divider {
+    min-height: 1px;
+    background-color: rgb(0, 0, 0);
+}
+
+.action #input {
+    background-color: rgb(101, 229, 16);
+}
+
+.action #output {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.decorator #input {
+    background-color: rgb(97, 0, 153);
+}
+
+.decorator #output {
+    background-color: rgb(161, 0, 255);
+}
+
+.root #title {
+    color: rgb(0, 255, 60);
+    font-size: 20px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;                                               
+}
+
+.root #description {
+    width: 0;
+    height: 0;
+}
+
+.root #input {
+    background-color: rgb(150, 150, 0);
+}
+
+.root #output {
+    background-color: rgb(255, 255, 0);
+}
+
+.sequence #input {
+    background-color: rgb(37, 114, 228);
+}
+
+.sequence #output {
+    background-color: rgb(37, 152, 228);
+}
+
+.port {
+    border-left-color: rgb(255, 0, 0);
+    border-right-color: rgb(255, 0, 0);
+    border-top-color: rgb(255, 0, 0);
+    border-bottom-color: rgb(255, 0, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    opacity: 1;
+    align-items: stretch;
+    justify-content: space-between;
+    position: relative;
+    left: 0;
+}
+
+.port #cap {
+    border-left-color: rgb(255, 37, 0);
+    border-right-color: rgb(255, 37, 0);
+    border-top-color: rgb(255, 37, 0);
+    border-bottom-color: rgb(255, 37, 0);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    align-items: stretch;
+    justify-content: space-between;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+}
+
+.port #connector {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#node-state {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.running #node-state {
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-color: rgb(255, 234, 0);
+    border-right-color: rgb(255, 234, 0);
+    border-top-color: rgb(255, 234, 0);
+    border-bottom-color: rgb(255, 234, 0);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.success #node-state {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left-color: rgba(43, 255, 0, 0.75);
+    border-right-color: rgba(43, 255, 0, 0.75);
+    border-top-color: rgba(43, 255, 0, 0.75);
+    border-bottom-color: rgba(43, 255, 0, 0.75);
+}
+
+.failure #node-state {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left-color: rgba(255, 0, 0, 0.75);
+    border-right-color: rgba(255, 0, 0, 0.75);
+    border-top-color: rgba(255, 0, 0, 0.75);
+    border-bottom-color: rgba(255, 0, 0, 0.75);
+}
+
+.selector #input {
+    background-color: rgb(153, 0, 26);
+}
+
+.selector #output {
+    background-color: rgb(255, 0, 43);
+}

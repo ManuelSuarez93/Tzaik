@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="BehaviourTreeEditor.uss" />
+    <BehaviourTree.SplitView fixed-pane-initial-dimension="300" style="flex-direction: column-reverse; align-items: auto;">
+        <ui:VisualElement style="width: 774px;">
+            <BehaviourTree.SplitView orientation="Vertical">
+                <ui:VisualElement name="inspector-container">
+                    <uie:Toolbar name="Inspector-label">
+                        <ui:Label text="Inspector" display-tooltip-when-elided="true" />
+                    </uie:Toolbar>
+                    <BehaviourTree.InspectorView style="height: 210px; width: 606px; flex-grow: 1; background-color: rgb(70, 44, 44);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="context-container">
+                    <uie:Toolbar name="context-label">
+                        <ui:Label text="Contex" display-tooltip-when-elided="true" />
+                    </uie:Toolbar>
+                    <ui:IMGUIContainer />
+                </ui:VisualElement>
+            </BehaviourTree.SplitView>
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel">
+            <uie:Toolbar name="Inspector">
+                <ui:Label text="Tree View" display-tooltip-when-elided="true" />
+            </uie:Toolbar>
+            <BehaviourTree.BehaviourTreeView focusable="true" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </BehaviourTree.SplitView>
+</ui:UXML>

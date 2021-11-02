@@ -1,0 +1,13 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Blowgun
+  m_Controller: {fileID: 9100000, guid: a27c251dc1dfa7e40b3f8c6fe1e0c14f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 63b90ae264663364886c6f351cb28fda, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b95a85d44977c804b854414e08f853e7, type: 2}

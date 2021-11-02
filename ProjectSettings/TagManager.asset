@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground/Stone
+  - Ground/Wood
+  - LevelPiece/Hallway
+  - LevelPiece/Room
+  - Enemy
+  - Enemy/Bone
+  - Enemy/Controller
+  - Object
+  - Obstacle
+  - ProjectilePlayer
+  - Connector
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - ItemLayer
+  - Water
+  - UI
+  - LowRes
+  - Player
+  - Projectile/Player
+  - Projectile/Enemy
+  - LevelPiece
+  - Enemy/Controller
+  - Enemy/Bones
+  - Projectile/Player/Controller
+  - Projectile/Player/Bones
+  - 3DUI
+  - Enemy
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

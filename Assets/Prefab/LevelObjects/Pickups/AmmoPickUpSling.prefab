@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5462113114276711660
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -5276185877354056483, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: interactable
+      value: 
+      objectReference: {fileID: 1276332749717950125}
+    - target: {fileID: 82321221675130686, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_Name
+      value: AmmoPickUpSling
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 130.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130687, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 82321221675130690, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 624b68b3635a5d84c96d5e2d038cc351, type: 2}
+    - target: {fileID: 6519843573428748865, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519843573428748865, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: prefabID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519843573428748865, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+      propertyPath: ammoAmount
+      value: 20
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+--- !u!114 &1276332749717950125 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6519843573428748865, guid: 99b16b73877c72740af0e446b134d5ae, type: 3}
+  m_PrefabInstance: {fileID: 5462113114276711660}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb4fbecdc54ea348b6ae3d409a7d5b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
