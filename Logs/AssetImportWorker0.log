@@ -1,0 +1,436 @@
+Using pre-set license
+Built from '2021.1/release' branch; Version is '2021.1.16f1 (5fa502fca597) revision 6268162'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1237; Version 2009; 64bit' Language: 'en' Physical Memory: 16326 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Tzaik
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54089
+Successfully changed project path to: C:/Tzaik
+C:/Tzaik
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 147.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.16f1 (5fa502fca597)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Tzaik/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+d3d12: loaded!
+Direct3D:
+    Version:         Direct3D 12 [level 12.1]
+    Renderer:        NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:          NVIDIA
+    VRAM:            5991 MB
+    App VRAM Budget: 5223 MB
+    Driver:          30.0.14.7168
+d3d12: Profiler is enabled, but stable power state is not. GPU timing errors are expected.
+
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001844 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 155.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.171 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1171ms)
+		BeginReloadAssembly (62ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (530ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (165ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (288ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (155ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (96ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005738 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Tzaik\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Tzaik\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 160.51 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.882 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1882ms)
+		BeginReloadAssembly (156ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1665ms)
+			LoadAssemblies (112ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (412ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (73ms)
+			SetupLoadedEditorAssemblies (969ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (161ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (671ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.13 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5971 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 239.0 MB.
+System memory in use after: 239.2 MB.
+
+Unloading 213 unused Assets to reduce memory usage. Loaded Objects now: 6362.
+Total: 7.443300 ms (FindLiveObjects: 0.450000 ms CreateObjectMapping: 0.344600 ms MarkObjects: 6.289400 ms  DeleteObjects: 0.358200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Test
+  artifactKey: Guid(31ecc40fdfb9b5c4789f76cdd3deb2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test using Guid(31ecc40fdfb9b5c4789f76cdd3deb2da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4d3f0892838056f5d2e0aaaca190fc4') in 0.014247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.701961 seconds.
+  path: Assets/Art/Images/Patterns/555.jpg
+  artifactKey: Guid(e323761ffb85f9e4e9c82a14730e49fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/Patterns/555.jpg using Guid(e323761ffb85f9e4e9c82a14730e49fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ae1f75d34fefb405b7e580c400a351') in 0.175769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Art/Images/UI/Bar.png
+  artifactKey: Guid(6013b9392b7e52b40b77385057ffa151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/UI/Bar.png using Guid(6013b9392b7e52b40b77385057ffa151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fcfc91ebd8c50b20ed1f49363fa2809') in 0.030199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000567 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/AimIK Icon.png
+  artifactKey: Guid(14a4d69b319a04b75bb03f351a174cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/AimIK Icon.png using Guid(14a4d69b319a04b75bb03f351a174cec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2045e5d0c0b78770109a8b941ca035') in 0.010862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Art/Images/Patterns/1827753 - Copy.jpg
+  artifactKey: Guid(573d48dd11b951748b45b082eceaa3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/Patterns/1827753 - Copy.jpg using Guid(573d48dd11b951748b45b082eceaa3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '314f84783862ffcb35c158390f562790') in 0.023694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Art/Images/UI/Items/Atlatl.PNG
+  artifactKey: Guid(5e537bf3b36fdd840aa57cc6c2739020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/UI/Items/Atlatl.PNG using Guid(5e537bf3b36fdd840aa57cc6c2739020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f799c9953252aa06f090331e6b2028') in 0.023919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Art/Images/Patterns/barra1.png
+  artifactKey: Guid(89818c92c2473c641a6a7cbf4716b0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/Patterns/barra1.png using Guid(89818c92c2473c641a6a7cbf4716b0a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35643dc622a778c6d4e56184d33b8655') in 0.021530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Art/Images/Patterns/1827753.jpg
+  artifactKey: Guid(f062a6fa6767f55489101b9276b3fcbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/Patterns/1827753.jpg using Guid(f062a6fa6767f55489101b9276b3fcbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '717abc94d97ecdc6562da305f8b14f5f') in 0.023956 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Art/Images/Patterns/bara.psd
+  artifactKey: Guid(77a2c293a1dabdc40922221a796b3e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/Patterns/bara.psd using Guid(77a2c293a1dabdc40922221a796b3e82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d70fe246857229493977c16a9f7e1d7') in 0.021994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.736277 seconds.
+  path: Assets/Art/Images/BayerDither4x4.png
+  artifactKey: Guid(a405309e77c00444184ef189c02d3997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/BayerDither4x4.png using Guid(a405309e77c00444184ef189c02d3997) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '692c701c3029079128af1a7fab2b6631') in 0.016846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Art/Images/BayerDither8x8.png
+  artifactKey: Guid(d5837ce2d54192649af72044a041993f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/BayerDither8x8.png using Guid(d5837ce2d54192649af72044a041993f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fed23bfc0eb76b855938b2c699879ec') in 0.017149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004349 seconds.
+  path: Assets/Plugins/RootMotion/PuppetMaster/Gizmos/BehaviourFall Icon.png
+  artifactKey: Guid(5f77f33a83efd35429c7eb5dc9474f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/PuppetMaster/Gizmos/BehaviourFall Icon.png using Guid(5f77f33a83efd35429c7eb5dc9474f43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b04fdfecc6247466ce8152daac580dd5') in 0.012209 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Plugins/RootMotion/PuppetMaster/Gizmos/BehaviourPuppet Icon.png
+  artifactKey: Guid(1b10303a9012d794dbcd05b1f7f818bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/PuppetMaster/Gizmos/BehaviourPuppet Icon.png using Guid(1b10303a9012d794dbcd05b1f7f818bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '526c8dc1c5b7ba50c8889528444ea204') in 0.011488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.227993 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/BipedIK Icon.png
+  artifactKey: Guid(2631a18e2dd7844718dea7db8ecf6c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/BipedIK Icon.png using Guid(2631a18e2dd7844718dea7db8ecf6c03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32e6a73be5ef29c2aa456c0805cd067') in 0.013163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Plugins/RootMotion/RagdollManager/Gizmos/BipedRagdollCreator Icon.png
+  artifactKey: Guid(abe07bc040eff524eb2e03d5fbbbd902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/RagdollManager/Gizmos/BipedRagdollCreator Icon.png using Guid(abe07bc040eff524eb2e03d5fbbbd902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3b16ad4da1a2a28d63a732a8f70f32') in 0.023239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038896 seconds.
+  path: Assets/Plugins/RootMotion/PuppetMaster/_DEMOS/Assets/FX/Blood/Blood 1.png
+  artifactKey: Guid(29a4cb9f342c54b78b5baae12714c16f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/PuppetMaster/_DEMOS/Assets/FX/Blood/Blood 1.png using Guid(29a4cb9f342c54b78b5baae12714c16f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c91743ec41ade2b5e7e5cec56b75ed') in 0.020033 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Plugins/RootMotion/PuppetMaster/_DEMOS/Assets/FX/Blood/Blood 2.png
+  artifactKey: Guid(8c548cf37e66748a89d4e6d8c9585ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/PuppetMaster/_DEMOS/Assets/FX/Blood/Blood 2.png using Guid(8c548cf37e66748a89d4e6d8c9585ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3655d2ad6c5f37efa7e1c90abfc0bc80') in 0.018579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_1.png
+  artifactKey: Guid(4b7ad1607a9e2294fa522cae628443d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_1.png using Guid(4b7ad1607a9e2294fa522cae628443d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b841b26a8e758993984ff17bb7f7cc4') in 0.019882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX.png
+  artifactKey: Guid(3103143b7f273b54e8e46b4f2f433163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX.png using Guid(3103143b7f273b54e8e46b4f2f433163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e76bf4f41c5f1c24f847324212c9b08c') in 0.021597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.118464 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_1_greyScale.png
+  artifactKey: Guid(0dd9fef3208aa7541b9e26f5243a0d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_1_greyScale.png using Guid(0dd9fef3208aa7541b9e26f5243a0d0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd763499ad338cd930d19d2daa9815637') in 0.029686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_2.png
+  artifactKey: Guid(d09c656d9fb6be74e8e35e449dd64558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_2.png using Guid(d09c656d9fb6be74e8e35e449dd64558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '850eec2f6575adef6ed65314543a3ee9') in 0.020080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000318 seconds.
+  path: Assets/Art/Images/UI/Items/Boleadora.PNG
+  artifactKey: Guid(33071a7cd188a0f42b47f080bab39d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/UI/Items/Boleadora.PNG using Guid(33071a7cd188a0f42b47f080bab39d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a729986e5fe6a78ec23ff0cc3d6fd1') in 0.020020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_Diffuse.png
+  artifactKey: Guid(204abc37f1ef2084c8551a7afbe60edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_Diffuse.png using Guid(204abc37f1ef2084c8551a7afbe60edc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f4bc732fcb533e086ace122c7bbae4e') in 0.030752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_Gloss.png
+  artifactKey: Guid(19b640978e503864fb00091c821c4935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_Gloss.png using Guid(19b640978e503864fb00091c821c4935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be950252956e24c0c1cf0e47fba1d458') in 0.030968 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_greyscale.png
+  artifactKey: Guid(679e4bb801c955544a4525d7df17f454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_greyscale.png using Guid(679e4bb801c955544a4525d7df17f454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28d153c2925e61a5186b4a6126803d28') in 0.021430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_2_greyScale.png
+  artifactKey: Guid(e8562306528b4fe47828b2d1af380064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/BloodGushFX/Textures/BloodParticleFX_2_greyScale.png using Guid(e8562306528b4fe47828b2d1af380064) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d1ee9b3a85f00c4ebbd47ccdbe0053') in 0.021215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_Displacement.png
+  artifactKey: Guid(16c53fef92528674fbf2fab05e0bf9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_Displacement.png using Guid(16c53fef92528674fbf2fab05e0bf9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1f66b3281ed432ab35e75e085e926e') in 0.028544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.034742 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_Normal.png
+  artifactKey: Guid(4cba40c9f7d32254585baf3702bf4507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_Normal.png using Guid(4cba40c9f7d32254585baf3702bf4507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1e30a6cfc14cec5adc94aba74774abd') in 0.048902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/_DEMOS/Assets/Car Interior/Textures/Car Interior.png
+  artifactKey: Guid(fc0e19bd8569a4c32acda5001e678b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/_DEMOS/Assets/Car Interior/Textures/Car Interior.png using Guid(fc0e19bd8569a4c32acda5001e678b07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae224698218f5fd1eadc92b1b5260cb') in 0.022287 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/CCDIK Icon.png
+  artifactKey: Guid(79450243724744b44820e5468e418048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/CCDIK Icon.png using Guid(79450243724744b44820e5468e418048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89e138e063b44f9238905b7c761d8867') in 0.011552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_SpecGloss.png
+  artifactKey: Guid(3d94dcdf086297049943a0b0e7566fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BloodDecalsAndEffects/BloodGushFX/brainsAndBlood/Textures/Brains_SpecGloss.png using Guid(3d94dcdf086297049943a0b0e7566fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a782d675d99a017c5854f1ca7344f854') in 0.037935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_AmbientOcclusion.jpg
+  artifactKey: Guid(6361da56800ba5a44970f3a6374ad31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_AmbientOcclusion.jpg using Guid(6361da56800ba5a44970f3a6374ad31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f7a9671309a44a9034313e6565933e') in 0.022469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_Color.jpg
+  artifactKey: Guid(726228228e153c4439e0d9db48a5f86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_Color.jpg using Guid(726228228e153c4439e0d9db48a5f86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde3fb3ce4b5976d197cdc49cc81b3f3') in 0.023366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000372 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/Chain Icon.png
+  artifactKey: Guid(e394bb73c6c534de1a49e2eff63b4f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/Chain Icon.png using Guid(e394bb73c6c534de1a49e2eff63b4f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583f8c52262584b476395f1ac8ac4d74') in 0.018784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000444 seconds.
+  path: Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_Displacement.jpg
+  artifactKey: Guid(1d46465332cc2b84586759a6109cf24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_Displacement.jpg using Guid(1d46465332cc2b84586759a6109cf24b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe592de16f3fcb89d29408621cf8469f') in 0.023371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.042632 seconds.
+  path: Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_Normal.jpg
+  artifactKey: Guid(9aeb0e8367058004880d60efd67220e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_Normal.jpg using Guid(9aeb0e8367058004880d60efd67220e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb6e67620b65186b855da659f9aa013') in 0.021667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_Roughness.jpg
+  artifactKey: Guid(024e049821ff988468eda54b5b634d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Materials/Textures/Chipboard/Chipboard003_1K_Roughness.jpg using Guid(024e049821ff988468eda54b5b634d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4246be0257a26a9a16dd16cdec7ec83') in 0.021591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.026737 seconds.
+  path: Assets/Art/Images/UI/crosshair.png
+  artifactKey: Guid(f773322cb204b8542af82cda7f78a05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/UI/crosshair.png using Guid(f773322cb204b8542af82cda7f78a05e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50ef5d97ac9bea209fbd99a3e1c70cbf') in 0.040182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Art/Images/UI/Items/Daga.PNG
+  artifactKey: Guid(208d619c844ac9241b538c435eb2a1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Images/UI/Items/Daga.PNG using Guid(208d619c844ac9241b538c435eb2a1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74c8da21d71f76bdbe3351e8c86499c') in 0.021879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.951442 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/EndEffector Icon.png
+  artifactKey: Guid(0ee227cd5021b40b2a18d383ba9dadff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/EndEffector Icon.png using Guid(0ee227cd5021b40b2a18d383ba9dadff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5ac24eaf886a2651e8919224546f7f') in 0.017708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/FABRIKRoot Icon.png
+  artifactKey: Guid(55f7720fb239042f08656d4ab294f5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/FABRIKRoot Icon.png using Guid(55f7720fb239042f08656d4ab294f5c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adac42756682c24174426650fae5bc48') in 0.012292 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/FullBodyBipedIK Icon.png
+  artifactKey: Guid(89e0c79ada10847639ab1754e12413a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/FullBodyBipedIK Icon.png using Guid(89e0c79ada10847639ab1754e12413a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0883f578c76aeed24d944044fb1a4b') in 0.011586 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000472 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/GrounderFBBIK Icon.png
+  artifactKey: Guid(36056811931e14f20adcc2767d6262e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/GrounderFBBIK Icon.png using Guid(36056811931e14f20adcc2767d6262e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee6d62dc58c91200957eb6b4b309fee7') in 0.012715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/FABRIK Icon.png
+  artifactKey: Guid(1ccc9218a62cd44dda0ddb5fa15c62cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/FABRIK Icon.png using Guid(1ccc9218a62cd44dda0ddb5fa15c62cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3269d272304261f0625b4c60fbdfaae') in 0.014516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.516760 seconds.
+  path: Assets/Art/Icon.png
+  artifactKey: Guid(c4ba07c057249574492090f1d1930b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Icon.png using Guid(c4ba07c057249574492090f1d1930b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ceac23721cffe95d79714df642fdeec') in 0.011390 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/InteractionTarget Icon.png
+  artifactKey: Guid(706b88054f06c4e83ad5f34217bedea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/InteractionTarget Icon.png using Guid(706b88054f06c4e83ad5f34217bedea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '203c6e9fb1eca7bc1f75e3e99f27ad26') in 0.012281 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/InteractionObject Icon.png
+  artifactKey: Guid(9e5cf919254ee4d6bb9ccd7dc1b4bebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/InteractionObject Icon.png using Guid(9e5cf919254ee4d6bb9ccd7dc1b4bebd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd71490c5f528fd5683d8ff6e429e6da2') in 0.013796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/LimbIK Icon.png
+  artifactKey: Guid(e747b4712fd43444ab8213b7ff4c089b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/LimbIK Icon.png using Guid(e747b4712fd43444ab8213b7ff4c089b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b813d5e89145dabbebc12cf94d620ca') in 0.013587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/InteractionTrigger Icon.png
+  artifactKey: Guid(2a1323dcf174944a69736d167afe96e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/InteractionTrigger Icon.png using Guid(2a1323dcf174944a69736d167afe96e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6957614ce43194e9f8c954de2ac3a54') in 0.013153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Plugins/RootMotion/FinalIK/Gizmos/InteractionSystem Icon.png
+  artifactKey: Guid(5e7cd1ffcb3304ceba342d37416ceb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/RootMotion/FinalIK/Gizmos/InteractionSystem Icon.png using Guid(5e7cd1ffcb3304ceba342d37416ceb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ae51f45a3f25b7c8377a7866201aaec') in 0.013957 seconds 
