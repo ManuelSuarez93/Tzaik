@@ -36,3 +36,39 @@ sysinfo.txt
 *.apk
 *.unitypackage
 *.meta
+Assets/Plugins/RootMotion/FinalIK/_Integration/IK Jobs (Unity 2018.2.4f1).unitypackage.meta
+Assets/Plugins/RootMotion/FinalIK/_Integration/IK Jobs (Unity 2019.3).unitypackage.meta
+Assets/Plugins/RootMotion/FinalIK/_Integration/Oculus (Unity 2017.4.28f1, Oculus Integration v1.37).unitypackage.meta
+Assets/Plugins/RootMotion/FinalIK/_Integration/Playmaker (Unity 2017.4.28f1, PlayMaker 1.9.0).unitypackage.meta
+Assets/Plugins/RootMotion/FinalIK/_Integration/Steam VR (Unity 2017.4.28f1, SteamVR Plugin v2.6.1).unitypackage.meta
+Assets/Plugins/RootMotion/FinalIK/_Integration/UMA (Unity 2017.4.28f1, UMA 2.8.1).unitypackage.meta
+Assets/Plugins/RootMotion/FinalIK/_Integration/VRIK Photon Demo (Unity 2017.4.28f1, Oculus Integration, PUN 1.103).unitypackage.meta
+Assets/Plugins/RootMotion/FinalIK/_Integration/VRIK Photon2 Demo (Unity 2017.4.28f1, Oculus or SteamVR Integration, PUN 2.20.2).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/Final IK (Unity 2017.4.28f1, Final IK 2.0).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/Goblin Archer (2,5D Puppets).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/Invector's Third Person Controller - Basic Locomotion FREE (v 1.0c).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/Kinematic Character Controller (Unity 2018.3.5f1, KKC v 3.2.1).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/Ootii's Motion Controller v2.73 (Unity 5.5.0).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/Opsive's Third Person Controller v1.3.10.unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/Opsive's UCC (Unity 2018.4.23f1, UCC 2.2.3).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/Photon (PUN 1.103).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/Photon (PUN 2.20.2).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/UMA (Unity 2017.4.28f1, UMA 2.8.1).unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/UNet.unitypackage.meta
+Assets/Plugins/RootMotion/PuppetMaster/_Integration/VR Boxing (Oculus, Unity 2017.4.28f1).unitypackage.meta
+Assets/Scripts/NavMeshComponents/Editor.meta
+Assets/Scripts/NavMeshComponents/Editor/NavMeshAssetManager.cs.meta
+Assets/Scripts/NavMeshComponents/Editor/NavMeshComponentsEditor.asmdef.meta
+Assets/Scripts/NavMeshComponents/Editor/NavMeshComponentsGUIUtility.cs.meta
+Assets/Scripts/NavMeshComponents/Editor/NavMeshLinkEditor.cs.meta
+Assets/Scripts/NavMeshComponents/Editor/NavMeshModifierEditor.cs.meta
+Assets/Scripts/NavMeshComponents/Editor/NavMeshModifierVolumeEditor.cs.meta
+Assets/Scripts/NavMeshComponents/Editor/NavMeshSurfaceEditor.cs.meta
+Assets/Scripts/NavMeshComponents/Scripts.meta
+Assets/Scripts/NavMeshComponents/Scripts/NavMeshComponents.asmdef.meta
+Assets/Scripts/NavMeshComponents/Scripts/NavMeshLink.cs.meta
+Assets/Scripts/NavMeshComponents/Scripts/NavMeshModifier.cs.meta
+Assets/Scripts/NavMeshComponents/Scripts/NavMeshModifierVolume.cs.meta
+Assets/Scripts/NavMeshComponents/Scripts/NavMeshSurface.cs.meta
+Logs/AssetImportWorker0-prev.log
+Logs/shadercompiler-UnityShaderCompiler.exe0.log
