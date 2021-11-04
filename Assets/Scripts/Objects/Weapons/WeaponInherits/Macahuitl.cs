@@ -3,6 +3,7 @@ using Tzaik.General;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using RootMotion.Dynamics;
 
 namespace Tzaik.Items.Weapons
 {
@@ -18,8 +19,11 @@ namespace Tzaik.Items.Weapons
         [SerializeField] Projectile wave; 
         public override void PerformAttack()
         {
-            if (AttackConidition) 
-                animator.SetTrigger("Attack"); 
+            if (AttackConidition)
+            { 
+                animator.SetTrigger("Attack");
+                rate = 0;
+            }
         }
         public override void AttackActionCheck()
         {
@@ -27,12 +31,11 @@ namespace Tzaik.Items.Weapons
             foreach (var e in enemy)
                 if (damageTags.Contains(e.tag))
                 { 
-                    e.GetComponent<HealthScript>().Damage(attack.BaseDamage + attack.AdditionalDamage);
+                    e.GetComponent<HealthScript>().Damage(attack.BaseDamage + attack.AdditionalDamage); 
                     e.GetComponent<Rigidbody>().AddForce(transform.forward * (attack.BaseForce + attack.AdditionalForce), ForceMode.Impulse);
                 }
 
             attackEvent.Invoke();
-            rate = 0;
         } 
 
         public void InstantiateWave()

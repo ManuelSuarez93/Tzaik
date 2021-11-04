@@ -181,9 +181,9 @@ MonoBehaviour:
       newProjectile: {fileID: 0}
   effects:
     swayIntenisty: 25
-    swaySmoothing: 25
+    swaySmoothing: 5
     shakeAmount: {x: 1, y: 1, z: 1}
-    shakeTime: 0.25
+    shakeTime: 0.1
     shakeIntensity: 2
     movement: {x: 0, y: -4, z: 0}
     moveIntensity: 2
