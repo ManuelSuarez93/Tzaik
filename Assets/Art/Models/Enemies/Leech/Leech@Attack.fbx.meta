@@ -6,6 +6,9 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Attack
+  - first:
+      74: -1427282118838853186
+    second: Attack Melee
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -66,7 +69,895 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      transformMask: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DeformationSystem
+        weight: 1
+      - path: DeformationSystem/Root_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/HeadEnd_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint4_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint4_M/joint5_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint4_M/joint5_M/joint12_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_L
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_L/joint7_L
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_L/joint7_L/joint8_L
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_R
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_R/joint7_R
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_R/joint7_R/joint8_R
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_L
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_L/joint10_L
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_L/joint10_L/joint11_L
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_R
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_R/joint10_R
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_R/joint10_R/joint11_R
+        weight: 1
+      - path: DeformationSystem/Root_M/Tail1_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M/Tail4_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M/Tail4_M/joint1_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M/Tail4_M/joint1_M/joint2_L
+        weight: 1
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M/Tail4_M/joint1_M/joint2_R
+        weight: 1
+      - path: FitSkeleton
+        weight: 1
+      - path: FitSkeleton/Root
+        weight: 1
+      - path: FitSkeleton/Root/Spine1
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/HeadEnd
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint4
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint4/joint5
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint4/joint5/joint12
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint6
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint6/joint7
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint6/joint7/joint8
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint9
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint9/joint10
+        weight: 1
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint9/joint10/joint11
+        weight: 1
+      - path: FitSkeleton/Root/Tail1
+        weight: 1
+      - path: FitSkeleton/Root/Tail1/Tail2
+        weight: 1
+      - path: FitSkeleton/Root/Tail1/Tail2/Tail3
+        weight: 1
+      - path: FitSkeleton/Root/Tail1/Tail2/Tail3/Tail4
+        weight: 1
+      - path: FitSkeleton/Root/Tail1/Tail2/Tail3/Tail4/joint1
+        weight: 1
+      - path: FitSkeleton/Root/Tail1/Tail2/Tail3/Tail4/joint1/joint2
+        weight: 1
+      - path: Geometry
+        weight: 1
+      - path: Geometry/geo
+        weight: 1
+      - path: Geometry/geo/Leech1
+        weight: 1
+      - path: MotionSystem
+        weight: 1
+      - path: MotionSystem/AimSystem
+        weight: 1
+      - path: MotionSystem/BendSystem
+        weight: 1
+      - path: MotionSystem/ConstraintSystem
+        weight: 1
+      - path: MotionSystem/DrivingSystem
+        weight: 1
+      - path: MotionSystem/DynamicSystem
+        weight: 1
+      - path: MotionSystem/FKIKSystem
+        weight: 1
+      - path: MotionSystem/FKSystem
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKOffsetjoint5_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKOffsetjoint5_M/FKExtrajoint5_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKOffsetjoint5_M/FKExtrajoint5_M/FKjoint5_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKOffsetjoint5_M/FKExtrajoint5_M/FKjoint5_M/FKXjoint5_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKPS1joint5_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKPS1joint5_M/FKPS2joint5_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKOffsetjoint7_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKOffsetjoint7_L/FKExtrajoint7_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKOffsetjoint7_L/FKExtrajoint7_L/FKjoint7_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKOffsetjoint7_L/FKExtrajoint7_L/FKjoint7_L/FKXjoint7_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKPS1joint7_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKPS1joint7_L/FKPS2joint7_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKOffsetjoint7_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKOffsetjoint7_R/FKExtrajoint7_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKOffsetjoint7_R/FKExtrajoint7_R/FKjoint7_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKOffsetjoint7_R/FKExtrajoint7_R/FKjoint7_R/FKXjoint7_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKPS1joint7_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKPS1joint7_R/FKPS2joint7_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKOffsetjoint10_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKOffsetjoint10_L/FKExtrajoint10_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKOffsetjoint10_L/FKExtrajoint10_L/FKjoint10_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKOffsetjoint10_L/FKExtrajoint10_L/FKjoint10_L/FKXjoint10_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKPS1joint10_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKPS1joint10_L/FKPS2joint10_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKOffsetjoint10_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKOffsetjoint10_R/FKExtrajoint10_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKOffsetjoint10_R/FKExtrajoint10_R/FKjoint10_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKOffsetjoint10_R/FKExtrajoint10_R/FKjoint10_R/FKXjoint10_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKPS1joint10_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKPS1joint10_R/FKPS2joint10_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint4_M/FKPS2joint4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint6_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint6_L/FKPS2joint6_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint6_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint6_R/FKPS2joint6_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint9_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint9_L/FKPS2joint9_L
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint9_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint9_R/FKPS2joint9_R
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKPS1Head_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKPS1Head_M/FKPS2Head_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKPS1Chest_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKPS1Chest_M/FKPS2Chest_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKPS1Spine2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKPS1Spine2_M/FKPS2Spine2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKOffsetjoint1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKOffsetjoint1_M/FKExtrajoint1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKOffsetjoint1_M/FKExtrajoint1_M/FKjoint1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKOffsetjoint1_M/FKExtrajoint1_M/FKjoint1_M/FKXjoint1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKPS1joint1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKPS1joint1_M/FKPS2joint1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKPS1Tail4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKPS1Tail4_M/FKPS2Tail4_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKPS1Tail3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKPS1Tail3_M/FKPS2Tail3_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKPS1Tail2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKPS1Tail2_M/FKPS2Tail2_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKPS1Spine1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKPS1Spine1_M/FKPS2Spine1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKPS1Tail1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKPS1Tail1_M/FKPS2Tail1_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingerOffset_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingerOffset_M/HipSwinger_M
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingerStabilizerTarget
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingReverse
+        weight: 1
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingReverse/HipSwingReverseRoot
+        weight: 1
+      - path: MotionSystem/GlobalSystem
+        weight: 1
+      - path: MotionSystem/GlobalSystem/GlobalFollowMain
+        weight: 1
+      - path: MotionSystem/IKSystem
+        weight: 1
+      - path: MotionSystem/IKSystem/IKCurve
+        weight: 1
+      - path: MotionSystem/IKSystem/IKFollow
+        weight: 1
+      - path: MotionSystem/IKSystem/IKHandle
+        weight: 1
+      - path: MotionSystem/IKSystem/IKHandle/IKHandleFollowMain
+        weight: 1
+      - path: MotionSystem/IKSystem/IKJoints
+        weight: 1
+      - path: MotionSystem/IKSystem/IKMessure
+        weight: 1
+      - path: MotionSystem/IKSystem/IKStatic
+        weight: 1
+      - path: MotionSystem/MainSystem
+        weight: 1
+      - path: MotionSystem/MainSystem/Main
+        weight: 1
+      - path: MotionSystem/RootSystem
+        weight: 1
+      - path: MotionSystem/RootSystem/LegLockConstrained
+        weight: 1
+      - path: MotionSystem/RootSystem/RootFollowMain
+        weight: 1
+      - path: MotionSystem/RootSystem/RootFollowMain/RootOffsetX_M
+        weight: 1
+      - path: MotionSystem/RootSystem/RootFollowMain/RootOffsetX_M/RootExtraX_M
+        weight: 1
+      - path: MotionSystem/RootSystem/RootFollowMain/RootOffsetX_M/RootExtraX_M/RootX_M
+        weight: 1
+      - path: MotionSystem/TwistSystem
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Attack Melee
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 8
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.8948617
+        functionName: Melee
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 04387fdf96a278a4e9f3ed177167cb4b, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: DeformationSystem
+        weight: 0
+      - path: DeformationSystem/Root_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/HeadEnd_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint4_M
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint4_M/joint5_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint4_M/joint5_M/joint12_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_L
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_L/joint7_L
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_L/joint7_L/joint8_L
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_R
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_R/joint7_R
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint6_R/joint7_R/joint8_R
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_L
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_L/joint10_L
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_L/joint10_L/joint11_L
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_R
+        weight: 1
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_R/joint10_R
+        weight: 0
+      - path: DeformationSystem/Root_M/Spine1_M/Spine2_M/Chest_M/Head_M/joint3_M/joint9_R/joint10_R/joint11_R
+        weight: 0
+      - path: DeformationSystem/Root_M/Tail1_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M/Tail4_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M/Tail4_M/joint1_M
+        weight: 0
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M/Tail4_M/joint1_M/joint2_L
+        weight: 0
+      - path: DeformationSystem/Root_M/Tail1_M/Tail2_M/Tail3_M/Tail4_M/joint1_M/joint2_R
+        weight: 0
+      - path: FitSkeleton
+        weight: 0
+      - path: FitSkeleton/Root
+        weight: 0
+      - path: FitSkeleton/Root/Spine1
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/HeadEnd
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint4
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint4/joint5
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint4/joint5/joint12
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint6
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint6/joint7
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint6/joint7/joint8
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint9
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint9/joint10
+        weight: 0
+      - path: FitSkeleton/Root/Spine1/Spine2/Chest/Head/joint3/joint9/joint10/joint11
+        weight: 0
+      - path: FitSkeleton/Root/Tail1
+        weight: 0
+      - path: FitSkeleton/Root/Tail1/Tail2
+        weight: 0
+      - path: FitSkeleton/Root/Tail1/Tail2/Tail3
+        weight: 0
+      - path: FitSkeleton/Root/Tail1/Tail2/Tail3/Tail4
+        weight: 0
+      - path: FitSkeleton/Root/Tail1/Tail2/Tail3/Tail4/joint1
+        weight: 0
+      - path: FitSkeleton/Root/Tail1/Tail2/Tail3/Tail4/joint1/joint2
+        weight: 0
+      - path: Geometry
+        weight: 0
+      - path: Geometry/geo
+        weight: 0
+      - path: Geometry/geo/Leech1
+        weight: 0
+      - path: MotionSystem
+        weight: 0
+      - path: MotionSystem/AimSystem
+        weight: 0
+      - path: MotionSystem/BendSystem
+        weight: 0
+      - path: MotionSystem/ConstraintSystem
+        weight: 0
+      - path: MotionSystem/DrivingSystem
+        weight: 0
+      - path: MotionSystem/DynamicSystem
+        weight: 0
+      - path: MotionSystem/FKIKSystem
+        weight: 0
+      - path: MotionSystem/FKSystem
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKOffsetjoint5_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKOffsetjoint5_M/FKExtrajoint5_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKOffsetjoint5_M/FKExtrajoint5_M/FKjoint5_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKOffsetjoint5_M/FKExtrajoint5_M/FKjoint5_M/FKXjoint5_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKPS1joint5_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint4_M/FKExtrajoint4_M/FKjoint4_M/FKXjoint4_M/FKPS1joint5_M/FKPS2joint5_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKOffsetjoint7_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKOffsetjoint7_L/FKExtrajoint7_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKOffsetjoint7_L/FKExtrajoint7_L/FKjoint7_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKOffsetjoint7_L/FKExtrajoint7_L/FKjoint7_L/FKXjoint7_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKPS1joint7_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_L/FKExtrajoint6_L/FKjoint6_L/FKXjoint6_L/FKPS1joint7_L/FKPS2joint7_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKOffsetjoint7_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKOffsetjoint7_R/FKExtrajoint7_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKOffsetjoint7_R/FKExtrajoint7_R/FKjoint7_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKOffsetjoint7_R/FKExtrajoint7_R/FKjoint7_R/FKXjoint7_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKPS1joint7_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint6_R/FKExtrajoint6_R/FKjoint6_R/FKXjoint6_R/FKPS1joint7_R/FKPS2joint7_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKOffsetjoint10_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKOffsetjoint10_L/FKExtrajoint10_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKOffsetjoint10_L/FKExtrajoint10_L/FKjoint10_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKOffsetjoint10_L/FKExtrajoint10_L/FKjoint10_L/FKXjoint10_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKPS1joint10_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_L/FKExtrajoint9_L/FKjoint9_L/FKXjoint9_L/FKPS1joint10_L/FKPS2joint10_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKOffsetjoint10_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKOffsetjoint10_R/FKExtrajoint10_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKOffsetjoint10_R/FKExtrajoint10_R/FKjoint10_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKOffsetjoint10_R/FKExtrajoint10_R/FKjoint10_R/FKXjoint10_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKPS1joint10_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKOffsetjoint9_R/FKExtrajoint9_R/FKjoint9_R/FKXjoint9_R/FKPS1joint10_R/FKPS2joint10_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint4_M/FKPS2joint4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint6_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint6_L/FKPS2joint6_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint6_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint6_R/FKPS2joint6_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint9_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint9_L/FKPS2joint9_L
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint9_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKOffsetHead_M/FKExtraHead_M/FKHead_M/FKXHead_M/FKOffsetjoint3_M/FKExtrajoint3_M/FKjoint3_M/FKXjoint3_M/FKPS1joint9_R/FKPS2joint9_R
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKPS1Head_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKOffsetChest_M/FKExtraChest_M/FKChest_M/FKXChest_M/FKPS1Head_M/FKPS2Head_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKPS1Chest_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKOffsetSpine2_M/FKExtraSpine2_M/FKSpine2_M/FKXSpine2_M/FKPS1Chest_M/FKPS2Chest_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKPS1Spine2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetSpine1_M/HipSwingerStabilizer/FKExtraSpine1_M/FKSpine1_M/FKXSpine1_M/FKPS1Spine2_M/FKPS2Spine2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKOffsetjoint1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKOffsetjoint1_M/FKExtrajoint1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKOffsetjoint1_M/FKExtrajoint1_M/FKjoint1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKOffsetjoint1_M/FKExtrajoint1_M/FKjoint1_M/FKXjoint1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKPS1joint1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKOffsetTail4_M/FKExtraTail4_M/FKTail4_M/FKXTail4_M/FKPS1joint1_M/FKPS2joint1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKPS1Tail4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKOffsetTail3_M/FKExtraTail3_M/FKTail3_M/FKXTail3_M/FKPS1Tail4_M/FKPS2Tail4_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKPS1Tail3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKOffsetTail2_M/FKExtraTail2_M/FKTail2_M/FKXTail2_M/FKPS1Tail3_M/FKPS2Tail3_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKPS1Tail2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKOffsetTail1_M/FKExtraTail1_M/FKTail1_M/FKXTail1_M/FKPS1Tail2_M/FKPS2Tail2_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKPS1Spine1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKPS1Spine1_M/FKPS2Spine1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKPS1Tail1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/FKXRoot_M/FKPS1Tail1_M/FKPS2Tail1_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingerOffset_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingerOffset_M/HipSwinger_M
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingerStabilizerTarget
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingReverse
+        weight: 0
+      - path: MotionSystem/FKSystem/FKFollowRoot/FKOffsetRoot_M/FKExtraRoot_M/FKRoot_M/HipSwingReverse/HipSwingReverseRoot
+        weight: 0
+      - path: MotionSystem/GlobalSystem
+        weight: 0
+      - path: MotionSystem/GlobalSystem/GlobalFollowMain
+        weight: 0
+      - path: MotionSystem/IKSystem
+        weight: 0
+      - path: MotionSystem/IKSystem/IKCurve
+        weight: 0
+      - path: MotionSystem/IKSystem/IKFollow
+        weight: 0
+      - path: MotionSystem/IKSystem/IKHandle
+        weight: 0
+      - path: MotionSystem/IKSystem/IKHandle/IKHandleFollowMain
+        weight: 0
+      - path: MotionSystem/IKSystem/IKJoints
+        weight: 0
+      - path: MotionSystem/IKSystem/IKMessure
+        weight: 0
+      - path: MotionSystem/IKSystem/IKStatic
+        weight: 0
+      - path: MotionSystem/MainSystem
+        weight: 0
+      - path: MotionSystem/MainSystem/Main
+        weight: 0
+      - path: MotionSystem/RootSystem
+        weight: 0
+      - path: MotionSystem/RootSystem/LegLockConstrained
+        weight: 0
+      - path: MotionSystem/RootSystem/RootFollowMain
+        weight: 0
+      - path: MotionSystem/RootSystem/RootFollowMain/RootOffsetX_M
+        weight: 0
+      - path: MotionSystem/RootSystem/RootFollowMain/RootOffsetX_M/RootExtraX_M
+        weight: 0
+      - path: MotionSystem/RootSystem/RootFollowMain/RootOffsetX_M/RootExtraX_M/RootX_M
+        weight: 0
+      - path: MotionSystem/TwistSystem
+        weight: 0
       maskType: 3
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 1

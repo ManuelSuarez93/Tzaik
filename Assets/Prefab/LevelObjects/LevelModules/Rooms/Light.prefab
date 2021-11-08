@@ -107,6 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 6236404095186323523}
+  positionScrollSpeed: 5
+  scale: 1
 --- !u!1 &8204658722620848869
 GameObject:
   m_ObjectHideFlags: 0

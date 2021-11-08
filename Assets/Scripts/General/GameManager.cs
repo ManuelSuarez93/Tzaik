@@ -68,7 +68,7 @@ namespace Tzaik.General
         static bool startAgain;
         static int totalEnemiesKilled;
         static Dictionary<CoinType, int> coinsAmount;
-        static int currentLevel;
+        int currentLevel;
 
         #endregion
 
@@ -91,7 +91,7 @@ namespace Tzaik.General
             UIManager.Instance.LoadingScreen.SetActive(true);
             if (startAgain && currentScene != Levels.DUNGEON_LEVEL) 
                 currentLevel = 0;
-             
+            
             Load(false);
             if(levelCreator != null)
                 levelCreator.Initialize();
@@ -123,12 +123,12 @@ namespace Tzaik.General
             => totalEnemies = FindObjectsOfType(typeof(EnemyAttack)).Length;
 
         public bool LevelComplete 
-            => enemiesKilled >= totalEnemies;
+            => enemiesKilled >= totalEnemies / 2;
         public void Pause(bool isPaused)
             => Time.timeScale = isPaused ? 0 : 1; 
         public void GoToNextLevel()
         { 
-            if(currentLevel <= levelsPerArea)
+            if(currentLevel < levelsPerArea)
             { 
                 currentLevel++;
                 RestartLevel();
@@ -146,6 +146,7 @@ namespace Tzaik.General
             Save();
             LoadScene(level);
         }
+
         public void Save()
         {
             var playerWeapons = new List<WeaponType>();

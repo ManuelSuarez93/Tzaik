@@ -307,6 +307,7 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
     Context: {fileID: 0}
 --- !u!114 &8670752242168717313
 MonoBehaviour:
@@ -320,10 +321,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1d24a7237d6b84f9c5041530554795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeRadius: 30
-  sightRadius: 15
-  attackRadius: 15
-  meleeDistance: 5
+  rangeRadius: 80
+  sightRadius: 60
+  attackRadius: 40
+  meleeDistance: 15
   lookAtSmoothing: 1
   head: {fileID: 7055678417254675091}
   anim: {fileID: 945840774}
@@ -392,6 +393,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 945840774}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8670752243021083963}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   damagedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -407,8 +456,9 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0.5
+  puppetMaster: {fileID: 0}
   Damaged: 0
-  MaxHealth: 100
+  MaxHealth: 80
 --- !u!114 &4795048353059975311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,11 +501,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04387fdf96a278a4e9f3ed177167cb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  meleedamage: 30
+  rangedDamage: 20
   attackRate: 1
-  meleeAttackForce: 100
+  meleeAttackForce: 1000
   isRanged: 1
-  speed: 25
+  speed: 40
   shootPoint: {fileID: 4639117104035084405}
   projectile: {fileID: 497776767457293472, guid: bb5633dd698847d46bc71a163e8c18fd, type: 3}
   isMultipleProjectile: 1
