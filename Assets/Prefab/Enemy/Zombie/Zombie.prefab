@@ -586,7 +586,7 @@ MonoBehaviour:
   meleedamage: 10
   rangedDamage: 0
   attackRate: 1
-  meleeAttackForce: 20
+  meleeAttackForce: 150
   isRanged: 0
   speed: 0
   shootPoint: {fileID: 0}
