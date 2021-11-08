@@ -190,7 +190,7 @@ MonoBehaviour:
     moveTime: 0.2
   specialTime: 5
   specialCost: 40
-  attackAreaSize: 3
+  attackAreaSize: 8
   damageTags:
   - Enemy/Controller
   - Enemy

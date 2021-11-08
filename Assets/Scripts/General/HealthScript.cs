@@ -1,3 +1,4 @@
+using RootMotion.Dynamics;
 using System.Collections;
 using Tzaik.Player;
 using UnityEngine;
@@ -37,7 +38,8 @@ namespace Tzaik.General
         [SerializeField] bool detectCollisions;
 
         [Tooltip("Stun time if it's damaged")]
-        [SerializeField] float stunTime;
+        [SerializeField] float stunTime; 
+        [SerializeField] PuppetMaster puppetMaster;
 
         [System.Serializable]
         public class DamageEvent : UnityEvent<float> { } 
@@ -53,6 +55,7 @@ namespace Tzaik.General
         public float CurrentHealth { get; private set; }
         public float StunTime => stunTime; 
         public UnityEvent DeathEvent  => deathEvent; 
+        public PuppetMaster PuppetMaster  => puppetMaster; 
         #region Properties
 
         #endregion

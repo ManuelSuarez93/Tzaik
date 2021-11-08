@@ -21,7 +21,7 @@ namespace Tzaik.Enemy
         [SerializeField] bool enableDebug;
         [SerializeField] Renderer mesh;
         [SerializeField] GameObject sounds;
-        [SerializeField] bool doBehaviorTree; 
+        [SerializeField] bool doBehaviorTree;
 
         public Blackboard blackboard = new Blackboard();
         EnemyDetect detect;

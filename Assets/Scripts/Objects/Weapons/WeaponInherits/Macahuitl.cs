@@ -31,7 +31,7 @@ namespace Tzaik.Items.Weapons
             foreach (var e in enemy)
                 if (damageTags.Contains(e.tag))
                 { 
-                    e.GetComponent<HealthScript>().Damage(attack.BaseDamage + attack.AdditionalDamage); 
+                    e.GetComponent<HealthScript>().Damage(attack.BaseDamage + attack.AdditionalDamage);  
                     e.GetComponent<Rigidbody>().AddForce(transform.forward * (attack.BaseForce + attack.AdditionalForce), ForceMode.Impulse);
                 }
 

@@ -180,8 +180,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745629862203850883}
-  m_LocalRotation: {x: 0.15663645, y: 0.005517314, z: 0.008125659, w: 0.9876075}
-  m_LocalPosition: {x: -0.03237211, y: 1.0133173, z: -0.18398541}
+  m_LocalRotation: {x: 0.15663645, y: 0.0055173114, z: 0.008125666, w: 0.98760754}
+  m_LocalPosition: {x: -0.03237195, y: 1.0133175, z: -0.18398768}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7161699857750372587}
@@ -349,6 +349,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &869318202408563506
@@ -715,18 +716,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4578487261125664455}
-        m_TargetAssemblyTypeName: RootMotion.Dynamics.PuppetMaster, Assembly-CSharp-firstpass
-        m_MethodName: Kill
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7070715041639856471}
         m_TargetAssemblyTypeName: Tzaik.General.TimeEvent, Assembly-CSharp
         m_MethodName: SetTimer
@@ -738,6 +727,42 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 942851300533716415}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4578487261125664455}
+        m_TargetAssemblyTypeName: RootMotion.Dynamics.PuppetMaster, Assembly-CSharp-firstpass
+        m_MethodName: SwitchToActiveMode
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3361195809355994932}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
   damagedEvent:
     m_PersistentCalls:
@@ -754,6 +779,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0.25
+  puppetMaster: {fileID: 4578487261125664455}
   Damaged: 0
   MaxHealth: 12
 --- !u!114 &4020151411760600398
@@ -1004,8 +1030,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2743043584787118298}
-  m_LocalRotation: {x: -0.6169271, y: -0.29844436, z: 0.66668004, w: -0.29303536}
-  m_LocalPosition: {x: 0.3066045, y: 0.12069873, z: -0.002358141}
+  m_LocalRotation: {x: -0.61692715, y: -0.29844436, z: 0.66668004, w: -0.29303533}
+  m_LocalPosition: {x: 0.3066045, y: 0.12069849, z: -0.0023597046}
   m_LocalScale: {x: 0.9999999, y: 0.99999994, z: 1}
   m_Children:
   - {fileID: 6802925900996843706}
@@ -1172,6 +1198,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &2837553784871015238
@@ -1385,8 +1412,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3615078622893197700}
-  m_LocalRotation: {x: -0.102801636, y: 0.6957553, z: 0.67897284, w: 0.21060003}
-  m_LocalPosition: {x: -0.14099173, y: -0.0827642, z: 0.000050099567}
+  m_LocalRotation: {x: -0.102801636, y: 0.69575524, z: 0.6789729, w: 0.21059999}
+  m_LocalPosition: {x: -0.14099212, y: -0.082763255, z: 0.000053929165}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8864747407025317167}
@@ -1553,6 +1580,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &3714441898256393794
@@ -1767,8 +1795,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4249841244777837864}
-  m_LocalRotation: {x: 0.6421995, y: -0.25401017, z: 0.6386885, w: 0.3393167}
-  m_LocalPosition: {x: -0.30660534, y: 0.120715715, z: -0.0029332559}
+  m_LocalRotation: {x: 0.6421995, y: -0.2540102, z: 0.6386884, w: 0.33931667}
+  m_LocalPosition: {x: -0.30660516, y: 0.120715454, z: -0.002935098}
   m_LocalScale: {x: 1, y: 0.9999997, z: 0.9999998}
   m_Children:
   - {fileID: 3293907779720549681}
@@ -1935,6 +1963,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &4276536993954998174
@@ -1998,7 +2027,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4279282205585410141}
   m_LocalRotation: {x: 0.5877221, y: -0.14292121, z: 0.079017535, w: 0.79240936}
-  m_LocalPosition: {x: -0.0000005066395, y: 0.6332084, z: 0.0000016093254}
+  m_LocalPosition: {x: -0.00000026077032, y: 0.6332087, z: 0.0000013113022}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8864747407025317167}
@@ -2163,6 +2192,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &4396369253433497654
@@ -2192,8 +2222,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4396369253433497654}
-  m_LocalRotation: {x: 0.09508542, y: 0.37623876, z: -0.36902878, w: 0.84452415}
-  m_LocalPosition: {x: 0.0000005066395, y: 0.4197233, z: -0.00000005960466}
+  m_LocalRotation: {x: 0.09508533, y: 0.3762388, z: -0.36902884, w: 0.84452415}
+  m_LocalPosition: {x: 0.000000603497, y: 0.41972354, z: 0.00000023841864}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1281294816938006477}
@@ -2360,6 +2390,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &4409351656259430051
@@ -2543,7 +2574,7 @@ MonoBehaviour:
     freezePermanently: 0
     enableAngularLimitsOnKill: 1
     enableInternalCollisionsOnKill: 1
-  mode: 0
+  mode: 1
   blendTime: 0.1
   fixTargetTransforms: 1
   solverIterationCount: 6
@@ -3057,7 +3088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0ab15d2fbab1d44eaece81c67a1a72e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aliveTimeMin: 0.5
+  aliveTimeMin: 2
   aliveTimeMax: 0
   TimerOn: 0
   onTimedEvent:
@@ -3504,7 +3535,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6364042899601811352}
   m_LocalRotation: {x: 0.09255628, y: 0.30760336, z: -0.3001689, w: 0.89817154}
-  m_LocalPosition: {x: -0.00000040233135, y: 0.47715637, z: -0.00000035762787}
+  m_LocalPosition: {x: -0.0000006556511, y: 0.47715575, z: -0.0000003874302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3293907779720549681}
@@ -3670,6 +3701,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &6366485352121736063
@@ -4108,8 +4140,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7014420820573207380}
-  m_LocalRotation: {x: -0.7626383, y: -0.008027105, z: 0.09116273, w: 0.64031845}
-  m_LocalPosition: {x: 0.00000008940697, y: 0.7028298, z: -0.00000011920929}
+  m_LocalRotation: {x: -0.7626382, y: -0.008027096, z: 0.09116268, w: 0.6403186}
+  m_LocalPosition: {x: 0.0000006854534, y: 0.7028277, z: -0.00000047683716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1839239600338531049}
@@ -4276,6 +4308,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &7026395779186962541
@@ -4306,7 +4339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7026395779186962541}
   m_LocalRotation: {x: 0.11572542, y: -0.3968485, z: 0.38118768, w: 0.826931}
-  m_LocalPosition: {x: -0.000000014901161, y: 0.4771741, z: -0.00000025331974}
+  m_LocalPosition: {x: 0.0000002682209, y: 0.47717428, z: -0.00000052154064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6802925900996843706}
@@ -4472,6 +4505,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &7091312956807608231
@@ -4699,8 +4733,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7236021674120904240}
-  m_LocalRotation: {x: 0.10306479, y: 0.54768044, z: 0.7985463, w: -0.22748096}
-  m_LocalPosition: {x: 0.14099172, y: -0.0827639, z: 0.0005103294}
+  m_LocalRotation: {x: 0.1030648, y: 0.54768044, z: 0.7985464, w: -0.22748095}
+  m_LocalPosition: {x: 0.1409916, y: -0.08276345, z: 0.00051213615}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 798540616053145142}
@@ -4867,6 +4901,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &7584030129486838782
@@ -4928,7 +4963,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7639648123474460434}
   m_LocalRotation: {x: -0.45520088, y: -0.074495584, z: 0.08821782, w: 0.8828704}
-  m_LocalPosition: {x: -0.000000056810677, y: 0.45265463, z: 0.27330962}
+  m_LocalPosition: {x: 0.00000021932647, y: 0.45265388, z: 0.27330655}
   m_LocalScale: {x: 0.99999994, y: 1.0000002, z: 1.0000001}
   m_Children: []
   m_Father: {fileID: 3688090438941813668}
@@ -5094,6 +5129,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &7778363987334603438
@@ -5156,8 +5192,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7780280661385992455}
-  m_LocalRotation: {x: 0.11539695, y: -0.48754176, z: 0.3108385, w: 0.80769175}
-  m_LocalPosition: {x: 0.0000000782311, y: 0.4197222, z: 0.000000074505806}
+  m_LocalRotation: {x: 0.11539684, y: -0.48754168, z: 0.31083855, w: 0.80769175}
+  m_LocalPosition: {x: 0.00000040046876, y: 0.41972232, z: 0.00000014901161}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5586385019535716305}
@@ -5324,6 +5360,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &7998026059257675978
@@ -5384,8 +5421,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8031602083255627368}
-  m_LocalRotation: {x: 0.0029018524, y: 0.0110305, z: 0.0017798675, w: 0.9999334}
-  m_LocalPosition: {x: -0.000017799903, y: 0.5207321, z: -0.01344569}
+  m_LocalRotation: {x: 0.0029018521, y: 0.011030499, z: 0.0017798613, w: 0.9999334}
+  m_LocalPosition: {x: -0.000018127263, y: 0.5207331, z: -0.013442084}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1375649864222802593}
@@ -5553,6 +5590,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &8087858873726249760
@@ -5713,8 +5751,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8341458396999143681}
-  m_LocalRotation: {x: -0.81716204, y: -0.06350234, z: 0.039335582, w: 0.5715474}
-  m_LocalPosition: {x: 0.00000014901161, y: 0.703323, z: 0.0000004172325}
+  m_LocalRotation: {x: -0.81716204, y: -0.06350236, z: 0.039335568, w: 0.5715474}
+  m_LocalPosition: {x: 0.00000020861626, y: 0.70332307, z: 0.00000017881393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7534001207727965447}
@@ -5881,6 +5919,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &8914742128422526357
@@ -5911,7 +5950,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8914742128422526357}
   m_LocalRotation: {x: 0.737167, y: -0.04335271, z: -0.19078013, w: 0.6467677}
-  m_LocalPosition: {x: -0.00000033527613, y: 0.633873, z: -0.00000017881393}
+  m_LocalPosition: {x: 0.00000009685755, y: 0.63387215, z: 0.00000011920929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 798540616053145142}
@@ -6076,6 +6115,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
 --- !u!1 &9121701127220723486

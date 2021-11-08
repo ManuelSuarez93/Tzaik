@@ -4562,7 +4562,7 @@ MonoBehaviour:
   collider: {fileID: 3106047422869900512}
   walls:
   - {fileID: 11400000, guid: ebba546d2caf94c439b59d63d305dbc3, type: 2}
-  navMeshSurface: {fileID: 0}
+  navMeshSurface: {fileID: 7312314619536267784}
 --- !u!65 &3106047422869900512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4744,7 +4744,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &772250424035961873
 Transform:
@@ -4850,8 +4850,9 @@ MonoBehaviour:
   m_TileSize: 256
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
-  m_BuildHeightMesh: 0
+  m_MinRegionArea: 2
   m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
 --- !u!1 &8941427596793873495
 GameObject:
   m_ObjectHideFlags: 0
@@ -5469,7 +5470,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 524213032900573793, guid: b1c7bb432d86ed84db9c9fb68848d4a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.9
+      value: 6.8
       objectReference: {fileID: 0}
     - target: {fileID: 524213032900573793, guid: b1c7bb432d86ed84db9c9fb68848d4a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5633,7 +5634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 524213032900573793, guid: b1c7bb432d86ed84db9c9fb68848d4a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.9
+      value: 6.8
       objectReference: {fileID: 0}
     - target: {fileID: 524213032900573793, guid: b1c7bb432d86ed84db9c9fb68848d4a8, type: 3}
       propertyPath: m_LocalPosition.z

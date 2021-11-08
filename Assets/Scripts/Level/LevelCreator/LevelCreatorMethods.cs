@@ -61,10 +61,10 @@ namespace Tzaik.Level
             foreach (var p in finalPathPieces)
                 AddWalls(p.GetComponent<LevelPiece>());
             FinishedCreatingLevel = true;
+            totalPieces[0].NavMeshSurface.BuildNavMesh();
             UIManager.Instance.LoadingScreen.SetActive(false);
 
             yield return null;
-            totalPieces[0].NavMeshSurface.BuildNavMesh();
         }
 
         private void DestroyPieces()
