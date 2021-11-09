@@ -59,9 +59,10 @@ namespace Tzaik.Enemy
         public void Melee()
         {
             if(Vector3.Distance(transform.position, Objective.transform.position) < MeleeDistance)
-            { 
+            {
+                PlayerHealthScript.ForceRecieved = transform.forward * meleeAttackForce;
+                PlayerHealthScript.ForceTypeReceived = ForceMode.Impulse;
                 PlayerHealthScript.Damage(meleedamage);
-                PlayerRigidbody.AddForceAtPosition(transform.forward * meleeAttackForce, PlayerRigidbody.transform.position, ForceMode.Impulse);
             }
         }
 

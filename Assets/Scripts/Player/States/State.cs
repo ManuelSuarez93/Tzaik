@@ -21,8 +21,7 @@
         
         public virtual void Update() 
         {
-            context.MouseLook.MouseLooking();
-            context.MouseLook.Zoom();
+            context.MouseLook.MouseLooking(); 
             //context.MouseLook.SidewaysLeft(); 
             Conditions();
         } 

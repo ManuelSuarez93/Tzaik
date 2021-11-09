@@ -52,6 +52,8 @@ namespace Tzaik.General
 
         #endregion
         public float MaxHealth;
+        public Vector3 ForceRecieved { get; set; }
+        public ForceMode ForceTypeReceived { get; set; }
         public float CurrentHealth { get; private set; }
         public float StunTime => stunTime; 
         public UnityEvent DeathEvent  => deathEvent; 

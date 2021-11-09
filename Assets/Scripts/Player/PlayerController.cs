@@ -76,8 +76,8 @@ namespace Tzaik.Player
 
         private void Update()
         {
-            currentState.Update(); 
-            //if (DebugEnable) { Debugging(); } 
+            currentState.Update();
+            if (DebugEnable) { Debugging(); }
         }
         
         private void FixedUpdate()

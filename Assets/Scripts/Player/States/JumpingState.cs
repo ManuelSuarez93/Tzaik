@@ -29,7 +29,8 @@ namespace Tzaik.Player
                 context.CurrentState.ChangeState(new DashingState(context, false));
             else if (InputManager.IsDashing && InputManager.IsRight)
                 context.CurrentState.ChangeState(new DashingState(context, true)); 
-
+            else if (context.Health.Damaged)
+                context.CurrentState.ChangeState(new HurtState(context));
         }
     }
 }
