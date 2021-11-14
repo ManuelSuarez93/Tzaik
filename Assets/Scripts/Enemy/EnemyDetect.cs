@@ -13,7 +13,7 @@ namespace Tzaik.Enemy
         [SerializeField] float attackRadius = 1f;
         [SerializeField] float meleeDistance = 1f;
         [SerializeField] float lookAtSmoothing = 1f;
-        [SerializeField] Transform head;
+        [SerializeField] float detectObstacleRadius = 5f; 
         [SerializeField] Animator anim;
         [SerializeField] List<string> tags;
         [Tooltip("Time inbetween detections")]
@@ -25,7 +25,7 @@ namespace Tzaik.Enemy
         [Header("Debuging")]
         [SerializeField] bool enableDebug = false;
         Vector3 lastHitPosition;
-        EnemyAgent agent;
+        
         #endregion
 
 
@@ -35,14 +35,13 @@ namespace Tzaik.Enemy
         public float AttackRadius  => attackRadius; 
         public DetectState CurrentState => currentState; 
         public Vector3 LastHitPosition => lastHitPosition; 
-        public float MeleeDistance => meleeDistance; 
-        public EnemyAgent Agent { get => agent; set => agent = value; }
+        public float MeleeDistance => meleeDistance;  
         #endregion
 
         #region Unity Methods
         void Start()
         {
-            StartCoroutine(DetectRoutine());
+            StartCoroutine(DetectRoutine()); 
         }
         #endregion
 
@@ -58,9 +57,11 @@ namespace Tzaik.Enemy
             RaycastHit hit;
             if (Physics.Raycast(transform.position, DirectionToPlayer(), out hit, range, playerLayer)) 
                 if (hit.collider.transform == playerTransform) return true; 
+                
 
             return false;  
         }
+         
 
         IEnumerator DetectRoutine()
         {

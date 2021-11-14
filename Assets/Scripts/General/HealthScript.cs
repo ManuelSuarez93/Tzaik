@@ -9,36 +9,20 @@ namespace Tzaik.General
     public class HealthScript : MonoBehaviour
     {
         #region Fields
-         
-        [Tooltip("Layers that will damage this object on collision")]
-        [SerializeField] LayerMask layerMask;
-
-        [Tooltip("What happens when this object is destroyed/deactivated")]
-
-        [SerializeField] bool checkDeath;
-        
-        [SerializeField] UnityEvent deathEvent;
-
-        [Tooltip("What happens when this character is hurt")]
-        [SerializeField] UnityEvent damagedEvent;
-
+          
+        [SerializeField] LayerMask layerMask; 
+        [SerializeField] bool checkDeath; 
+        [SerializeField] UnityEvent deathEvent; 
+        [SerializeField] UnityEvent damagedEvent; 
         [SerializeField] DamageEvent damageEvent;
-        [SerializeField] HealEvent healEvent;
-
+        [SerializeField] HealEvent healEvent; 
         [SerializeField] bool HasParentHealthScript = false; 
-        [SerializeField] HealthScript parentHealthScript;
-
-        [Tooltip("If it's an enemy it will add it to score for player")]
-        [SerializeField] bool isEnemy;
-
-        [Tooltip("Cooldown time when object can change health")]
-        [SerializeField] float cooldownTime;
-
-        [Tooltip("If the collider detects damage from this side")]
-        [SerializeField] bool detectCollisions;
-
-        [Tooltip("Stun time if it's damaged")]
-        [SerializeField] float stunTime; 
+        [SerializeField] HealthScript parentHealthScript;  
+        [SerializeField] bool isEnemy; 
+        [SerializeField] float cooldownTime; 
+        [SerializeField] bool detectCollisions; 
+        [SerializeField] float stunTime;
+        [SerializeField] float invicibilityTime;
         [SerializeField] PuppetMaster puppetMaster;
 
         [System.Serializable]
@@ -56,8 +40,8 @@ namespace Tzaik.General
         public ForceMode ForceTypeReceived { get; set; }
         public float CurrentHealth { get; private set; }
         public float StunTime => stunTime; 
-        public UnityEvent DeathEvent  => deathEvent; 
-        public PuppetMaster PuppetMaster  => puppetMaster; 
+        public UnityEvent DeathEvent  => deathEvent;  
+        public bool CanBeDamaged { get; set; }
         #region Properties
 
         #endregion
@@ -67,6 +51,7 @@ namespace Tzaik.General
             currentCooldown = cooldownTime;
             CurrentHealth = MaxHealth;
             isDead = false;
+            CanBeDamaged = true;
         }
         public void Update()
         {
@@ -86,24 +71,23 @@ namespace Tzaik.General
             }
             else return false;
         }
+
         public void Damage(float h)
-        { 
-             
-
-            CurrentHealth -= h;
-            damagedEvent.Invoke();
-            damageEvent.Invoke(MaxHealth/CurrentHealth);
-
-
-            if (HasParentHealthScript)
+        {   
+            if(CanBeDamaged)
             { 
-                parentHealthScript.Damage(h);
-                parentHealthScript.Damaged = true;
+                CurrentHealth -= h;
+
+                damagedEvent.Invoke();
+                damageEvent.Invoke(MaxHealth / CurrentHealth);
+
+                if (HasParentHealthScript)
+                    parentHealthScript.Damage(h);
+                else
+                    Damaged = true;
             }
-            else 
-                Damaged = true;
-            
         }   
+
         public void CheckHealth()
         {
             if (CurrentHealth <= 0)
@@ -171,6 +155,14 @@ namespace Tzaik.General
                     damageTimer = 0;
                 yield return null;
             }
+        }
+        public void SetStunned() => StartCoroutine(StunnedCoroutine());
+
+        IEnumerator StunnedCoroutine()
+        { 
+            CanBeDamaged = false;
+            yield return new WaitForSeconds(invicibilityTime); 
+            CanBeDamaged = true;
         }
 
         #endregion

@@ -15,24 +15,17 @@ namespace BehaviourTree
         }
 
         protected override NodeState OnUpdate()
-        {
-            if (blackboard.NextPosition != null)
+        { 
+            if (blackboard.Context.Detect.DistanceBetweenPlayer() >= blackboard.Context.Detect.MeleeDistance)
             {
-                blackboard.Context.Agent.NavAgent.isStopped = false;
-                if (blackboard.Context.Detect.DistanceBetweenPlayer() >= blackboard.Context.Detect.MeleeDistance)
-                {
-                    blackboard.Context.Agent.SetDestination(blackboard.NextPosition);
-                    return NodeState.Running;
-                }
-                else
-                {
-                    blackboard.Context.Agent.SetDestination(blackboard.Context.transform.position);
-                    return NodeState.Success;
-                }
-
-            }
+                blackboard.Context.Agent.SetDestination(blackboard.NextPosition, blackboard.Context.Detect.MeleeDistance, 
+                    blackboard.Context.Detect.playerTransform);
+                return NodeState.Success;
+            }  
             else
-                return NodeState.Failure;
+            {
+                return NodeState.Running;
+            } 
         }
     }
 

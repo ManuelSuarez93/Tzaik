@@ -1,4 +1,5 @@
 using System.Collections;
+using Tzaik.Enemy;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -10,6 +11,7 @@ namespace Tzaik
         #region Fields
         [SerializeField] float timeForSearch;
         [SerializeField] NavMeshAgent navAgent;
+        [SerializeField] float distanceThreshold;
         float timer;
         #endregion
 
@@ -19,22 +21,50 @@ namespace Tzaik
         public float TimeForSearch => timeForSearch;  
         public float ForwardVelocity { get; set; }
         public float RightVelocity { get; set; }
-        public float LeftVelocity { get; set; }
+        public float LeftVelocity { get; set; } 
         #endregion
 
         #region Unity Methods
         void Awake()
             =>  NavAgent = GetComponent<NavMeshAgent>();
-        private void Update()
-        {
-            CalculateVelocities();
-        }
+        private void Update() => CalculateVelocities();
         #endregion
 
         #region Methods
-        public void SetDestination(Vector3 d)
-            => NavAgent.SetDestination(d);
+        public void SetDestination(Vector3 d, float distance, Transform objective)
+        {
+            var distanceObj = Vector3.Distance(transform.position, objective.position);
+            var max = distance + distanceThreshold;
+            var min = distance - distanceThreshold;
+            if (distanceObj >= max)
+            { 
+                NavAgent.SetDestination(d);
+            }
+            else if (distanceObj <= max && distanceObj >= min) 
+            { 
+                NavAgent.SetDestination(transform.position);
+            }
+            else if(distanceObj < min)
+            {
+                NavAgent.SetDestination(SetDirection() * distanceObj);
+            }
+        }
+
+        public Vector3 SetDirection()
+        {
+            RaycastHit hit;
+            Vector3 direction = transform.forward;
+            if (Physics.Raycast(transform.position, transform.forward * -1, out hit, 5f))
+                if (hit.transform != null) direction = transform.forward * -1;
+            if (Physics.Raycast(transform.position, transform.right * -1, out hit, 5f))
+                if (hit.transform != null) direction = transform.right * -1;
+            if (Physics.Raycast(transform.position, transform.right, out hit, 5f))
+                if (hit.transform != null) direction = transform.right;
+
+            return direction; 
+        }
           
+
         public void CalculateVelocities() 
         {
             Vector3 normalizedMovement = navAgent.desiredVelocity.normalized;

@@ -4,20 +4,28 @@ namespace Tzaik.Player
 {
     public class HurtState : State
     {
-        public HurtState(PlayerController PlayerContext) : base(PlayerContext)   { }
+        float timer;
+        public HurtState(PlayerController PlayerContext) : base(PlayerContext) { }
         public override void OnStateEnter()
         {
-            context.Rigidbody.velocity = Vector3.zero;
+            timer = Time.time;
+            context.Rigidbody.velocity = Vector3.zero; 
             context.Rigidbody.AddForce(context.Health.ForceRecieved, context.Health.ForceTypeReceived);
-            context.CurrentState.ChangeState(new IdleState(context));
+            context.Health.SetStunned();
         }
         public override void OnStateExit()
         {
             context.Health.ForceRecieved = Vector3.zero;
-            context.Health.Damaged = false;
+            context.Health.Damaged = false; 
         }
 
-        public override void Update() => context.MouseLook.MouseLooking();
+        public override void Update()
+        {
+            if (timer + context.Health.StunTime < Time.time)  
+                context.CurrentState.ChangeState(new IdleState(context)); 
 
+            
+            context.MouseLook.MouseLooking();
+        }
     }
 }

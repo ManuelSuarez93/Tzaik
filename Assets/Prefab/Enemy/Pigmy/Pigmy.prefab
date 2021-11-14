@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58202578732278501}
   m_LocalRotation: {x: 0.0016344253, y: 0.10524973, z: 0.9923588, w: 0.06437271}
-  m_LocalPosition: {x: -0.17466938, y: -0.07409361, z: 0.00003102218}
+  m_LocalPosition: {x: -0.1746694, y: -0.07409337, z: 0.000028479202}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5221188837577444885}
@@ -77,7 +77,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.17466938, y: -0.07409361, z: 0.00003102218}
+  m_ConnectedAnchor: {x: -0.1746694, y: -0.07409337, z: 0.000028479202}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -195,6 +195,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -226,7 +227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78329380601981640}
   m_LocalRotation: {x: -0.27463326, y: 0.23490065, z: 0.06976527, w: 0.92980164}
-  m_LocalPosition: {x: 0.000000059604645, y: 0.38984433, z: -0.0000043958426}
+  m_LocalPosition: {x: -0.000000026077032, y: 0.38984567, z: 0.0000005289912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 852113461605775097}
@@ -275,7 +276,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000059604645, y: 0.38984433, z: -0.0000043958426}
+  m_ConnectedAnchor: {x: -0.000000037252903, y: 0.38984576, z: 0.00000051409006}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -393,6 +394,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -508,6 +510,37 @@ MonoBehaviour:
   mesh: {fileID: 0}
   sounds: {fileID: 4687103812989615744}
   doBehaviorTree: 0
+  animator: {fileID: 0}
+  stunEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4038711685601864722}
+        m_TargetAssemblyTypeName: RootMotion.Dynamics.PuppetMaster, Assembly-CSharp-firstpass
+        m_MethodName: Kill
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  stunExitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4038711685601864722}
+        m_TargetAssemblyTypeName: RootMotion.Dynamics.PuppetMaster, Assembly-CSharp-firstpass
+        m_MethodName: Resurrect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -626,6 +659,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 1
   stunTime: 0.25
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -829,7 +863,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073088514196719049}
   m_LocalRotation: {x: -0.012969355, y: -0.09537097, z: 0.13412012, w: 0.9862799}
-  m_LocalPosition: {x: 0.00000010870996, y: 0.36586955, z: 0.0000009631773}
+  m_LocalPosition: {x: 0.0000002454401, y: 0.3658695, z: 0.00000026726693}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 637435242430930272}
@@ -877,7 +911,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000010870996, y: 0.36586955, z: 0.0000009631773}
+  m_ConnectedAnchor: {x: 0.0000002454401, y: 0.3658695, z: 0.00000026726693}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -995,6 +1029,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -1167,7 +1202,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525172321884823812}
   m_LocalRotation: {x: -0.012720519, y: 0.095309235, z: -0.13168098, w: 0.9866177}
-  m_LocalPosition: {x: 0.00000017587661, y: 0.36589813, z: -0.00000037488496}
+  m_LocalPosition: {x: 0.00000026676545, y: 0.36589822, z: 0.000000084108564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5592487198427141681}
@@ -1215,7 +1250,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000017587661, y: 0.36589813, z: -0.00000037488496}
+  m_ConnectedAnchor: {x: 0.00000026676545, y: 0.36589822, z: 0.000000084108564}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -1333,6 +1368,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -1425,7 +1461,7 @@ Transform:
   m_GameObject: {fileID: 1953631636311418174}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1.1000004, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 5588804497858167103}
   - {fileID: 3224991221075414819}
@@ -1522,7 +1558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127577872592747907}
   m_LocalRotation: {x: 0.00000037252894, y: -0.000530511, z: 0.00000011920926, w: 0.9999999}
-  m_LocalPosition: {x: 0.00000008940697, y: 0.3633862, z: -0.000000086637996}
+  m_LocalPosition: {x: 0.00000008940697, y: 0.36338654, z: -0.000000086638074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8176185922856680715}
@@ -1571,7 +1607,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000008940697, y: 0.3633862, z: -0.000000086637996}
+  m_ConnectedAnchor: {x: 0.00000008940697, y: 0.36338654, z: -0.000000086638074}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -1689,6 +1725,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -1782,7 +1819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2616241240607667906}
   m_LocalRotation: {x: 0.00000015165264, y: -0.0000013801064, z: -0.000018522493, w: 1}
-  m_LocalPosition: {x: 0.0000038146973, y: 0.87016296, z: -0.0077667236}
+  m_LocalPosition: {x: 0.000003496806, y: 0.8701626, z: -0.00777181}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 634912960066442955}
@@ -1832,7 +1869,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -11.160996, y: 14.370163, z: 129.80176}
+  m_ConnectedAnchor: {x: 6.833881, y: 1.7052436, z: -49.364304}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -1950,6 +1987,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -2064,8 +2102,8 @@ MonoBehaviour:
   stateSettings:
     killDuration: 1
     deadMuscleWeight: 0.01
-    deadMuscleDamper: 2
-    maxFreezeSqrVelocity: 0.02
+    deadMuscleDamper: 0
+    maxFreezeSqrVelocity: 5
     freezePermanently: 0
     enableAngularLimitsOnKill: 1
     enableInternalCollisionsOnKill: 1
@@ -2074,9 +2112,9 @@ MonoBehaviour:
   fixTargetTransforms: 1
   solverIterationCount: 6
   visualizeTargetPose: 1
-  mappingWeight: 1
-  pinWeight: 1
-  muscleWeight: 1
+  mappingWeight: 0.205
+  pinWeight: 0.208
+  muscleWeight: 0.191
   muscleSpring: 100
   muscleDamper: 0
   pinPow: 4
@@ -2630,7 +2668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2978255302732819086}
   m_LocalRotation: {x: 0.5084457, y: 0.5084451, z: -0.4914093, w: 0.4914097}
-  m_LocalPosition: {x: 0.26677135, y: 0.2409603, z: 0.022608276}
+  m_LocalPosition: {x: 0.26677138, y: 0.24095792, z: 0.022593208}
   m_LocalScale: {x: 1, y: 1, z: 1.0000002}
   m_Children:
   - {fileID: 637435242430930272}
@@ -2679,7 +2717,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.26677135, y: 0.2409603, z: 0.022608276}
+  m_ConnectedAnchor: {x: 0.26677138, y: 0.24095792, z: 0.022593208}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -2797,6 +2835,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -3082,7 +3121,7 @@ GameObject:
   - component: {fileID: 2656460383602493664}
   m_Layer: 0
   m_Name: Tiki_Mask
-  m_TagString: Untagged
+  m_TagString: Enemy/Bone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3461,7 +3500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5213624388570934396}
   m_LocalRotation: {x: 0.6133551, y: -0.12650982, z: 0.14395629, w: 0.7662032}
-  m_LocalPosition: {x: 0.0000013485551, y: 0.3508678, z: -0.0000013709068}
+  m_LocalPosition: {x: -0.0000004172325, y: 0.3508669, z: 0.0000003427267}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5221188837577444885}
@@ -3508,7 +3547,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000013485551, y: 0.3508678, z: -0.0000013709068}
+  m_ConnectedAnchor: {x: -0.0000004172325, y: 0.35086724, z: 0.00000044703484}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -3626,6 +3665,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -3688,7 +3728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5479922576333876140}
   m_LocalRotation: {x: -0.07843445, y: 6.8212097e-13, z: 1.314504e-12, w: 0.99691933}
-  m_LocalPosition: {x: 0, y: 0.563099, z: 0.06837459}
+  m_LocalPosition: {x: 0, y: 0.5630982, z: 0.06836957}
   m_LocalScale: {x: 1, y: 1.0000001, z: 1.0000001}
   m_Children: []
   m_Father: {fileID: 4315696413803382988}
@@ -3736,7 +3776,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.563099, z: 0.06837459}
+  m_ConnectedAnchor: {x: 0, y: 0.5630982, z: 0.06836957}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -3854,6 +3894,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -3949,7 +3990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5817750296313141047}
   m_LocalRotation: {x: -0.000000089406946, y: 0.00084584934, z: -0.000000089406946, w: 0.99999964}
-  m_LocalPosition: {x: 0.00000035390474, y: 0.36338326, z: -0.000000065104885}
+  m_LocalPosition: {x: -0.0000021492237, y: 0.36338356, z: -0.0000005529929}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3674495133080000256}
@@ -3998,7 +4039,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000035390474, y: 0.36338326, z: -0.000000065104885}
+  m_ConnectedAnchor: {x: -0.0000021492237, y: 0.36338356, z: -0.0000005529929}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -4116,6 +4157,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -4147,7 +4189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5842498307220413771}
   m_LocalRotation: {x: 0.5085538, y: -0.50855374, z: 0.49129745, w: 0.49129727}
-  m_LocalPosition: {x: -0.26676843, y: 0.2409322, z: 0.022473685}
+  m_LocalPosition: {x: -0.2667678, y: 0.2409329, z: 0.022473577}
   m_LocalScale: {x: 1, y: 1, z: 1.0000002}
   m_Children:
   - {fileID: 5592487198427141681}
@@ -4196,7 +4238,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.26676843, y: 0.2409322, z: 0.022473685}
+  m_ConnectedAnchor: {x: -0.2667678, y: 0.2409329, z: 0.022473577}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -4314,6 +4356,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -4376,7 +4419,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6223975210706502863}
   m_LocalRotation: {x: 0.078434266, y: 0.0000028286677, z: 0.000018357183, w: 0.99691933}
-  m_LocalPosition: {x: -0.0000058290107, y: 0.28948212, z: 0.045822054}
+  m_LocalPosition: {x: -0.0000058289797, y: 0.28948224, z: 0.04583477}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8869392967541734384}
@@ -4426,7 +4469,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000058290107, y: 0.28948212, z: 0.045822054}
+  m_ConnectedAnchor: {x: -0.0000058289797, y: 0.28948224, z: 0.04583477}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -4544,6 +4587,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -4637,7 +4681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6834768009426460763}
   m_LocalRotation: {x: 0.6161904, y: 0.12872297, z: -0.14689752, w: 0.7629947}
-  m_LocalPosition: {x: -0.0000022128224, y: 0.35080138, z: -0.0000023692846}
+  m_LocalPosition: {x: 0.00000078231096, y: 0.35079998, z: 0.0000015050173}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7442509388066022930}
@@ -4684,7 +4728,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000022128224, y: 0.35080138, z: -0.0000023692846}
+  m_ConnectedAnchor: {x: 0.00000078231096, y: 0.35079998, z: 0.0000015050173}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -4802,6 +4846,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -5211,7 +5256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7535897740538611072}
   m_LocalRotation: {x: -0.27197856, y: -0.2371438, z: -0.06984647, w: 0.93000644}
-  m_LocalPosition: {x: 0.000000461936, y: 0.38940954, z: 0.00000346452}
+  m_LocalPosition: {x: -0.00000014156103, y: 0.38940924, z: -0.0000016614795}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2538605755287457460}
@@ -5260,7 +5305,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000461936, y: 0.38940954, z: 0.00000346452}
+  m_ConnectedAnchor: {x: -0.00000014156103, y: 0.38940924, z: -0.0000016614795}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -5378,6 +5423,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3
@@ -5842,7 +5888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9106568513954667587}
   m_LocalRotation: {x: -0.0016931368, y: 0.10190209, z: 0.99270463, w: -0.06442554}
-  m_LocalPosition: {x: 0.17466916, y: -0.07409403, z: 0.0028987103}
+  m_LocalPosition: {x: 0.17466916, y: -0.07409331, z: 0.0029088827}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7442509388066022930}
@@ -5891,7 +5937,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.17466916, y: -0.07409403, z: 0.0028987103}
+  m_ConnectedAnchor: {x: 0.17466916, y: -0.07409331, z: 0.0029088827}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -6009,6 +6055,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 3

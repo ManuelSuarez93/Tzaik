@@ -16,16 +16,16 @@ RenderSettings:
   serializedVersion: 9
   m_Fog: 1
   m_FogColor: {r: 0.2924528, g: 0.27929834, b: 0.16967781, a: 0.22745098}
-  m_FogMode: 2
-  m_FogDensity: 0.00025
-  m_LinearFogStart: 0
+  m_FogMode: 1
+  m_FogDensity: 0.001
+  m_LinearFogStart: 6.34
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.13333334, g: 0.10392157, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.15882353, g: 0.046078432, b: 0.029411765, a: 1}
   m_AmbientGroundColor: {r: 0.18235295, g: 0.23529412, b: 0.060784314, a: 1}
   m_AmbientIntensity: 0.25
   m_AmbientMode: 1
-  m_SubtractiveShadowColor: {r: 0.10559807, g: 0.1981132, b: 0.12111099, a: 1}
+  m_SubtractiveShadowColor: {r: 0.16981131, g: 0.12308192, b: 0.120950505, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 7f4b72bed8152e14ea2d3fae80a8bb5e, type: 2}
   m_HaloStrength: 0.107
   m_FlareStrength: 0.68

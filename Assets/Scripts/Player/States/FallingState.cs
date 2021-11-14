@@ -13,10 +13,9 @@ namespace Tzaik.Player
             base.Update();
             if (currentSpeed > context.Movement.Speed)
                 currentSpeed -= Time.deltaTime * 0.25f; 
-            context.PlayerMove(currentSpeed); 
         }
+        public override void FixedUpdate() => context.PlayerMove(currentSpeed);
 
-        
         public override void Conditions()
         {
             if (context.Checks.IsGrounded())

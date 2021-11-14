@@ -26,7 +26,7 @@ namespace Tzaik.Player
         [SerializeField] bool UseCharacterController; 
         [SerializeField] CapsuleCollider collider;
         [SerializeField] PlayerSpecial special;
-        [SerializeField] HealthScript health;
+        [SerializeField] HealthScript health; 
 
         bool isTimerOver;
         FootstepAudio footstep;
@@ -78,17 +78,39 @@ namespace Tzaik.Player
         {
             currentState.Update();
             if (DebugEnable) { Debugging(); }
+             
         }
-        
+         
         private void FixedUpdate()
             => currentState.FixedUpdate(); 
+        #endregion
+
+        public void Debugging()
+        {
+            Debug.Log($"<color=green>Current state:</color> <color=cyan>{CurrentState}</color>");
+            GameManager.Instance.StateText($"<color=green>Current state:</color> <color=cyan>{CurrentState}</color>");
+        }
+        public void ChangeState(State newState) => currentState.ChangeState(newState);
+        public void PlayerMove(float speed)
+            => Movement.RigidMovement(InputManager.Movement.ReadValue<Vector2>().x, 
+                                        InputManager.Movement.ReadValue<Vector2>().y, 
+                                        speed, MouseLook.GetCamForward, MouseLook.GetCamRight, checks.IsGrounded());
+        #region Coroutines
+        public void DoTimerCoroutine(float time)
+            => StartCoroutine(TimerCoroutine(time));
+        public void DoCoroutine(string routine)
+        {
+            StopAllCoroutines();
+            StartCoroutine(routine);
+        }
+
         public IEnumerator CanInteract()
         {
-            while(true)
+            while (true)
             {
                 RaycastHit hit;
                 Physics.Raycast(transform.position, mouseLook.GetCamForward, out hit, checks.MaxDistanceToDetectObject);
-                if(hit.collider != null)
+                if (hit.collider != null)
                 {
                     if (Vector3.Distance(transform.position, hit.collider.transform.position) > 5f)
                         UIManager.Instance.Crosshair.color = Color.blue;
@@ -103,20 +125,6 @@ namespace Tzaik.Player
             }
 
         }
-        #endregion
-
-        public void Debugging()
-        {
-            Debug.Log($"<color=green>Current state:</color> <color=cyan>{CurrentState}</color>");
-            GameManager.Instance.StateText($"<color=green>Current state:</color> <color=cyan>{CurrentState}</color>");
-        }
-         
-        public void PlayerMove(float speed)
-            => Movement.RigidMovement(InputManager.Movement.ReadValue<Vector2>().x, 
-                                        InputManager.Movement.ReadValue<Vector2>().y, 
-                                        speed, MouseLook.GetCamForward, MouseLook.GetCamRight, checks.IsGrounded());  
-        public void DoTimerCoroutine(float time)
-            => StartCoroutine(TimerCoroutine(time));
         IEnumerator TimerCoroutine(float time)
         {
             isTimerOver = false; 
@@ -128,13 +136,7 @@ namespace Tzaik.Player
             } 
             isTimerOver = true;
             yield return null;
-        }
-
-        public void DoCoroutine(string routine)
-        {
-            StopAllCoroutines();
-            StartCoroutine(routine);
-        }
+        } 
         IEnumerator SidewaysLeftCoroutine()
         {
             Debug.Log("SidewaysLeft CoRoutine being called");
@@ -144,8 +146,7 @@ namespace Tzaik.Player
                 yield return null;
             }
             mouseLook.ZRotation = mouseLook.ZRotationMax;
-        }
-
+        } 
         IEnumerator SidewaysRightCoroutine()
         {
             Debug.Log("SidewaysRight CoRoutine being called");
@@ -155,8 +156,7 @@ namespace Tzaik.Player
                 yield return null;
             }
             mouseLook.ZRotation = -mouseLook.ZRotationMax;
-        }
-
+        } 
         IEnumerator CenterCameraFromLeft()
         {
 
@@ -167,8 +167,7 @@ namespace Tzaik.Player
                 yield return null;
             }
             mouseLook.ZRotation = 0;
-        }
-
+        } 
         IEnumerator CenterCameraFromRight()
         {
             Debug.Log("CenterCameraFromRight CoRoutine being called");
@@ -179,6 +178,7 @@ namespace Tzaik.Player
             }
             mouseLook.ZRotation = 0;
         }
+        #endregion
 
     }
 

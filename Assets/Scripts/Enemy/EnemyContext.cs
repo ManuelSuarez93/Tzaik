@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using Tzaik.General;
 using Tzaik.Player;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Tzaik.Enemy
 {
@@ -22,18 +23,18 @@ namespace Tzaik.Enemy
         [SerializeField] Renderer mesh;
         [SerializeField] GameObject sounds;
         [SerializeField] bool doBehaviorTree;
+        [SerializeField] Animator animator;
+        [SerializeField] UnityEvent stunEvent;
+        [SerializeField] UnityEvent stunExitEvent;
 
         public Blackboard blackboard = new Blackboard();
-        EnemyDetect detect;
-        EnemyState currentState;
+        EnemyDetect detect; 
         EnemyAgent agent;
         EnemyAttack attack; 
         HealthScript health;
-        Animator animator; 
         #endregion
 
-        #region Properties
-        public EnemyState CurrentState { get => currentState; set => currentState = value; }
+        #region Properties 
         public EnemyAgent Agent { get => agent; }
         public EnemyDetect Detect { get => detect;}
         public EnemyAttack Attack { get => attack; }
@@ -48,10 +49,10 @@ namespace Tzaik.Enemy
         void Awake()
         {
             agent = GetComponent<EnemyAgent>();
-            detect = GetComponent<EnemyDetect>();
-            detect.Agent = agent;
+            detect = GetComponent<EnemyDetect>(); 
             attack = GetComponent<EnemyAttack>();
-            animator = GetComponentInChildren<Animator>();
+            if(animator == null)
+                animator = GetComponentInChildren<Animator>();
             attack.Anim = animator;
             attack.MeleeDistance = detect.MeleeDistance;
             health = GetComponent<HealthScript>(); 
@@ -80,12 +81,14 @@ namespace Tzaik.Enemy
             while(timer < stuntime)
             {
                 blackboard.isStunned = true;
-                agent.SetDestination(transform.position);
+                agent.NavAgent.SetDestination(transform.position);
+                stunEvent.Invoke();
                 timer += Time.deltaTime;
                 yield return null;
             }
+            stunExitEvent.Invoke();
             blackboard.isStunned = false;
-        }
+        } 
         void SetContext()
         {
             Animator.SetFloat("SpeedX", agent.ForwardVelocity);

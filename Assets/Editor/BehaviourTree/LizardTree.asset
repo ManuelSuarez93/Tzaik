@@ -40,7 +40,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 338fdb9ac05b44c418ef045699e6c6ba
-  position: {x: 28, y: 1278}
+  position: {x: -35, y: 1370}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 5d1ea89d4e896184083ad13ddf9f1e09
-  position: {x: -373.00006, y: 1118.5001}
+  position: {x: -395, y: 1124}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -178,8 +178,8 @@ MonoBehaviour:
     Context: {fileID: 0}
   isStunned: 0
   childNodes:
-  - {fileID: -7239088033421087692}
   - {fileID: -1714255863951450342}
+  - {fileID: -7239088033421087692}
 --- !u!114 &-4005584875997156653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,7 +422,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: eb84948d74d31b646b95b33d2e48c0fe
-  position: {x: 77, y: 1124}
+  position: {x: 14, y: 1216}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 6aeb4f655a1bda449996a0208b1b8476
-  position: {x: 227, y: 1146}
+  position: {x: 331, y: 1119}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -498,7 +498,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: ca879b085041c0a4690ffd2695b089ab
-  position: {x: 183, y: 1278}
+  position: {x: 120, y: 1370}
   blackboard:
     currentDetectState: 0
     currentHealth: 0

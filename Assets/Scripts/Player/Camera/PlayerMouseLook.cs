@@ -20,8 +20,8 @@ namespace Tzaik.Player.Cameras
         [SerializeField] float wallrunSidewaysRate;
         [SerializeField] float wallrunSidewaysMax;
         [Header("Zoom options")]
-        [SerializeField] float zoomAmount;
-         
+        [SerializeField] float zoomAmount; 
+
         public bool IsWallRun { get; set; }
         public bool IsSliding { get; set; } 
         SidewaysCamera sideways = new SidewaysCamera();
@@ -45,7 +45,7 @@ namespace Tzaik.Player.Cameras
             xRotation -= InputManager.MousePosition.y * sensitivityXAxis;
             yRotation += InputManager.MousePosition.x * sensitivityYAxis;
             xRotation = Mathf.Clamp(xRotation, -89.9f, 89.9f); 
-            pivot.localEulerAngles = new Vector3(invertedX ? xRotation * -1 : xRotation, yRotation ,zRotation);  
+            pivot.localEulerAngles = new Vector3(invertedX ? xRotation * -1 : xRotation, yRotation ,zRotation);   
         }
         public void SidewaysRight()
         {
@@ -63,17 +63,7 @@ namespace Tzaik.Player.Cameras
 
         public void InputSidewaysLeft() => sideways.SidewaysRight(ref zRotation, zRotationMax, sidewaysRate); 
         public void InputSidewaysRight() => sideways.SidewaysRight(ref zRotation, zRotationMax, sidewaysRate);
-
-        public void Zoom()
-        {
-            if (InputManager.IsRightMouseClick) { ZoomIn(); }
-            else if(InputManager.IsRightMouseClickUp) { ZoomOut(); }
-        } 
-
-        void ZoomIn() 
-            => pivot.GetComponent<Camera>().fieldOfView -= zoomAmount;
-        void ZoomOut()
-            => pivot.GetComponent<Camera>().fieldOfView += zoomAmount; 
+          
         public void DoWallRunSideways(bool isRight) 
             =>  sideways.WallRunSideways(ref zRotation, wallrunSidewaysMax, isRight, wallrunSidewaysRate);
 

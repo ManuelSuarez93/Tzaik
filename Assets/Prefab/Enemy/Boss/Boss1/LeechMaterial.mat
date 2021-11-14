@@ -36,7 +36,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DitherPattern:
-        m_Texture: {fileID: 2800000, guid: a405309e77c00444184ef189c02d3997, type: 3}
+        m_Texture: {fileID: 2800000, guid: d5837ce2d54192649af72044a041993f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
@@ -96,7 +96,7 @@ Material:
     - _Emission: {r: 0.005882353, g: 0.04019608, b: 0.006862745, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
     - _ShadowTint: {r: 0, g: 0, b: 0, a: 1}
     - _Specular: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

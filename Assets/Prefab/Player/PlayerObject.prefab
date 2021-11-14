@@ -73,21 +73,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6129096974592853176}
     m_Modifications:
+    - target: {fileID: 604653241, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: totalSpecial
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1710184632, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
       propertyPath: damageImg
       value: 
       objectReference: {fileID: 3439668636144376102}
-    - target: {fileID: 1710184632, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
-      propertyPath: transparency
-      value: 0.075
-      objectReference: {fileID: 0}
     - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
-      propertyPath: jump.jumpHeightdouble
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
-      propertyPath: mouseLook.sidewaysRate
-      value: 200
+      propertyPath: checks.maxDistanceToDetectObject
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2015876197, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
       propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -107,7 +103,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8530974805399301919, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8530974805399301919, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
       propertyPath: m_LocalPosition.z
@@ -314,6 +310,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2652028079287038934, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2747049104313086340, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -326,6 +326,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadScene
       objectReference: {fileID: 0}
+    - target: {fileID: 3297469149658935442, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 7156259052514150787}
     - target: {fileID: 3426908027898761239, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -370,6 +374,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8736549508075369615, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2588290674644429400, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
@@ -381,6 +389,17 @@ RectTransform:
 --- !u!114 &3439668636144376102 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8841346032368014339, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
+  m_PrefabInstance: {fileID: 6129096976159657253}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7156259052514150787 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3917795812057105574, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
   m_PrefabInstance: {fileID: 6129096976159657253}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

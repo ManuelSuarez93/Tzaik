@@ -15,14 +15,9 @@ namespace BehaviourTree
         }
 
         protected override NodeState OnUpdate()
-        {
-            if (blackboard.NextPosition != null)
-            { 
-                blackboard.Context.Agent.SetDestination(Random.insideUnitSphere + blackboard.NextPosition);
+        { 
+                blackboard.Context.Agent.NavAgent.SetDestination(Random.insideUnitSphere + blackboard.NextPosition);
                 return NodeState.Success;
-            }
-            else
-                return NodeState.Failure;
         }
     }
 

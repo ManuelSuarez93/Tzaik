@@ -11,12 +11,11 @@ namespace Tzaik.Player
         {
             base.Update();
             context.HeadBob.DoHeadBobbing();
-            context.PlayerMove(context.Movement.Speed);
 
             if (context.Footstep.CurrentTag != context.Checks.GroundTag)
                 context.Footstep.ChangeTag(context.Checks.GroundTag); 
         }
-
+        public override void FixedUpdate() => context.PlayerMove(context.Movement.Speed);
         public override void Conditions()
         {
             if (!InputManager.IsMoving)

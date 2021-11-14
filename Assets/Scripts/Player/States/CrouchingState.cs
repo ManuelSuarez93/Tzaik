@@ -20,10 +20,10 @@ namespace Tzaik.Player
 
             if(Mathf.Abs(context.Rigidbody.velocity.x) > 0 || Mathf.Abs(context.Rigidbody.velocity.y) > 0) 
                 context.HeadBob.DoHeadBobbing();
-
-            context.PlayerMove(context.Crouch.crouchSpeed);
+             
         }
 
+        public override void FixedUpdate() => context.PlayerMove(context.Crouch.crouchSpeed);
         public override void Conditions()
         {
             if (!context.Crouch.CheckIfNoObjectAbove(context.transform, context.Crouch.maxDistanceToObjectAbove))

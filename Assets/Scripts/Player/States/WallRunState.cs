@@ -19,8 +19,7 @@
         }
         public override void Update()
         {
-            context.MouseLook.MouseLooking();
-            context.MouseLook.Zoom();
+            context.MouseLook.MouseLooking(); 
             Conditions();
             context.HeadBob.DoHeadBobbing();
             context.MouseLook.DoWallRunSideways(isRight);
