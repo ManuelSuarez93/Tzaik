@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 namespace BehaviourTree
-{
-    [CreateAssetMenu]
+{ 
     public class IsInSight : DecoratorNode
     {
 

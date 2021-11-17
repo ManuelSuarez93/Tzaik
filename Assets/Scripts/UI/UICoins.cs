@@ -13,11 +13,9 @@ namespace Tzaik.UI
         [SerializeField] Text jadeCoinsText;
         [SerializeField] Text idolsText;
         [SerializeField] Text crystalTabletText;
-
-        public PlayerCoins PlayerCoins { get => playerCoins; set => playerCoins = value; }
-
+         
  
-        public void ShowCoins()
+        public void ShowCoins(PlayerCoins playerCoins)
         {
             if(playerCoins != null)
             {

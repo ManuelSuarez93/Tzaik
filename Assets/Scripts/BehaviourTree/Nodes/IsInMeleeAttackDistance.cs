@@ -2,7 +2,6 @@
 
 namespace BehaviourTree
 {
-    [CreateAssetMenu]
     public class IsInMeleeAttackDistance : DecoratorNode
     { 
         public override string nodeName => "Is Objective in melee attack distance?";

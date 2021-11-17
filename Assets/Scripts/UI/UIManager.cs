@@ -5,7 +5,8 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using Tzaik.Audio;
 using System.Collections.Generic;
-using Tzaik.Player; 
+using Tzaik.Player;
+using System;
 
 namespace Tzaik.UI
 {
@@ -59,6 +60,11 @@ namespace Tzaik.UI
         [Header("Timer")]
         [SerializeField] float timer = 1f;
         float currentTime = 0f;
+        PlayerInventory playerInventory;
+        PlayerCoins playerCoins;
+        HealthScript playerHealth;
+        PlayerSpecial playerSpecial;
+
         #endregion
 
         #region Prpoerties
@@ -66,17 +72,18 @@ namespace Tzaik.UI
         public UIAmmo UIAmmo => ammo; 
         public GameObject LoadingScreen => loadingScreen;
         public Image LoadingBar => loadingBar; 
-        public Image Crosshair => crosshair; 
+        public Image Crosshair => crosshair;
+
         #endregion
 
         #region Unity Methods 
 
         private void Awake()
         {
-            health.Health = GameManager.Instance.Player.GetComponent<PlayerController>().Health;
-            special.Special = GameManager.Instance.Player.GetComponent<PlayerSpecial>();
-            coins.PlayerCoins = GameManager.Instance.Player.GetComponent<PlayerCoins>(); 
-            inventory.inventory = GameManager.Instance.Player.GetComponent<PlayerController>().Inventory; 
+            playerInventory = GameManager.Instance.Player.GetComponent<PlayerController>().Inventory;
+            playerCoins = GameManager.Instance.Player.GetComponent<PlayerCoins>();
+            playerHealth = GameManager.Instance.Player.GetComponent<PlayerController>().Health;
+            playerSpecial = GameManager.Instance.Player.GetComponent<PlayerController>().Special;
         }
 
         private void Start() 
@@ -84,9 +91,11 @@ namespace Tzaik.UI
 
         public void Update()
         {
-            ammo.ShowAmmo();
-            coins.ShowCoins();
-            health.ShowHealth();
+            //ammo.ShowAmmo(playerInventory.CurrentWeapon);
+            coins.ShowCoins(playerCoins);
+            health.ShowHealth(playerHealth);
+            special.ShowSpecial(playerSpecial);
+            special.ShowCharge(playerInventory.CurrentWeapon);
             kills.ShowKillCount(); 
             currentLevel.ShowCurrentLevel();
             Timer();
@@ -102,6 +111,8 @@ namespace Tzaik.UI
                 InfoText.text = text;
             }
         }
+
+
         public void Timer()
         {
            if(currentTime > 0)

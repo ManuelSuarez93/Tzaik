@@ -134,6 +134,8 @@ MonoBehaviour:
       speedUpgrade: 0
       forceUpgrade: 0
       newProjectile: {fileID: 0}
+      coinCost: 5
+      coinType: 0
     - upgradeType: 0
       level: 1
       updateId: 0
@@ -143,6 +145,8 @@ MonoBehaviour:
       speedUpgrade: 0
       forceUpgrade: 0
       newProjectile: {fileID: 0}
+      coinCost: 10
+      coinType: 0
     - upgradeType: 0
       level: 2
       updateId: 0
@@ -152,6 +156,8 @@ MonoBehaviour:
       speedUpgrade: 0
       forceUpgrade: 0
       newProjectile: {fileID: 0}
+      coinCost: 15
+      coinType: 2
     - upgradeType: 0
       level: 3
       updateId: 0
@@ -161,6 +167,8 @@ MonoBehaviour:
       speedUpgrade: 0
       forceUpgrade: 0
       newProjectile: {fileID: 0}
+      coinCost: 20
+      coinType: 0
     - upgradeType: 0
       level: 4
       updateId: 0
@@ -170,6 +178,8 @@ MonoBehaviour:
       speedUpgrade: 0
       forceUpgrade: 0
       newProjectile: {fileID: 0}
+      coinCost: 25
+      coinType: 0
     - upgradeType: 1
       level: 0
       updateId: 0
@@ -179,6 +189,8 @@ MonoBehaviour:
       speedUpgrade: 0
       forceUpgrade: 0
       newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
   effects:
     swayIntenisty: 25
     swaySmoothing: 5

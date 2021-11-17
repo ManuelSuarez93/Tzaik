@@ -447,6 +447,7 @@ GameObject:
   - component: {fileID: 7190796132898001987}
   - component: {fileID: 8779135650367968958}
   - component: {fileID: 5308160216327672318}
+  - component: {fileID: 51717887}
   m_Layer: 11
   m_Name: Pigmy
   m_TagString: Enemy/Controller
@@ -481,8 +482,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 40
-  m_Acceleration: 25
+  m_Speed: 20
+  m_Acceleration: 200
   avoidancePriority: 50
   m_AngularSpeed: 200
   m_StoppingDistance: 0
@@ -546,6 +547,8 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
+    CanMelee: 0
+    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
 --- !u!114 &2229504132245962830
@@ -562,10 +565,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rangeRadius: 30
   sightRadius: 25
-  attackRadius: 3
-  meleeDistance: 3
+  attackRadius: 5
+  meleeDistance: 5
   lookAtSmoothing: 1
-  head: {fileID: 0}
+  detectObstacleRadius: 5
   anim: {fileID: 0}
   tags:
   - Player
@@ -644,6 +647,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 588060963478773761}
+        m_TargetAssemblyTypeName: UnityEngine.Rigidbody, UnityEngine
+        m_MethodName: Sleep
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5308160216327672318}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   damagedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -662,7 +689,7 @@ MonoBehaviour:
   invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
-  MaxHealth: 3
+  MaxHealth: 15
 --- !u!114 &2607327009237110976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -677,6 +704,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeForSearch: 10
   navAgent: {fileID: 0}
+  distanceThreshold: 5
 --- !u!54 &588060963478773761
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -726,7 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ae782702fb1c847bfc9d93ef53f412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tree: {fileID: 11400000, guid: f9cc188cf9a47c047a6041e7e1c23bc4, type: 2}
+  tree: {fileID: 11400000, guid: b777dc2fb1e627d4c811fe7cbddd98f8, type: 2}
 --- !u!136 &5308160216327672318
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -741,6 +769,22 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &51717887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526559592901038752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b217f7440dee1f9419bab1f5147c7ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meleeAttackCooldown: 1
+  rangedAttackCooldown: 0
+  meleeAttackPerformed: 0
+  rangedAttackPerformed: 0
 --- !u!1 &656384196382032836
 GameObject:
   m_ObjectHideFlags: 0

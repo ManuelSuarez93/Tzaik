@@ -6,6 +6,11 @@ namespace Tzaik.Items.Weapons
 {
     public class Atlatl : Weapon
     {
-        
+        public override void PerformAttack()
+        { 
+            if (AttackConidition)
+                animator.SetTrigger("Attack");
+        }
+         
     }
 }

@@ -1,3 +1,4 @@
+using RootMotion.Dynamics;
 using System.Collections.Generic;
 using Tzaik.Enemy;
 using Tzaik.General;
@@ -19,8 +20,8 @@ namespace Tzaik.Items
             {
                 if (enemyTag.Contains(obj.tag))
                 {
-                    if (obj.GetComponent<RecieveDamage>() != null)
-                        obj.GetComponent<RecieveDamage>().Damage(Damage);
+                    if (obj.GetComponent<HealthScript>() != null)
+                        obj.GetComponent<HealthScript>().Damage(Damage);
                     AddJointToSpear(obj);
                     collisionEnterEvent.Invoke();
                 }
@@ -29,7 +30,7 @@ namespace Tzaik.Items
                     currentPassThrough = PassThroughEnemiesAmount;
                     isStopped = true;
                 }
-            } 
+            }
         }
 
         void AddJointToSpear(GameObject obj)
@@ -37,7 +38,8 @@ namespace Tzaik.Items
             if (enemies.Contains(obj.GetComponentInParent<EnemyContext>())) return;
 
             var joint = point.AddComponent<CharacterJoint>();
-            joint.connectedBody = obj.GetComponent<Rigidbody>(); 
+            joint.connectedBody = obj.GetComponent<Rigidbody>();
+            obj.GetComponentInParent<PuppetMaster>().SwitchToActiveMode();
             enemies.Add(obj.GetComponentInParent<EnemyContext>()); 
             currentPassThrough++;
         }

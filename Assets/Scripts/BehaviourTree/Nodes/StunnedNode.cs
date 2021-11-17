@@ -2,8 +2,7 @@
 using UnityEngine.Events;
 
 namespace BehaviourTree
-{
-    [CreateAssetMenu]
+{ 
     public class StunnedNode : ActionNode
     {
         [SerializeField] UnityEvent Event; 

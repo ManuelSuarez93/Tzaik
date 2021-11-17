@@ -20,8 +20,9 @@ namespace Tzaik.Items.Weapons
         public override void PerformAttack()
         {
             if (AttackConidition)
-            { 
-                animator.SetTrigger("Attack");
+            {  
+                animator.SetFloat("Attack", Random.Range(1, 3));
+                animator.SetTrigger("AttackTrigger"); 
                 rate = 0;
             }
         }

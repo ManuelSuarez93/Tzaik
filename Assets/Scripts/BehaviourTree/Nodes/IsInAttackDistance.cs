@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 namespace BehaviourTree
-{
-    [CreateAssetMenu]
+{ 
     public class IsInAttackDistance : DecoratorNode
     {
         public override string nodeName => "Is Objective in attack distance?";

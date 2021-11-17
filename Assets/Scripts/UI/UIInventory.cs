@@ -1,5 +1,5 @@
-using System.Collections.Generic;
-using Tzaik.Player;
+using System;
+using System.Collections.Generic; 
 using UnityEngine;
 
 namespace Tzaik.UI
@@ -9,8 +9,7 @@ namespace Tzaik.UI
     {
         [SerializeField] List<UIInventorySlot> slots;
         [SerializeField] WeaponWheel wheel;
-        public PlayerInventory inventory { private get; set; }
-
+          
         public void AddSlot(int i, Sprite img)
             => slots[i].SetSlotImage(img);
         public void RemoveSlot(int i)

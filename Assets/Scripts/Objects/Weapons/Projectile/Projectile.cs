@@ -66,12 +66,19 @@ namespace Tzaik.Items
         protected float GetDistance() 
             => Speed * Time.fixedDeltaTime;
         protected HealthScript GetHealthScript(GameObject o)
+            => o.GetComponent<HealthScript>();
+        protected HealthScript GetHealthScriptInParent(GameObject o)
             => o.GetComponentInParent<HealthScript>();
         protected void DoDamage(HealthScript hs, float damage)
             => hs.Damage(damage);
         public override void DoAction(GameObject obj)
         {
-            var hs = GetHealthScript(obj);
+            HealthScript hs;
+            if (precisionDamage)
+                hs = GetHealthScriptInParent(obj);
+            else
+                hs = GetHealthScript(obj);
+
             if (hs != null && enemyTag.Contains(obj.tag))
                 DoDamage(hs, Damage);
             var rb = obj.GetComponent<Rigidbody>();

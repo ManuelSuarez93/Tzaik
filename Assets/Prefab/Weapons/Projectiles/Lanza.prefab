@@ -71,15 +71,19 @@ MonoBehaviour:
   collisionEnterEvent:
     m_PersistentCalls:
       m_Calls: []
+  destroyEvent:
+    m_PersistentCalls:
+      m_Calls: []
   instantiableObjects:
   - {fileID: 902271061612456675, guid: 3de85059c6da51944a68590d52c5c9d3, type: 3}
   isStopped: 0
   precisionDamage: 1
-  moveByRigidobdy: 1
   enemyTag:
   - Enemy
   - Enemy/Bone
+  moveByRigidobdy: 1
   rigid: {fileID: 2846786754596887647}
+  forceImpactAmount: 500
   PassThroughEnemiesAmount: 3
   point: {fileID: 39393717008003472}
   enemies: []

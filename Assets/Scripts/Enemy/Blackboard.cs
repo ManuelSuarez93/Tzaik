@@ -10,7 +10,9 @@ namespace Tzaik.Enemy
         [SerializeField] EnemyDetect.DetectState currentDetectState;
         [SerializeField] float currentHealth;
         [SerializeField] Vector3 currentPosition;
-        [SerializeField] Vector3 nextPosition; 
+        [SerializeField] Vector3 nextPosition;
+        public bool CanMelee;
+        public bool CanRanged;
         public bool isStunned; 
         public EnemyContext Context;
 

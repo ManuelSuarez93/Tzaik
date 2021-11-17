@@ -153,8 +153,7 @@ namespace Tzaik.Player
         private static void CrouchCanceled(InputAction.CallbackContext obj)
             => IsCrouching = false;
         private static void Interact(InputAction.CallbackContext obj)
-            => playerController.Interact.Interact(playerController.Checks.GetInteractable());
-
+            => playerController.Interact.Interact(playerController.Checks.GetInteractable()); 
         private static void SwitchWeaponPerformed(InputAction.CallbackContext obj)
             => playerController.Inventory.SelectItem((int)PlayerControls.Player.SwitchWeapon.ReadValue<float>(), true);
         private static void Weapon3Performed(InputAction.CallbackContext obj) 
@@ -175,19 +174,7 @@ namespace Tzaik.Player
             IsPaused = !IsPaused;
             PauseGame(true, true, IsPaused, true, true);
         }
-        #endregion 
-        public static int GetNumInputs()
-        {
-            if (Input.GetKey(KeyCode.Alpha0))
-                return 0;
-            if (Input.GetKey(KeyCode.Alpha1))
-                return 1;
-            if (Input.GetKey(KeyCode.Alpha2))
-                return 2;
-            if (Input.GetKey(KeyCode.Alpha3))
-                return 3; 
-            else return -1;
-        }
+        #endregion  
          
         public static void ShowMouse(bool paused)
         {

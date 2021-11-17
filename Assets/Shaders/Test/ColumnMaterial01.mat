@@ -51,6 +51,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -78,12 +82,12 @@ Material:
     - _OutlineThickness: 0.022
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
-    - _SpecularFalloff: 2
+    - _SpecularFalloff: 1
     - _SpecularHighlights: 1
-    - _SpecularSize: 0.45
+    - _SpecularSize: 0.15
     - _SrcBlend: 1
-    - _StepAmount: 3
-    - _StepWidth: 0.38
+    - _StepAmount: 2
+    - _StepWidth: 0.05
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:

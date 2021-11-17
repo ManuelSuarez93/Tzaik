@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 namespace BehaviourTree
-{
-    [CreateAssetMenu]
+{ 
     public class PerformAttackRanged : ActionNode
     {
         public override string nodeName => "Perform attack ranged";
@@ -18,6 +17,7 @@ namespace BehaviourTree
         {
             if (blackboard.NextPosition != null)
             {
+                blackboard.Context.AttackConditions.PerformRange();
                 blackboard.Context.Attack.PerformRagnedAttack();
                 return NodeState.Success;
             }

@@ -15,7 +15,7 @@ namespace Tzaik
         void Update()
         {
             light.intensity = (Mathf.PerlinNoise(Time.time * positionScrollSpeed , Time.time * positionScrollSpeed) * scale);
-            transform.localPosition = originalPos + (Position() * scale);
+            //transform.localPosition = originalPos + (Position() * scale);
         }
         Vector3 Position()
         { 

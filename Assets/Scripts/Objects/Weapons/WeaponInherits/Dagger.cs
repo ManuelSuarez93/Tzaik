@@ -9,13 +9,16 @@ namespace Tzaik.Items.Weapons
     {
         [Header("Dagger")]
         [SerializeField] float attackAreaSize;
-        [SerializeField] List<string> damageTags; 
-
+        [SerializeField] List<string> damageTags;  
         public override void PerformAttack()
-        {
+        { 
             if (AttackConidition)
-                animator.SetTrigger("Attack");
+            {
+                animator.SetFloat("Attack", Random.Range(1, 3));
+                animator.SetTrigger("AttackTrigger");
+            }
         }
+
         public override void AttackActionCheck()
         {
             var enemy = Physics.OverlapSphere(attack.ShootOrigin.position, attackAreaSize);
@@ -24,10 +27,9 @@ namespace Tzaik.Items.Weapons
                     e.GetComponent<HealthScript>().Damage(attack.BaseDamage);
 
             attackEvent.Invoke();
-            rate = 0;
+            rate = 0;  
         }
          
-
         protected override bool AttackConidition => rate == shootRate;
     }
 }

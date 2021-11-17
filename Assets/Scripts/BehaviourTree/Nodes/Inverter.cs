@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 namespace BehaviourTree
-{
-    [CreateAssetMenu]
+{ 
     public class Inverter : DecoratorNode
     {
         public override string nodeName => "Inverter";

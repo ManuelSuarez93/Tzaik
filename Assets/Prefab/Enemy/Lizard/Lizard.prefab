@@ -231,7 +231,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0014950931, y: 5.2450204, z: 42.71789}
+  m_ConnectedAnchor: {x: -0.20474389, y: 2.9146347, z: -39.495983}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 2
@@ -349,6 +349,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -637,6 +638,13 @@ MonoBehaviour:
   mesh: {fileID: 0}
   sounds: {fileID: 6427060637353379256}
   doBehaviorTree: 1
+  animator: {fileID: 0}
+  stunEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stunExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -656,12 +664,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c1d24a7237d6b84f9c5041530554795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rangeRadius: 30
-  sightRadius: 25
-  attackRadius: 15
-  meleeDistance: 5
+  rangeRadius: 50
+  sightRadius: 40
+  attackRadius: 25
+  meleeDistance: 10
   lookAtSmoothing: 1
-  head: {fileID: 0}
+  detectObstacleRadius: 5
   anim: {fileID: 3361195809355994932}
   tags:
   - Player
@@ -779,6 +787,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0.25
+  invicibilityTime: 0
   puppetMaster: {fileID: 4578487261125664455}
   Damaged: 0
   MaxHealth: 12
@@ -796,6 +805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeForSearch: 1
   navAgent: {fileID: 0}
+  distanceThreshold: 0
 --- !u!54 &2003066256058983823
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1080,7 +1090,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: -0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.30660447, y: 0.120698966, z: -0.002358247}
+  m_ConnectedAnchor: {x: 0.30660453, y: 0.12069855, z: -0.00235963}
   serializedVersion: 2
   m_SecondaryAxis: {x: 1, y: 0, z: 0}
   m_XMotion: 0
@@ -1198,6 +1208,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -1462,7 +1473,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.14099155, y: -0.082764566, z: 0.000049373135}
+  m_ConnectedAnchor: {x: -0.14099212, y: -0.082763046, z: 0.00005478412}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -1580,6 +1591,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -1845,7 +1857,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.30660528, y: 0.12071583, z: -0.0029336428}
+  m_ConnectedAnchor: {x: -0.3066052, y: 0.12071558, z: -0.002934757}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -1963,6 +1975,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -2074,7 +2087,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000029057264, y: 0.6332088, z: 0.0000007748604}
+  m_ConnectedAnchor: {x: -0.00000047683716, y: 0.6332085, z: 0.0000022053719}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2192,6 +2205,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -2272,7 +2286,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000019744039, y: 0.41972354, z: 0}
+  m_ConnectedAnchor: {x: 0.0000009164214, y: 0.4197237, z: 0.00000011920932}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -2390,6 +2404,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -3583,7 +3598,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000013709068, y: 0.4771561, z: -0.00000081956387}
+  m_ConnectedAnchor: {x: -0.00000043213367, y: 0.47715646, z: -0.000000059604645}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -3701,6 +3716,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -4190,7 +4206,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000035762787, y: 0.70282936, z: -0.00000029802322}
+  m_ConnectedAnchor: {x: 0.0000005662441, y: 0.7028282, z: -0.00000047683716}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -4308,6 +4324,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -4387,7 +4404,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000003427267, y: 0.47717404, z: -0.0000008791685}
+  m_ConnectedAnchor: {x: -0.00000009685755, y: 0.47717497, z: -0.000000059604645}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -4505,6 +4522,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -4783,7 +4801,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.14099179, y: -0.08276403, z: 0.00050994754}
+  m_ConnectedAnchor: {x: 0.14099158, y: -0.08276332, z: 0.000512518}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -4901,6 +4919,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -5011,7 +5030,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000002849847, y: 0.45265493, z: 0.2733105}
+  m_ConnectedAnchor: {x: 0.00000024260953, y: 0.45265365, z: 0.27330577}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: -1, z: 0}
   m_XMotion: 0
@@ -5129,6 +5148,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -5242,7 +5262,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: -0, z: -0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000042095786, y: 0.41972238, z: 0.00000010430813}
+  m_ConnectedAnchor: {x: -0.000000085681684, y: 0.41972244, z: 0.00000017881393}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: -1}
   m_XMotion: 0
@@ -5360,6 +5380,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -5472,7 +5493,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000017618295, y: 0.5207319, z: -0.013446674}
+  m_ConnectedAnchor: {x: -0.00001813611, y: 0.5207335, z: -0.013441086}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -5590,6 +5611,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -5801,7 +5823,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000011920929, y: 0.70332277, z: 0.000000059604645}
+  m_ConnectedAnchor: {x: 0.00000035762787, y: 0.7033235, z: 0.00000047683716}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 0, z: 1}
   m_XMotion: 0
@@ -5919,6 +5941,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10
@@ -5997,7 +6020,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000059604645, y: 0.6338725, z: -0.00000017881393}
+  m_ConnectedAnchor: {x: -0.00000008568168, y: 0.6338726, z: 0.00000011920929}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -6115,6 +6138,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 10

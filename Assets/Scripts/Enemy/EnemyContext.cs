@@ -32,16 +32,16 @@ namespace Tzaik.Enemy
         EnemyAgent agent;
         EnemyAttack attack; 
         HealthScript health;
+        EnemyAttackConditions attackConditions;
         #endregion
 
         #region Properties 
-        public EnemyAgent Agent { get => agent; }
-        public EnemyDetect Detect { get => detect;}
-        public EnemyAttack Attack { get => attack; }
-        public HealthScript Health { get => health; }
-        public Renderer Mesh { get => mesh; set => mesh = value; }
-        public Animator Animator { get => animator; set => animator = value; }
-        public GameObject Sounds { get => sounds; set => sounds = value; }
+        public EnemyAgent Agent => agent; 
+        public EnemyDetect Detect => detect;
+        public EnemyAttack Attack => attack; 
+        public HealthScript Health  => health; 
+        public Animator Animator { get => animator; set => animator = value; } 
+        public EnemyAttackConditions AttackConditions => attackConditions;
 
         #endregion
 
@@ -51,6 +51,7 @@ namespace Tzaik.Enemy
             agent = GetComponent<EnemyAgent>();
             detect = GetComponent<EnemyDetect>(); 
             attack = GetComponent<EnemyAttack>();
+            attackConditions = GetComponent<EnemyAttackConditions>();
             if(animator == null)
                 animator = GetComponentInChildren<Animator>();
             attack.Anim = animator;
@@ -92,16 +93,18 @@ namespace Tzaik.Enemy
         void SetContext()
         {
             Animator.SetFloat("SpeedX", agent.ForwardVelocity);
-            Animator.SetFloat("SpeedY",  agent.RightVelocity);
+            Animator.SetFloat("SpeedY", Mathf.InverseLerp(-0.99f, 1, agent.RightVelocity));
             Animator.SetFloat("SpeedYLeft", Mathf.InverseLerp(-0.99f, 1, agent.LeftVelocity));
             Animator.SetFloat("Rotation", agent.CalculateForward());
             blackboard.CurrentDetectState = detect.CurrentState;
+            blackboard.CanMelee = !attackConditions.MeleeAttackPerformed; 
+            blackboard.CanRanged = !attackConditions.RangedAttackPerformed;
             blackboard.CurrentHealth = health.CurrentHealth;
             blackboard.CurrentPosition = transform.position;
             blackboard.isStunned = health.Damaged;
             blackboard.NextPosition = detect.playerTransform != null ? detect.playerTransform.position : blackboard.NextPosition;
             if (detect.playerTransform != null)
-                transform.LookAt(detect.playerTransform);
+                detect.LookAtPlayer();
             Attack.Objective = detect.playerTransform != null ? detect.playerTransform : null;
             blackboard.Context = this;
         }

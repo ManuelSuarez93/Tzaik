@@ -31,7 +31,7 @@ namespace Tzaik
         #endregion
 
         #region Methods
-        public void SetDestination(Vector3 d, float distance, Transform objective)
+        public bool SetDestination(Vector3 d, float distance, Transform objective)
         {
             var distanceObj = Vector3.Distance(transform.position, objective.position);
             var max = distance + distanceThreshold;
@@ -39,27 +39,42 @@ namespace Tzaik
             if (distanceObj >= max)
             { 
                 NavAgent.SetDestination(d);
+                return false;
             }
             else if (distanceObj <= max && distanceObj >= min) 
             { 
                 NavAgent.SetDestination(transform.position);
+                return true;
             }
             else if(distanceObj < min)
             {
                 NavAgent.SetDestination(SetDirection() * distanceObj);
+                return false;
             }
+
+            return false;
         }
 
+        public void GetNewDestination(float distance)
+        {
+            RaycastHit hit;
+            Vector3 direction = transform.forward;
+            var rand = Random.Range(-1, 2);
+            if (Physics.Raycast(transform.position, transform.right * rand, out hit, 5f))
+                if (hit.transform == null) direction = transform.right * rand;
+
+            NavAgent.SetDestination(transform.position + direction * distance * 3);
+        } 
         public Vector3 SetDirection()
         {
             RaycastHit hit;
             Vector3 direction = transform.forward;
             if (Physics.Raycast(transform.position, transform.forward * -1, out hit, 5f))
-                if (hit.transform != null) direction = transform.forward * -1;
+                if (hit.transform == null) direction = transform.forward * -1;
             if (Physics.Raycast(transform.position, transform.right * -1, out hit, 5f))
-                if (hit.transform != null) direction = transform.right * -1;
+                if (hit.transform == null) direction = transform.right * -1;
             if (Physics.Raycast(transform.position, transform.right, out hit, 5f))
-                if (hit.transform != null) direction = transform.right;
+                if (hit.transform == null) direction = transform.right;
 
             return direction; 
         }
@@ -85,7 +100,7 @@ namespace Tzaik
 
             return angle;
         }
-        public bool PathFinished() => NavAgent.pathStatus == NavMeshPathStatus.PathInvalid 
+        public bool PathFinished => NavAgent.pathStatus == NavMeshPathStatus.PathInvalid 
             || NavAgent.pathStatus == NavMeshPathStatus.PathPartial 
             || NavAgent.remainingDistance <= 0 || !NavAgent.pathPending;
         public void DoSearch()

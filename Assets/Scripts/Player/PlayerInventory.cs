@@ -81,6 +81,10 @@ namespace Tzaik.Player
             w.gameObject.SetActive(false);
             return w.GetComponent<Weapon>();
         }
+        public void SelectItemScrollWheel()
+        {
+
+        }
         public void SelectItem(int num, bool isSwitch = false)
         {  
             if(isSwitch)
@@ -96,13 +100,10 @@ namespace Tzaik.Player
             }
 
             if (num != -1 && weapons.Length > num)
-                ActivateItem(num);
-
-            if (currentWeapon != null) 
-                UIManager.Instance.UIAmmo.GetCurrentWeapon(currentWeapon.GetComponent<Weapon>());
+                ActivateItem(num); 
 
             if (num != -1)
-                UIManager.Instance.UIInv.DoWheel(num);
+                UIManager.Instance.UIInv.DoWheel(num); 
         }
         void AddToInventory(int s, Weapon o)
         {

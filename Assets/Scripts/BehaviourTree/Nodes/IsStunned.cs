@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 namespace BehaviourTree
-{
-    [CreateAssetMenu]
+{ 
     public class IsStunned : DecoratorNode
     {
         public override string nodeName => "Is enemy stunned?";

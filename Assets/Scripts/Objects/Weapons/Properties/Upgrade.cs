@@ -1,5 +1,6 @@
 ﻿using Tzaik.LevelObjects;
 using UnityEngine;
+using static Tzaik.Items.Misc.CoinItem;
 
 namespace Tzaik.Items.Weapons
 {
@@ -16,6 +17,8 @@ namespace Tzaik.Items.Weapons
         [SerializeField] float speedUpgrade;
         [SerializeField] float forceUpgrade;
         [SerializeField] Projectile newProjectile;
+        [SerializeField] int coinCost;
+        [SerializeField] CoinType coinType;
 
         public Projectile NewProjectile => newProjectile; 
         public int UpdateId  => updateId;
@@ -26,6 +29,9 @@ namespace Tzaik.Items.Weapons
         public int DamageUpgrade => damageUpgrade;
         public float SpeedUpgrade  => speedUpgrade;
         public float ForceUpgrade => forceUpgrade;
+
+        public int CoinCost  => coinCost; 
+        public CoinType CoinType { get => coinType; set => coinType = value; }
     }
 
 

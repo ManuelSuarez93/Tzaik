@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 namespace BehaviourTree
-{
-    [CreateAssetMenu]
+{ 
     public class WaitAndCheckNodes : DecoratorNode
     {
         public float duration = 1;

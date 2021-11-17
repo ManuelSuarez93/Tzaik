@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 
 namespace BehaviourTree
-{
-    [CreateAssetMenu]
+{ 
     public class PerformAttackMelee : ActionNode
     {
         public override string nodeName => "Perform attack melee";
@@ -18,6 +17,7 @@ namespace BehaviourTree
         {
             if (blackboard.NextPosition != null)
             {
+                blackboard.Context.AttackConditions.PerformMelee();
                 blackboard.Context.Attack.PerformMeleeAttack();
                 return NodeState.Success;
             }

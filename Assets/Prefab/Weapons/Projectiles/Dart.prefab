@@ -388,7 +388,7 @@ MonoBehaviour:
       m_Calls: []
   instantiableObjects:
   - {fileID: 8246236707438921204, guid: d5f0d5cd82343ca45ba65a67df1a0394, type: 3}
-  - {fileID: 1611860539896589285, guid: 58ee85cedd2c7b645ab896dc1b6ddaa7, type: 3}
+  - {fileID: 8021199650328162847, guid: 2e34fae6786caba459b7d51d9bad40b6, type: 3}
   isStopped: 0
   precisionDamage: 1
   enemyTag:
@@ -396,7 +396,7 @@ MonoBehaviour:
   - Enemy
   moveByRigidobdy: 0
   rigid: {fileID: 0}
-  forceImpactAmount: 10
+  forceImpactAmount: 50
 --- !u!136 &2468017990110322849
 CapsuleCollider:
   m_ObjectHideFlags: 0

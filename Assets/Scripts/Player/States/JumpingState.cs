@@ -9,14 +9,12 @@ namespace Tzaik.Player
         public JumpingState(PlayerController playerContext, float MovingSpeed) :
             base(playerContext) { movingSpeed = MovingSpeed; }
 
-        public override void OnStateEnter() => context.Jump.Jumping(context.Rigidbody);
-        public override void Update()
+        public override void OnStateEnter() => context.Jump.Jumping(context.Rigidbody); 
+        public override void FixedUpdate()
         {
-            base.Update();
-            Debug.Log($"Moving Speed{movingSpeed}");
             context.PlayerMove(movingSpeed);
+            context.Movement.Gravity();
         }
-
         public override void Conditions()
         { 
             //if (context.Checks.CanWallRunLeft() && InputManager.IsLeft)

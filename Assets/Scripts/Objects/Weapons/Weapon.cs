@@ -43,7 +43,8 @@ namespace Tzaik.Items.Weapons
         public WeaponAttack WeaponAttack => attack;
         public WeaponUpgrades  Upgrades => upgrades;
         public float WeaponShootRate => shootRate;
-        public WeaponType Type  => type; 
+        public WeaponType Type  => type;
+        public float SpecialRate => specialRate / specialTime;
 
         #endregion
 
@@ -86,25 +87,31 @@ namespace Tzaik.Items.Weapons
         #region Weapon shoot rate
         public void AttackRateTimer() => rate = rate < shootRate ? rate + Time.deltaTime : shootRate;
         public void SetRate(int r) => rate = r;
+        
         private void SpecialRateTimer() => specialRate = specialRate < specialTime ? specialRate + Time.deltaTime : specialRate;
         #endregion
 
         protected virtual bool AttackConidition
             => rate == shootRate && ammo.TotalAmmo > 0; 
 
-        public void CheckAndPerformUpgrade(int upgradeType)
+        public string CheckAndPerformUpgrade(int upgradeType, PlayerCoins coins)
         {
             var type = (UpgradeType)upgradeType;
             if (upgrades.UpgradesLevel.ContainsKey(type))
             {
-                upgrades.UpgradesLevel[type]++;  
-                var upgrade = upgrades.GetUpgrade(upgrades.UpgradesLevel[type], type);
+                var level = upgrades.UpgradesLevel[type] + 1;
+                var upgrade = upgrades.GetUpgrade(level, type);
+                if (coins.CoinsAmount[upgrade.CoinType] < upgrade.CoinCost)
+                    return "Error";
+                else
+                    upgrades.UpgradesLevel[type]++;
 
                 DoUpgrade(upgrade);
                 SaveWeaponObject();
+                return "";
             } 
             else
-                Debug.LogError($"{upgradeType} does not exist");
+                return $"{upgradeType} does not exist";
         }
         protected virtual void DoUpgrade(Upgrade upg)
         {
@@ -168,6 +175,7 @@ namespace Tzaik.Items.Weapons
             {
                 animator.SetTrigger("Special");
                 special.CurrentSpecial -= specialCost;
+                specialRate = 0;
             }
         }
         public virtual void DoSpecial() { }

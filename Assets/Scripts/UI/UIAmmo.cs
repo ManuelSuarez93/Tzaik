@@ -9,13 +9,10 @@ namespace Tzaik
     public class UIAmmo
     { 
         [SerializeField] Text ammoText;
-        [SerializeField] Image ammoImg;
-        Weapon weapon; 
-
-        public void GetCurrentWeapon(Weapon w) 
-            => weapon = w;
-        public void ShowAmmo()
-            => ammoImg.fillAmount = (weapon != null) ? weapon.WeaponAmmo.TotalAmmo / weapon.WeaponAmmo.MaxAmmo : 1;
+        [SerializeField] Image ammoImg; 
+         
+        public void ShowAmmo(Weapon w)
+            => ammoImg.fillAmount = (w != null) ? w.WeaponAmmo.TotalAmmo / w.WeaponAmmo.MaxAmmo : 1;
 
     }
 }

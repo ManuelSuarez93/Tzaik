@@ -65,8 +65,7 @@ namespace Tzaik.Player.Cameras
                     currentX += Time.deltaTime * currentRate; 
                 else
                 {
-                    right = false;
-                    onStep.Invoke();
+                    right = false; 
                 }
             }
             else
@@ -76,7 +75,6 @@ namespace Tzaik.Player.Cameras
                 else
                 {
                     right = true;
-                    onStep.Invoke();
                 }
             }
         }
@@ -87,14 +85,20 @@ namespace Tzaik.Player.Cameras
                 if (currentY <= maxY)
                     currentY += Time.deltaTime * currentRate;
                 else
+                { 
                     up = false;
+                    onStep.Invoke();
+                }
             }
             else
             {
                 if (currentY >= minY)
                     currentY -= Time.deltaTime * currentRate;
                 else
+                { 
                     up = true;
+                    onStep.Invoke();
+                }
             }
         }
         #endregion

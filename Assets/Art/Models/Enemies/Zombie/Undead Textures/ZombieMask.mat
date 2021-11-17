@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ZombieMask
   m_Shader: {fileID: 4800000, guid: 9c489164c87123b4db23de8938d36698, type: 3}
-  m_ShaderKeywords: ENABLEDITHER_OFF ENABLEFRESNEL_OFF ENABLEOUTLINE_ON
+  m_ShaderKeywords: ENABLEDITHER_ON ENABLEFRESNEL_OFF ENABLEOUTLINE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -65,7 +65,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - ENABLEDITHER: 0
+    - ENABLEDITHER: 1
     - ENABLEFRESNEL: 0
     - ENABLEOUTLINE: 1
     - _BumpScale: 1
@@ -92,11 +92,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.06470513, g: 0.9716981, b: 0.01375042, a: 1}
-    - _DitherColor: {r: 0.9607843, g: 0.4617772, b: 0, a: 1}
-    - _Emission: {r: 0, g: 0, b: 0, a: 1}
+    - _DitherColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Emission: {r: 0.0024509805, g: 0.0024509805, b: 0.0024509805, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _ShadowTint: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowTint: {r: 0.3962264, g: 0.3962264, b: 0.3962264, a: 1}
     - _Specular: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
