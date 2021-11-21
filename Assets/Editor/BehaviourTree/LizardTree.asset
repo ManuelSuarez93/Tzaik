@@ -42,7 +42,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 338fdb9ac05b44c418ef045699e6c6ba
-  position: {x: -35, y: 1370}
+  position: {x: 353.00003, y: 1707.0001}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
     Context: {fileID: 0}
   isStunned: 0
   duration: 1
---- !u!114 &-6190701385495680639
+--- !u!114 &-6075833290601367603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,13 +89,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 966030ac7f7552443b0e93bc7347b870, type: 3}
-  m_Name: SequenceNode
+  m_Script: {fileID: 11500000, guid: 48be9b3fc64acfd489fd409c721cce2f, type: 3}
+  m_Name: SelectorNode
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 08862f39ab38f594c95526cd008629b0
-  position: {x: 596.9999, y: 1121}
+  guid: 482099c595083324dbe1856b058611ae
+  position: {x: 70.98004, y: 1341.9999}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -107,37 +107,8 @@ MonoBehaviour:
     Context: {fileID: 0}
   isStunned: 0
   childNodes:
-  - {fileID: 1652134827945942036}
-  - {fileID: 7423981825872806958}
---- !u!114 &-5019779712605922879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fcadf9e14a31444bd14ca401cef8b8, type: 3}
-  m_Name: ParalellNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 1d1eb0a2bae26f345a9ca2a493671d67
-  position: {x: -65.99998, y: 1041}
-  blackboard:
-    currentDetectState: 0
-    currentHealth: 0
-    currentPosition: {x: 0, y: 0, z: 0}
-    nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
-    isStunned: 0
-    Context: {fileID: 0}
-  isStunned: 0
-  childNodes:
-  - {fileID: 6000331103983885720}
-  - {fileID: 2600637633131998034}
+  - {fileID: -2969614589412849968}
+  - {fileID: 9034306589478446184}
 --- !u!114 &-4810152210574421725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,7 +207,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 7159822c129854e45a72eab58f958e13
-  position: {x: 1064.7754, y: 1038.5209}
+  position: {x: 1037, y: 1070.482}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -275,11 +246,35 @@ MonoBehaviour:
   isStunned: 0
   childNodes:
   - {fileID: -4810152210574421725}
-  - {fileID: 8785810890809832847}
-  - {fileID: -2969614589412849968}
   - {fileID: 5206616853479569755}
   - {fileID: 239827433608509151}
   - {fileID: -9040380443492603159}
+--- !u!114 &-3151983290443026283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36507f45e832024e81ade9851f6f0ea, type: 3}
+  m_Name: GoToNewPositionMelee
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: aac2f0efe0385384e9c3a5fd05bedf40
+  position: {x: 770.26843, y: 1238}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    CanMelee: 0
+    CanRanged: 0
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
 --- !u!114 &-2969614589412849968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,7 +290,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 3298bdf75ffb5df41bc6af5553e7ca4d
-  position: {x: 487.90002, y: 891.0001}
+  position: {x: -176.09747, y: 1450.0002}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -306,7 +301,7 @@ MonoBehaviour:
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
-  childNode: {fileID: 8842565920990846066}
+  childNode: {fileID: 1652134827945942036}
 --- !u!114 &-1714255863951450342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -361,20 +356,20 @@ MonoBehaviour:
   - {fileID: 9034306589478446184}
   - {fileID: -3391553899636788393}
   - {fileID: 1652134827945942036}
-  - {fileID: 2824522725470461667}
-  - {fileID: -6190701385495680639}
-  - {fileID: 7423981825872806958}
-  - {fileID: 8842565920990846066}
   - {fileID: -8690075543078195994}
   - {fileID: 8785810890809832847}
-  - {fileID: -5019779712605922879}
   - {fileID: 6000331103983885720}
   - {fileID: -4810152210574421725}
   - {fileID: -1714255863951450342}
-  - {fileID: 5870003385936379292}
-  - {fileID: 2600637633131998034}
   - {fileID: -7239088033421087692}
   - {fileID: -4113088050315320866}
+  - {fileID: 2435010432436159422}
+  - {fileID: 3845483174781261517}
+  - {fileID: 3731867996696679887}
+  - {fileID: -6075833290601367603}
+  - {fileID: 3918323149104985141}
+  - {fileID: -3151983290443026283}
+  - {fileID: 4849483018009017676}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -426,7 +421,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: e93c14e308a67a942a3177b0bcee3012
-  position: {x: 470, y: 1296}
+  position: {x: -150.13246, y: 1598.5}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -437,7 +432,7 @@ MonoBehaviour:
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
---- !u!114 &2600637633131998034
+--- !u!114 &2435010432436159422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -446,13 +441,67 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 966030ac7f7552443b0e93bc7347b870, type: 3}
-  m_Name: SequenceNode
+  m_Script: {fileID: 11500000, guid: d162c5f78989aa74382d680ad099dffc, type: 3}
+  m_Name: CanMeleeAttack
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: eb84948d74d31b646b95b33d2e48c0fe
-  position: {x: 14, y: 1216}
+  guid: 6087fe60d0f29c548922f395927f0644
+  position: {x: 525.35187, y: 1238}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    CanMelee: 0
+    CanRanged: 0
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: 3918323149104985141}
+--- !u!114 &3731867996696679887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9122d00f7870fa47afda50cad7a0501, type: 3}
+  m_Name: CanRangeAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 34f8c8cd4f0f5574eb7f8ec555a6b345
+  position: {x: 71.000015, y: 1238}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    CanMelee: 0
+    CanRanged: 0
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: -6075833290601367603}
+--- !u!114 &3845483174781261517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48be9b3fc64acfd489fd409c721cce2f, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: fbf14d5ce7891514cb9f020d36bb0c56
+  position: {x: 502, y: 1014.0001}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -464,9 +513,10 @@ MonoBehaviour:
     Context: {fileID: 0}
   isStunned: 0
   childNodes:
-  - {fileID: -8690075543078195994}
-  - {fileID: 5870003385936379292}
---- !u!114 &2824522725470461667
+  - {fileID: 3731867996696679887}
+  - {fileID: 2435010432436159422}
+  - {fileID: -3151983290443026283}
+--- !u!114 &3918323149104985141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,13 +525,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94e68543142d27444ac23a2e62f6316d, type: 3}
-  m_Name: GoToDistancePlayerPosition
+  m_Script: {fileID: 11500000, guid: 48be9b3fc64acfd489fd409c721cce2f, type: 3}
+  m_Name: SelectorNode
   m_EditorClassIdentifier: 
   state: 0
   started: 0
-  guid: 6aeb4f655a1bda449996a0208b1b8476
-  position: {x: 331, y: 1119}
+  guid: 7076e040ed993d547a41d068789be8c6
+  position: {x: 472.35187, y: 1359}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -492,6 +542,37 @@ MonoBehaviour:
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
+  childNodes:
+  - {fileID: 4849483018009017676}
+--- !u!114 &4849483018009017676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97fcadf9e14a31444bd14ca401cef8b8, type: 3}
+  m_Name: ParalellNode
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: ef6f7f351c76e9e4aa65fda4eb5c727f
+  position: {x: 491.00006, y: 1465}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    CanMelee: 0
+    CanRanged: 0
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNodes:
+  - {fileID: 8785810890809832847}
+  - {fileID: 6000331103983885720}
 --- !u!114 &5206616853479569755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +588,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: dcf51cb96fe2ebb438a03d6111f0e09a
-  position: {x: 854.7754, y: 890.5209}
+  position: {x: 502, y: 891}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -518,34 +599,7 @@ MonoBehaviour:
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
-  childNode: {fileID: 9034306589478446184}
---- !u!114 &5870003385936379292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66436396ddef6624a8885dc18d17101e, type: 3}
-  m_Name: WaitNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: ca879b085041c0a4690ffd2695b089ab
-  position: {x: 120, y: 1370}
-  blackboard:
-    currentDetectState: 0
-    currentHealth: 0
-    currentPosition: {x: 0, y: 0, z: 0}
-    nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
-    isStunned: 0
-    Context: {fileID: 0}
-  isStunned: 0
-  duration: 1
+  childNode: {fileID: 3845483174781261517}
 --- !u!114 &6000331103983885720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,7 +615,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 5f5522bf5211a5748876c014019f7797
-  position: {x: -222.83751, y: 1173.5}
+  position: {x: 603.9002, y: 1586.0001}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -572,33 +626,6 @@ MonoBehaviour:
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
---- !u!114 &7423981825872806958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66436396ddef6624a8885dc18d17101e, type: 3}
-  m_Name: WaitNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 9b909bb6d3675794f963c1af4317defa
-  position: {x: 680, y: 1296}
-  blackboard:
-    currentDetectState: 0
-    currentHealth: 0
-    currentPosition: {x: 0, y: 0, z: 0}
-    nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
-    isStunned: 0
-    Context: {fileID: 0}
-  isStunned: 0
-  duration: 2.5
 --- !u!114 &7899578557138334162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,7 +668,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: ddea29851fc238348a6e0ba38ea6bbf2
-  position: {x: -99.18499, y: 910}
+  position: {x: 303.00003, y: 1586.0001}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -652,36 +679,7 @@ MonoBehaviour:
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
-  childNode: {fileID: -5019779712605922879}
---- !u!114 &8842565920990846066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97fcadf9e14a31444bd14ca401cef8b8, type: 3}
-  m_Name: ParalellNode
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 44d11ad647c83e04683a3f52ec78adac
-  position: {x: 522, y: 999}
-  blackboard:
-    currentDetectState: 0
-    currentHealth: 0
-    currentPosition: {x: 0, y: 0, z: 0}
-    nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
-    isStunned: 0
-    Context: {fileID: 0}
-  isStunned: 0
-  childNodes:
-  - {fileID: 2824522725470461667}
-  - {fileID: -6190701385495680639}
+  childNode: {fileID: -8690075543078195994}
 --- !u!114 &9034306589478446184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,7 +695,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: e4a7d8ab01e5bd84c8438307d7f1117d
-  position: {x: 829.7755, y: 1038.5209}
+  position: {x: 94.98013, y: 1449.9999}
   blackboard:
     currentDetectState: 0
     currentHealth: 0

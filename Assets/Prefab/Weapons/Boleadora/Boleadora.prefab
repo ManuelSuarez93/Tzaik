@@ -230,14 +230,14 @@ MonoBehaviour:
     usesAmmo: 1
   attack:
     projectile: {fileID: 9149933736760015711, guid: 080d7766fc7256244b3aa964d59bf975, type: 3}
-    specialProjectile: {fileID: 0}
+    specialProjectile: {fileID: 5856908878830154411, guid: bfb8588274ac6a342906a71ebd69c829, type: 3}
     shootOrigin: {fileID: 1922195150815638401}
     baseDamage: 100
     baseSpeed: 25
     baseForce: 10000
     projectileAmount: 1
     randomTrajectory: 0
-    sphereSize: 0
+    sphereSize: 30
   ui:
     inventorySlot: 0
     hasInventorySlot: 0
@@ -257,8 +257,8 @@ MonoBehaviour:
     movement: {x: 0, y: 0, z: 0}
     moveIntensity: 0
     moveTime: 0
-  specialTime: 0
-  specialCost: 0
+  specialTime: 0.5
+  specialCost: 5
 --- !u!1 &6119456447912974205
 GameObject:
   m_ObjectHideFlags: 0

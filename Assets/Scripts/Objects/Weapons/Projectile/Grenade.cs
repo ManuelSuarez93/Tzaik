@@ -24,9 +24,7 @@ namespace Tzaik.Items
                 {
                     c.GetComponent<Rigidbody>().AddExplosionForce(forceImpactAmount, transform.position, sphereRadius, ForceImpactAmount , ForceMode.Impulse);
                     DoDamage(hs, Damage);
-                }
-
-                
+                } 
             }
              
         } 

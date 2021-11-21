@@ -69,7 +69,7 @@ namespace Tzaik.Items.Weapons
 
             attackEvent.Invoke();
             rate = 0;
-        } 
+        }  
         public virtual void AttackActionCheck()
         { 
             if (AttackConidition)

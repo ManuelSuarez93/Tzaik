@@ -61,8 +61,7 @@ namespace Tzaik.Enemy
 
             return false;  
         }
-         
-
+          
         IEnumerator DetectRoutine()
         {
             while(true)
@@ -107,7 +106,6 @@ namespace Tzaik.Enemy
             => transform.forward = Vector3.Lerp(transform.forward, objective - transform.position, lookAtSmoothing * Time.deltaTime);
         public void LookAtPlayer()
             => transform.forward = Vector3.Lerp(transform.forward, playerTransform.position - transform.position, lookAtSmoothing * Time.deltaTime);
-         
         public float DistanceBetweenPlayer() => Vector3.Distance(transform.position, playerTransform.position); 
         private bool InFieldOfView() => playerTransform != null ? Vector3.Angle(transform.forward, DirectionToPlayer()) < angleDetection : false;
         public Vector3 DirectionToPlayer() => playerTransform != null ? (playerTransform.position - transform.position).normalized : transform.forward;

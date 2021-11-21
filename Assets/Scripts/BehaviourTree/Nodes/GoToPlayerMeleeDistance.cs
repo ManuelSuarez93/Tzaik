@@ -18,19 +18,14 @@ namespace BehaviourTree
             if (blackboard.Context.Detect.DistanceBetweenPlayer() <= blackboard.Context.Detect.MeleeDistance)
             {
                 blackboard.Context.Agent.NavAgent.SetDestination(blackboard.NextPosition);
-                if (blackboard.Context.Agent.PathFinished)
-                {
-                    return NodeState.Success;
-                }
-                else
-                {
-                    return NodeState.Running;
-                }
+                if (blackboard.Context.Agent.NavAgent.remainingDistance <= 1f) 
+                    return NodeState.Success; 
+                else 
+                    return NodeState.Running; 
             }
             else
                 return NodeState.Running;
 
         }
     }
-
 }

@@ -30209,7 +30209,7 @@ MonoBehaviour:
   player: {fileID: 1766749826}
   levelCreator: {fileID: 734793258}
   currentArea: 1
-  levelsPerArea: 0
+  levelsPerArea: 5
   bosses:
   - BossLevel1
   - 

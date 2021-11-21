@@ -38,8 +38,7 @@ namespace Tzaik.Items
             if (enemies.Contains(obj.GetComponentInParent<EnemyContext>())) return;
 
             var joint = point.AddComponent<CharacterJoint>();
-            joint.connectedBody = obj.GetComponent<Rigidbody>();
-            obj.GetComponentInParent<PuppetMaster>().SwitchToActiveMode();
+            joint.connectedBody = obj.GetComponent<Rigidbody>(); 
             enemies.Add(obj.GetComponentInParent<EnemyContext>()); 
             currentPassThrough++;
         }

@@ -574,6 +574,7 @@ GameObject:
   - component: {fileID: 1863408825660002132}
   - component: {fileID: 3361195809355994932}
   - component: {fileID: 6124838420151855759}
+  - component: {fileID: 781715869}
   m_Layer: 11
   m_Name: Lizard
   m_TagString: Enemy/Controller
@@ -650,6 +651,8 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
+    CanMelee: 0
+    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
 --- !u!114 &942851300533716416
@@ -889,6 +892,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tree: {fileID: 11400000, guid: ab72bb07dffbb2043a300dd44e5220b4, type: 2}
+--- !u!114 &781715869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489516484746696494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b217f7440dee1f9419bab1f5147c7ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meleeAttackCooldown: 1
+  rangedAttackCooldown: 2
+  meleeAttackPerformed: 0
+  rangedAttackPerformed: 0
 --- !u!1 &2431716942675897074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,7 +3151,6 @@ GameObject:
   - component: {fileID: 1305830699908964149}
   - component: {fileID: 1305046811491050216}
   - component: {fileID: 6493986382557511711}
-  - component: {fileID: 784018267231412936}
   m_Layer: 6
   m_Name: Image
   m_TagString: Untagged
@@ -3197,21 +3215,6 @@ MonoBehaviour:
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &784018267231412936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5175982306461665385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8b28c9add78c764185f12a419428671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  img: {fileID: 6493986382557511711}
-  health: {fileID: 942851300209578234}
 --- !u!1 &5179108814114761082
 GameObject:
   m_ObjectHideFlags: 0

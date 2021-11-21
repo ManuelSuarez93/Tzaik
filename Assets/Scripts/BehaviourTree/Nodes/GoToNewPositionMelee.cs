@@ -13,8 +13,8 @@
 
         protected override NodeState OnUpdate()
         {
-            blackboard.Context.Agent.GetNewDestination(blackboard.Context.Detect.MeleeDistance);
-            if (!blackboard.Context.Agent.NavAgent.pathPending)
+            blackboard.Context.Agent.GetNewDestination(blackboard.NextPosition, blackboard.Context.Detect.MeleeDistance);
+            if (blackboard.Context.Agent.NavAgent.remainingDistance <= 1f)
                 return NodeState.Success;
             else
                 return NodeState.Running;
