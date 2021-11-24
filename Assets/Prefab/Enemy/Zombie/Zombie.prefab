@@ -347,7 +347,7 @@ GameObject:
   - component: {fileID: 1593156712}
   - component: {fileID: 140652338}
   - component: {fileID: 2321843633720242610}
-  - component: {fileID: 256178745}
+  - component: {fileID: 546957349958490732}
   m_Layer: 11
   m_Name: Zombie
   m_TagString: Enemy/Controller
@@ -411,13 +411,13 @@ MonoBehaviour:
   mesh: {fileID: 0}
   sounds: {fileID: 3682066126383242971}
   doBehaviorTree: 0
-  animator: {fileID: 0}
   stunEvent:
     m_PersistentCalls:
       m_Calls: []
   stunExitEvent:
     m_PersistentCalls:
       m_Calls: []
+  lookAtIk: {fileID: 1995234355}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -444,7 +444,6 @@ MonoBehaviour:
   attackRadius: 8
   meleeDistance: 8
   lookAtSmoothing: 1
-  detectObstacleRadius: 5
   anim: {fileID: 1593156712}
   tags:
   - Player
@@ -569,6 +568,8 @@ MonoBehaviour:
   timeForSearch: 10
   navAgent: {fileID: 0}
   distanceThreshold: 0
+  RemainigDistance: 0
+  NextPosition: {x: 0, y: 0, z: 0}
 --- !u!54 &148753279795283433
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -606,6 +607,10 @@ MonoBehaviour:
   shootPoint: {fileID: 0}
   projectile: {fileID: 0}
   isMultipleProjectile: 0
+  meleeAttackCooldown: 0
+  rangedAttackCooldown: 0
+  meleeAttackPerformed: 0
+  rangedAttackPerformed: 0
 --- !u!95 &1593156712
 Animator:
   serializedVersion: 3
@@ -652,7 +657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tree: {fileID: 11400000, guid: f9cc188cf9a47c047a6041e7e1c23bc4, type: 2}
---- !u!114 &256178745
+--- !u!114 &546957349958490732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -661,13 +666,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 970520418312173384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b217f7440dee1f9419bab1f5147c7ea6, type: 3}
+  m_Script: {fileID: 11500000, guid: a25d6e22ee9c4ec4fbd92ef295665044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeAttackCooldown: 0
-  rangedAttackCooldown: 0
-  meleeAttackPerformed: 0
-  rangedAttackPerformed: 0
+  animator: {fileID: 1593156712}
 --- !u!1 &1104007796650617874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,6 +2390,7 @@ GameObject:
   - component: {fileID: 3338609864112699597}
   - component: {fileID: 8285717483616577338}
   - component: {fileID: 6780680514717810974}
+  - component: {fileID: 7958902132933785055}
   m_Layer: 6
   m_Name: Image
   m_TagString: Untagged
@@ -2452,6 +2455,20 @@ MonoBehaviour:
   m_FillOrigin: 1
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7958902132933785055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3155188361827781185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e68e53ad88aa354ab1b302a119882ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 1497875923295875228}
+  img: {fileID: 6780680514717810974}
 --- !u!1 &3178588975624473287
 GameObject:
   m_ObjectHideFlags: 0

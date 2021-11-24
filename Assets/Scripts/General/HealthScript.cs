@@ -33,25 +33,28 @@ namespace Tzaik.General
         public bool Damaged;
         float currentCooldown;
         bool isDead;
+        bool canBeDamaged;
 
         #endregion
+
+        #region Properties
         public float MaxHealth;
         public Vector3 ForceRecieved { get; set; }
         public ForceMode ForceTypeReceived { get; set; }
         public float CurrentHealth { get; private set; }
         public float StunTime => stunTime; 
-        public UnityEvent DeathEvent  => deathEvent;  
-        public bool CanBeDamaged { get; set; }
-        #region Properties
+        public UnityEvent DeathEvent  => deathEvent;
+        public bool CanBeDamaged => canBeDamaged;
 
         #endregion
+
         #region Unity Methods
         private void Start()
         {
             currentCooldown = cooldownTime;
             CurrentHealth = MaxHealth;
             isDead = false;
-            CanBeDamaged = true;
+            canBeDamaged = true;
         }
         public void Update()
         {
@@ -74,7 +77,7 @@ namespace Tzaik.General
 
         public void Damage(float h)
         {   
-            if(CanBeDamaged)
+            if(canBeDamaged)
             { 
                 CurrentHealth -= h;
 
@@ -159,11 +162,13 @@ namespace Tzaik.General
         public void SetStunned() => StartCoroutine(StunnedCoroutine());
 
         IEnumerator StunnedCoroutine()
-        { 
-            CanBeDamaged = false;
-            yield return new WaitForSeconds(invicibilityTime); 
-            CanBeDamaged = true;
+        {
+            canBeDamaged = false;
+            yield return new WaitForSeconds(invicibilityTime);
+            canBeDamaged = true;
         }
+
+        public void SetDamagable(bool can) => canBeDamaged = can;
 
         #endregion
     }

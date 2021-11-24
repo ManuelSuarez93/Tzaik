@@ -52,6 +52,10 @@ PrefabInstance:
       value: -3500
       objectReference: {fileID: 0}
     - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: mouseLook.sidewaysRate
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
       propertyPath: checks.maxDistanceToDetectObject
       value: 3
       objectReference: {fileID: 0}
@@ -174,7 +178,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1123750308, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
       propertyPath: m_Type
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1123750308, guid: 9deb30ceaf913f94695ecf00be71edfd, type: 3}
       propertyPath: m_FillMethod

@@ -16,8 +16,7 @@ namespace BehaviourTree
         protected override NodeState OnUpdate()
         {
             if (blackboard.NextPosition != null)
-            {
-                blackboard.Context.AttackConditions.PerformRange();
+            { 
                 blackboard.Context.Attack.PerformRagnedAttack();
                 return NodeState.Success;
             }

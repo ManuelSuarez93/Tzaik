@@ -111,15 +111,16 @@ MonoBehaviour:
   - {fileID: 5546812423715617408, guid: a366eebe50cf5544b9d0c03418a4f5b9, type: 3}
   isStopped: 0
   precisionDamage: 0
-  enemyTag: []
+  enemyTag:
+  - Enemy/Controller
   moveByRigidobdy: 1
-  rigid: {fileID: 0}
+  rigid: {fileID: 3315155269564363195}
   forceImpactAmount: 0
   sphereRadius: 30
   totalForce: 0
   layers:
     serializedVersion: 2
-    m_Bits: 65536
+    m_Bits: 67584
 --- !u!1 &4254549562020130699
 GameObject:
   m_ObjectHideFlags: 0

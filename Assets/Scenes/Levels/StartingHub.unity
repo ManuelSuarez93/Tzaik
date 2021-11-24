@@ -13680,7 +13680,7 @@ PrefabInstance:
     - target: {fileID: 2192053007918479546, guid: 848ea26afb7312d47b0b4f281f36d78a, type: 3}
       propertyPath: weapon
       value: 
-      objectReference: {fileID: 6529043826871647406, guid: 5f02efed610dc7945914b16284b56754, type: 3}
+      objectReference: {fileID: 377960277367854823, guid: 5f02efed610dc7945914b16284b56754, type: 3}
     - target: {fileID: 2192053007918479546, guid: 848ea26afb7312d47b0b4f281f36d78a, type: 3}
       propertyPath: modelsUI
       value: 

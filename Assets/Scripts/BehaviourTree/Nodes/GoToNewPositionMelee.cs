@@ -13,12 +13,22 @@
 
         protected override NodeState OnUpdate()
         {
-            blackboard.Context.Agent.GetNewDestination(blackboard.NextPosition, blackboard.Context.Detect.MeleeDistance);
-            if (blackboard.Context.Agent.NavAgent.remainingDistance <= 1f)
-                return NodeState.Success;
+            if(blackboard.Context.Agent.IsSideways)
+            {
+                if (blackboard.Context.Agent.NavAgent.remainingDistance <= 1f)
+                {
+                    blackboard.Context.Agent.IsSideways = false;
+                    return NodeState.Success;
+                }
+                else
+                    return NodeState.Running;
+            }
             else
+            { 
+                blackboard.Context.Agent.GetNewDestination(blackboard.CurrentPosition, blackboard.Context.Detect.MeleeDistance); 
                 return NodeState.Running;
+            }
         }
     }
-
+     
 }

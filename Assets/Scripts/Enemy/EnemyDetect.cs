@@ -12,8 +12,7 @@ namespace Tzaik.Enemy
         [SerializeField] float sightRadius = 3f;
         [SerializeField] float attackRadius = 1f;
         [SerializeField] float meleeDistance = 1f;
-        [SerializeField] float lookAtSmoothing = 1f;
-        [SerializeField] float detectObstacleRadius = 5f; 
+        [SerializeField] float lookAtSmoothing = 1f; 
         [SerializeField] Animator anim;
         [SerializeField] List<string> tags;
         [Tooltip("Time inbetween detections")]

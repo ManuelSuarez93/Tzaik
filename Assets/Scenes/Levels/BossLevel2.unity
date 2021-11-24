@@ -271,6 +271,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerObject
       objectReference: {fileID: 0}
+    - target: {fileID: 8136455489481178111, guid: 16c8fb57e959e5b40b5c8bf7dc30b4b2, type: 3}
+      propertyPath: m_Height
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8136455489481178111, guid: 16c8fb57e959e5b40b5c8bf7dc30b4b2, type: 3}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16c8fb57e959e5b40b5c8bf7dc30b4b2, type: 3}
 --- !u!1 &311201202
@@ -308,13 +316,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 311201202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b217f7440dee1f9419bab1f5147c7ea6, type: 3}
+  m_Script: {fileID: 11500000, guid: a25d6e22ee9c4ec4fbd92ef295665044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  meleeAttackCooldown: 10
-  rangedAttackCooldown: 2
-  meleeAttackPerformed: 0
-  rangedAttackPerformed: 0
+  animator: {fileID: 773841877}
 --- !u!114 &311201204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +368,10 @@ MonoBehaviour:
   shootPoint: {fileID: 1314504562}
   projectile: {fileID: 1112449278758036996, guid: 8ac08c809ea59d44c8d5258aa521fc41, type: 3}
   isMultipleProjectile: 0
+  meleeAttackCooldown: 10
+  rangedAttackCooldown: 5
+  meleeAttackPerformed: 0
+  rangedAttackPerformed: 0
 --- !u!54 &311201207
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -523,7 +532,6 @@ MonoBehaviour:
   attackRadius: 15
   meleeDistance: 10
   lookAtSmoothing: 1
-  detectObstacleRadius: 5
   anim: {fileID: 773841877}
   tags:
   - Player
@@ -552,13 +560,13 @@ MonoBehaviour:
   mesh: {fileID: 0}
   sounds: {fileID: 1615874040}
   doBehaviorTree: 1
-  animator: {fileID: 0}
   stunEvent:
     m_PersistentCalls:
       m_Calls: []
   stunExitEvent:
     m_PersistentCalls:
       m_Calls: []
+  lookAtIk: {fileID: 0}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -608,6 +616,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &348619648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5848490241070218776, guid: 16c8fb57e959e5b40b5c8bf7dc30b4b2, type: 3}
+  m_PrefabInstance: {fileID: 196465972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &433559078
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +976,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5cf530dabc9b1da42930dc310ac0bc44, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1535,7 +1548,7 @@ MonoBehaviour:
   levelCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
-  player: {fileID: 0}
+  player: {fileID: 348619648}
   levelCreator: {fileID: 0}
   currentArea: 1
   levelsPerArea: 0

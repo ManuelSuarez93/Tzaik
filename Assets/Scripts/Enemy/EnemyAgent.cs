@@ -21,6 +21,7 @@ namespace Tzaik
         #region Properties
         public NavMeshAgent NavAgent { get => navAgent; set => navAgent = value; }
         public bool SearchComplete { get; private set; }
+        public bool IsSideways { get; set; }
         public float TimeForSearch => timeForSearch;
         public float ForwardVelocity { get; set; }
         public float RightVelocity { get; set; }
@@ -39,8 +40,7 @@ namespace Tzaik
         public void DebugNavAgent()
         {
             NextPosition = NavAgent.destination;
-            RemainigDistance = NavAgent.remainingDistance;
-            
+            RemainigDistance = NavAgent.remainingDistance; 
         }
         #endregion
 
@@ -52,17 +52,17 @@ namespace Tzaik
             var min = distance - distanceThreshold;
             if (distanceObj >= max)
             {
-                NavAgent.SetDestination(d);
+                NavAgent.SetDestination(d); 
                 return false;
             }
             else if (distanceObj <= max && distanceObj >= min)
             {
-                NavAgent.SetDestination(transform.position);
+                NavAgent.SetDestination(transform.position); 
                 return true;
             }
             else if (distanceObj < min)
             {
-                NavAgent.SetDestination(SetDirection() * distanceObj);
+                NavAgent.SetDestination(SetDirection() * distanceObj); 
                 return false;
             }
 
@@ -70,15 +70,16 @@ namespace Tzaik
         }
 
         public void GetNewDestination(Vector3 position, float distance)
-        {
+        { 
             RaycastHit hit;
             Vector3 direction = transform.forward * -1;
             var rand = Random.Range(-1, 2);
             if (!Physics.Raycast(transform.position, transform.right * rand, out hit, 5f))
-                if (hit.transform == null) direction += transform.right * rand;
+                if (hit.transform == null) direction = transform.right * rand;
 
             NavAgent.SetDestination(position + direction * distance);
-        }
+            IsSideways = true;
+        } 
         public Vector3 SetDirection()
         {
             RaycastHit hit;
@@ -131,7 +132,11 @@ namespace Tzaik
             SearchComplete = true;
         }
 
-        private void OnDrawGizmos() => Gizmos.DrawLine(transform.position, navAgent.destination);
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(transform.position, navAgent.destination);
+        }
         #endregion
     }
      

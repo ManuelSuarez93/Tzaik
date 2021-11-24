@@ -16,8 +16,7 @@ namespace BehaviourTree
         protected override NodeState OnUpdate()
         {
             if (blackboard.NextPosition != null)
-            {
-                blackboard.Context.AttackConditions.PerformMelee();
+            { 
                 blackboard.Context.Attack.PerformMeleeAttack();
                 return NodeState.Success;
             }

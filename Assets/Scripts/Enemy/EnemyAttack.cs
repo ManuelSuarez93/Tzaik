@@ -15,11 +15,20 @@ namespace Tzaik.Enemy
         [SerializeField] bool isRanged;
         [SerializeField] float speed;
         [SerializeField] Transform shootPoint;
-        [SerializeField] GameObject projectile;
+        [SerializeField] protected GameObject projectile;
         [SerializeField] bool isMultipleProjectile = false;
-        
-        
-        Animator anim; 
+        [Header("Attack conditions")]
+        [SerializeField] float meleeAttackCooldown;
+        [SerializeField] float rangedAttackCooldown;
+        [SerializeField] bool meleeAttackPerformed;
+        [SerializeField] bool rangedAttackPerformed;
+
+        float meleeTimer;
+        float rangedTimer;
+        public bool MeleeAttackPerformed => meleeAttackPerformed;
+        public bool RangedAttackPerformed => rangedAttackPerformed;  
+
+        protected EnemyAnimator animator; 
         #endregion
 
         #region Properties
@@ -28,11 +37,43 @@ namespace Tzaik.Enemy
         public Rigidbody PlayerRigidbody { get; set; }
         public float MeleeDistance { get; set; }
         public bool IsRanged { get => isRanged; }
-        public Animator Anim { get => anim; set => anim = value; }
         #endregion
+        #region UnityMethods
+        private void Start()
+        {
+            Initialize();
+        }
 
+        protected virtual void Initialize()
+        {
+            meleeTimer = Time.time;
+            rangedTimer = Time.time;
+            meleeAttackPerformed = false;
+            rangedAttackPerformed = false;
+        }
+
+        private void Update()
+        {
+            Cooldowns();
+        }
+
+        protected virtual void Cooldowns()
+        {
+            if (meleeAttackPerformed && meleeTimer + meleeAttackCooldown <= Time.time)
+            {
+                meleeAttackPerformed = false;
+                meleeTimer = Time.time;
+            }
+
+            if (rangedAttackPerformed && rangedTimer + rangedAttackCooldown <= Time.time)
+            {
+                rangedAttackPerformed = false;
+                rangedTimer = Time.time;
+            }
+        }
+        #endregion
         #region Methods 
-        void ShootProjectile()
+        protected virtual void ShootProjectile()
         {
             GameObject o = Instantiate(projectile, shootPoint);
             o.transform.forward = Objective.position;
@@ -56,7 +97,7 @@ namespace Tzaik.Enemy
             }
         }
 
-        public void Melee()
+        public virtual void Melee()
         {
             if(Vector3.Distance(transform.position, Objective.transform.position) < MeleeDistance)
             {
@@ -65,9 +106,19 @@ namespace Tzaik.Enemy
                 PlayerHealthScript.Damage(meleedamage);
             }
         }
+        
+        public void SetAnimator(EnemyAnimator a) => animator  = animator ??= a;
+        public void PerformMeleeAttack()
+        {
+            animator.SetTrigger("AttackMelee"); 
+            meleeAttackPerformed = true;
+        }
 
-        public void PerformMeleeAttack() => anim.SetTrigger("AttackMelee");
-        public void PerformRagnedAttack() => anim.SetTrigger("AttackRange");
+        public void PerformRagnedAttack()
+        {
+            animator.SetTrigger("AttackRange");
+            rangedAttackPerformed = true;
+        }
 
         public void Ranged()
             => ShootProjectile();

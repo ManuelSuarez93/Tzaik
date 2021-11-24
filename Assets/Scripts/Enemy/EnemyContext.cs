@@ -1,4 +1,5 @@
 using RootMotion.Dynamics;
+using RootMotion.FinalIK;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,55 +23,61 @@ namespace Tzaik.Enemy
         [SerializeField] bool enableDebug;
         [SerializeField] Renderer mesh;
         [SerializeField] GameObject sounds;
-        [SerializeField] bool doBehaviorTree;
-        [SerializeField] Animator animator;
+        [SerializeField] bool doBehaviorTree; 
         [SerializeField] UnityEvent stunEvent;
         [SerializeField] UnityEvent stunExitEvent;
+        [SerializeField] LookAtIK lookAtIk;
 
         public Blackboard blackboard = new Blackboard();
         EnemyDetect detect; 
         EnemyAgent agent;
         EnemyAttack attack; 
         HealthScript health;
-        EnemyAttackConditions attackConditions;
+        EnemyAnimator enemyAnimator; 
         #endregion
 
         #region Properties 
         public EnemyAgent Agent => agent; 
         public EnemyDetect Detect => detect;
         public EnemyAttack Attack => attack; 
-        public HealthScript Health  => health; 
-        public Animator Animator { get => animator; set => animator = value; } 
-        public EnemyAttackConditions AttackConditions => attackConditions;
+        public HealthScript Health  => health;   
 
         #endregion
 
         #region Unity Methods
         void Awake()
         {
-            agent = GetComponent<EnemyAgent>();
+            agent = GetComponent<EnemyAgent>(); 
             detect = GetComponent<EnemyDetect>(); 
             attack = GetComponent<EnemyAttack>();
-            attackConditions = GetComponent<EnemyAttackConditions>();
-            if(animator == null)
-                animator = GetComponentInChildren<Animator>();
-            attack.Anim = animator;
-            attack.MeleeDistance = detect.MeleeDistance;
-            health = GetComponent<HealthScript>(); 
-        }
+            health = GetComponent<HealthScript>();
+            enemyAnimator = GetComponent<EnemyAnimator>(); 
+            enemyAnimator.SetAnimator(GetComponentInChildren<Animator>());
 
-        private void Start()
-        {
             attack.PlayerRigidbody = GameManager.Instance.Player.GetComponent<Rigidbody>();
-            attack.PlayerHealthScript = GameManager.Instance.Player.GetComponent<PlayerController>().Health; 
+            attack.PlayerHealthScript = GameManager.Instance.Player.GetComponent<PlayerController>().Health;
+            if (lookAtIk != null)
+                lookAtIk.solver.target = GameManager.Instance.Player.transform;
+            if (enemyAnimator != null)
+                attack.SetAnimator(enemyAnimator);
+            if(detect != null)
+                attack.MeleeDistance = detect.MeleeDistance;
         }
-
+          
         void Update() => SetContext();
+        private void LateUpdate()
+        {
+            if (detect.playerTransform != null)
+                transform.forward = detect.playerTransform.position - transform.position;
+        }
+        #endregion
+
+        #region Methods 
         public void SetStunned()
         { 
             if(health.Damaged)
-            { 
-                Animator.SetTrigger("Stunned");
+            {
+                enemyAnimator.SetTrigger("Stuned");
                 StartCoroutine(StunnedCoroutine(health.StunTime)); 
                 health.Damaged = false;
             }
@@ -89,30 +96,23 @@ namespace Tzaik.Enemy
             }
             stunExitEvent.Invoke();
             blackboard.isStunned = false;
-        } 
+        }
         void SetContext()
         {
-            Animator.SetFloat("SpeedX", agent.ForwardVelocity);
-            Animator.SetFloat("SpeedY", Mathf.InverseLerp(-0.99f, 1, agent.RightVelocity));
-            Animator.SetFloat("SpeedYLeft", Mathf.InverseLerp(-0.99f, 1, agent.LeftVelocity));
-            Animator.SetFloat("Rotation", agent.CalculateForward());
+            enemyAnimator.Animations(agent);
             blackboard.CurrentDetectState = detect.CurrentState;
-            blackboard.CanMelee = !attackConditions.MeleeAttackPerformed; 
-            blackboard.CanRanged = !attackConditions.RangedAttackPerformed;
+            blackboard.CanMelee = !attack.MeleeAttackPerformed;
+            blackboard.CanRanged = !attack.RangedAttackPerformed;
             blackboard.CurrentHealth = health.CurrentHealth;
             blackboard.CurrentPosition = transform.position;
             blackboard.isStunned = health.Damaged;
             blackboard.NextPosition = detect.playerTransform != null ? detect.playerTransform.position : blackboard.NextPosition;
-            if (detect.playerTransform != null)
-                detect.LookAtPlayer();
+            //if (detect.playerTransform != null)
+            //    detect.LookAtPlayer();
             Attack.Objective = detect.playerTransform != null ? detect.playerTransform : null;
             blackboard.Context = this;
         }
          
-         
-        #endregion
-
-        #region Methods 
         #endregion
     }
 }

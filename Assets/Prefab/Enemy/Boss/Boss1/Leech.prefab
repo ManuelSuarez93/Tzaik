@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 945840774}
   - component: {fileID: 9048046815735465553}
   - component: {fileID: 1975713998}
+  - component: {fileID: 6772724284848146504}
   m_Layer: 16
   m_Name: Leech
   m_TagString: Enemy
@@ -302,11 +303,19 @@ MonoBehaviour:
   mesh: {fileID: 0}
   sounds: {fileID: 3202231830927941753}
   doBehaviorTree: 0
+  stunEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  stunExitEvent:
+    m_PersistentCalls:
+      m_Calls: []
   blackboard:
     currentDetectState: 0
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
+    CanMelee: 0
+    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
 --- !u!114 &8670752242168717313
@@ -326,7 +335,7 @@ MonoBehaviour:
   attackRadius: 40
   meleeDistance: 15
   lookAtSmoothing: 1
-  head: {fileID: 7055678417254675091}
+  detectObstacleRadius: 5
   anim: {fileID: 945840774}
   tags:
   - Player
@@ -456,6 +465,7 @@ MonoBehaviour:
   cooldownTime: 0
   detectCollisions: 0
   stunTime: 0.5
+  invicibilityTime: 0
   puppetMaster: {fileID: 0}
   Damaged: 0
   MaxHealth: 80
@@ -473,6 +483,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeForSearch: 10
   navAgent: {fileID: 0}
+  distanceThreshold: 0
+  RemainigDistance: 0
+  NextPosition: {x: 0, y: 0, z: 0}
 --- !u!54 &7966110585333416014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -556,6 +569,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tree: {fileID: 11400000, guid: ab72bb07dffbb2043a300dd44e5220b4, type: 2}
+--- !u!114 &6772724284848146504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7055678417254675183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25d6e22ee9c4ec4fbd92ef295665044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 945840774}
 --- !u!1001 &3094581130909559673
 PrefabInstance:
   m_ObjectHideFlags: 0

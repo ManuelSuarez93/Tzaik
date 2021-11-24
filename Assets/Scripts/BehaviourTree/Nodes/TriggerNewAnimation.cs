@@ -14,7 +14,7 @@
 
         protected override NodeState OnUpdate()
         {
-            blackboard.Context.Animator.SetTrigger(triggerName);
+            //blackboard.Context.Animator.SetTrigger(triggerName);
             return NodeState.Success;
         }
     }
