@@ -12,7 +12,7 @@ namespace Tzaik
         [SerializeField] Image ammoImg; 
          
         public void ShowAmmo(Weapon w)
-            => ammoImg.fillAmount = (w != null) ? w.WeaponAmmo.TotalAmmo / w.WeaponAmmo.MaxAmmo : 1;
+            => ammoImg.fillAmount = (w != null) ? (float)w.WeaponAmmo.TotalAmmo / (float)w.WeaponAmmo.MaxAmmo  : 1;
 
     }
 }

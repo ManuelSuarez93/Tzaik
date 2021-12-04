@@ -15,7 +15,7 @@ namespace Tzaik.Items
         [SerializeField] protected List<string> enemyTag;
         [SerializeField] protected bool moveByRigidobdy = false;
         [SerializeField] protected Rigidbody rigid;
-        [SerializeField] protected float forceImpactAmount;
+        [SerializeField] protected float forceImpactAmount, gravityApplied, slowDownRate;
         
         #endregion
 
@@ -23,7 +23,7 @@ namespace Tzaik.Items
         public float Speed { protected get; set; }
         public float Damage { protected get; set; }
         public float ForceImpactAmount { protected get; set; }
-        RaycastHit hit;
+        RaycastHit hit; 
         #endregion
 
         #region Unity Methods  
@@ -40,13 +40,9 @@ namespace Tzaik.Items
         #region Methods
         protected virtual void BulletTraversalByRaycast()
         {
-
-            if(!isStopped)
-            {
-                Speed += Physics.gravity.y * Time.fixedDeltaTime;
-                SetTransformPosition(transform, RaycastHit(transform.forward) ? hit.point : transform.position + (transform.forward * GetDistance()));
-            }
-            
+//RaycastHit(transform.forward) ? hit.point : 
+            if(!isStopped) 
+                SetTransformPosition(transform,  transform.position + (transform.forward * GetDistance() + (Vector3.down * gravityApplied)));
 
             if (transform.position == hit.point)
             {
@@ -58,13 +54,17 @@ namespace Tzaik.Items
             }
         }
         protected virtual void BulletTraversalByRigidbody()
-            => rigid.MovePosition(transform.position + (Speed * transform.forward * Time.fixedDeltaTime));
+        {
+            rigid.MovePosition(transform.position + (Speed * transform.forward * Time.fixedDeltaTime));
+            if (Speed > 0)
+                Speed--;
+        }
+
         protected void SetTransformPosition(Transform t,Vector3 position) 
             => t.position = position;
         protected bool RaycastHit(Vector3 forward) 
             => Physics.Raycast(transform.position, forward, out hit, GetDistance(), Physics.AllLayers, QueryTriggerInteraction.Ignore);
-        protected float GetDistance() 
-            => Speed * Time.fixedDeltaTime;
+        protected float GetDistance() => (Speed - Time.fixedDeltaTime * slowDownRate) * Time.fixedDeltaTime;
         protected HealthScript GetHealthScript(GameObject o)
             => o.GetComponent<HealthScript>();
         protected HealthScript GetHealthScriptInParent(GameObject o)

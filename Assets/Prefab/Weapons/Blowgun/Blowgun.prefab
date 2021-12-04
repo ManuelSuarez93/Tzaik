@@ -1,0 +1,571 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2757828129236753079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2757828129236753076}
+  - component: {fileID: 4431346274259217514}
+  - component: {fileID: 1925290698276292482}
+  - component: {fileID: 6087758401381228193}
+  - component: {fileID: 40702332}
+  m_Layer: 3
+  m_Name: Blowgun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2757828129236753076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757828129236753079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.098, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9027920100568900421}
+  - {fileID: 7653187821801545610}
+  - {fileID: 5044434538652676534}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4431346274259217514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757828129236753079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469ebdfbfb43d7142b0e5599027f3d23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootRate: 0.85
+  isRanged: 1
+  attackEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6087758401381228193}
+        m_TargetAssemblyTypeName: ProjectZero.Audio.AudioSourceSettings, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4431346274259217514}
+        m_TargetAssemblyTypeName: Tzaik.Items.Weapons.Weapon, Assembly-CSharp
+        m_MethodName: Move
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 40702332}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Attack
+          m_BoolArgument: 0
+        m_CallState: 2
+  specialAttackEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  animator: {fileID: 40702332}
+  type: 2
+  ammo:
+    maxAmmo: 30
+    usedAmmo: 1
+    totalAmmo: 30
+    usesAmmo: 1
+  attack:
+    projectile: {fileID: 4784335971950985999, guid: bbb0a74f185b21d48a79ce46e718c1fc, type: 3}
+    specialProjectile: {fileID: 7733344151035414851, guid: bd3846092ec411e4a9651fa5436cf918, type: 3}
+    shootOrigin: {fileID: 9027920100568900421}
+    baseDamage: 3
+    baseSpeed: 100
+    baseForce: 0
+    projectileAmount: 1
+    randomTrajectory: 0
+    sphereSize: 0
+  ui:
+    inventorySlot: 0
+    hasInventorySlot: 0
+    sprite: {fileID: 21300000, guid: b628c8539429b564791f6ebcaa07af1d, type: 3}
+    text: 
+  upgrades:
+    upgradeText1: Improve ammo
+    upgradeText2: Improve shoto rate
+    specialUpgradeText: Improve special's poison damage
+    upgrades:
+    - upgradeType: 0
+      level: 0
+      updateId: 0
+      maxAmmoUpgrade: 15
+      shootingRateUpgrade: 0
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+    - upgradeType: 0
+      level: 1
+      updateId: 0
+      maxAmmoUpgrade: 20
+      shootingRateUpgrade: 0
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+    - upgradeType: 0
+      level: 2
+      updateId: 0
+      maxAmmoUpgrade: 20
+      shootingRateUpgrade: 0
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+    - upgradeType: 0
+      level: 3
+      updateId: 0
+      maxAmmoUpgrade: 25
+      shootingRateUpgrade: 0
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+    - upgradeType: 0
+      level: 4
+      updateId: 0
+      maxAmmoUpgrade: 30
+      shootingRateUpgrade: 0
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+    - upgradeType: 1
+      level: 0
+      updateId: 0
+      maxAmmoUpgrade: 0
+      shootingRateUpgrade: -0.15
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+    - upgradeType: 1
+      level: 1
+      updateId: 0
+      maxAmmoUpgrade: 0
+      shootingRateUpgrade: -0.12
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+    - upgradeType: 1
+      level: 2
+      updateId: 0
+      maxAmmoUpgrade: 0
+      shootingRateUpgrade: -0.13
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+    - upgradeType: 1
+      level: 3
+      updateId: 0
+      maxAmmoUpgrade: 0
+      shootingRateUpgrade: -0.12
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+    - upgradeType: 1
+      level: 4
+      updateId: 0
+      maxAmmoUpgrade: 0
+      shootingRateUpgrade: -0.25
+      damageUpgrade: 0
+      speedUpgrade: 0
+      forceUpgrade: 0
+      newProjectile: {fileID: 0}
+      coinCost: 0
+      coinType: 0
+  effects:
+    swayIntenisty: 25
+    swaySmoothing: 25
+    shakeAmount: {x: 0, y: 0, z: 0}
+    shakeTime: 0
+    shakeIntensity: 0
+    movement: {x: 0, y: 0, z: -2}
+    moveIntensity: 1
+    moveTime: 0.1
+  specialTime: 5
+  specialCost: 10
+--- !u!82 &1925290698276292482
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757828129236753079}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &6087758401381228193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757828129236753079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695cd238d57d8d343b5ea0af7dd7721e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 4
+  maxPitch: 1.2
+  minPitch: 1
+  audioClips:
+  - {fileID: 8300000, guid: 7e12ce637423df8418eb21dc71ac0b39, type: 3}
+  - {fileID: 8300000, guid: 33384177525b65e46b5c6211173bc19e, type: 3}
+  playOnAwake: 0
+--- !u!95 &40702332
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757828129236753079}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: 3b78ac143fe8a1b418dcfa9b13997970, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &3677244099147007929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5044434538652676534}
+  - component: {fileID: 8354242806784514201}
+  - component: {fileID: 4359267094231821163}
+  m_Layer: 3
+  m_Name: Cylinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &5044434538652676534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3677244099147007929}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.5, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 2757828129236753076}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!33 &8354242806784514201
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3677244099147007929}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4359267094231821163
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3677244099147007929}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: de5b094d445b59b4cab3d487ffaff09a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &7025128790705816880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7653187821801545610}
+  - component: {fileID: 5820252684024074853}
+  - component: {fileID: 5192706765276180396}
+  m_Layer: 3
+  m_Name: BlowGun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7653187821801545610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7025128790705816880}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2757828129236753076}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5820252684024074853
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7025128790705816880}
+  m_Mesh: {fileID: -5076798556035486163, guid: 0c368e8ae989ea441ac2fdb39880885f, type: 3}
+--- !u!23 &5192706765276180396
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7025128790705816880}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 257
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: ae508f81bbc76cd4dbd521425a5f9943, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &9027920100568900420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9027920100568900421}
+  m_Layer: 3
+  m_Name: ShootOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9027920100568900421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9027920100568900420}
+  m_LocalRotation: {x: 0, y: -0.01745245, z: 0, w: 0.99984777}
+  m_LocalPosition: {x: -0.018, y: 0, z: 0.507}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2757828129236753076}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -2, z: 0}

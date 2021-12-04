@@ -108,7 +108,7 @@ MonoBehaviour:
     projectile: {fileID: 5958040058897813090, guid: 1013afb397f484947a9f8ecbda476028, type: 3}
     specialProjectile: {fileID: 284158718933435420, guid: 0dab9db10e5f66c489dca9d0cf191e61, type: 3}
     shootOrigin: {fileID: 126194939}
-    baseDamage: 5
+    baseDamage: 0.5
     baseSpeed: 100
     baseForce: 0
     projectileAmount: 8
@@ -292,6 +292,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 3861478300804232965, guid: 515d28dc02dbf79449b350133c90f6bd, type: 3}
+    - target: {fileID: -3887185075125053422, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_DirtyAABB
       value: 0
       objectReference: {fileID: 0}
@@ -318,14 +322,14 @@ PrefabInstance:
     - target: {fileID: -3887185075125053422, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: de5b094d445b59b4cab3d487ffaff09a, type: 2}
+      objectReference: {fileID: 2100000, guid: 3d06de0e3fa5b164c8ad921a60b18cfe, type: 2}
     - target: {fileID: -3887185075125053422, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_BlendShapeWeights.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[0]
-      value: 30
+      value: 36.7
       objectReference: {fileID: 0}
     - target: {fileID: -3887185075125053422, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_BlendShapeWeights.Array.data[1]

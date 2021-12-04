@@ -304,10 +304,13 @@ MonoBehaviour:
   enemyTag:
   - Enemy/Controller
   - Enemy
-  moveByRigidobdy: 1
+  moveByRigidobdy: 0
   rigid: {fileID: 5953000350569044741}
   forceImpactAmount: 0
+  gravityApplied: 0.25
+  slowDownRate: 50
   sphereRadius: 5
+  totalForce: 0
 --- !u!114 &5378385098709051789
 MonoBehaviour:
   m_ObjectHideFlags: 0

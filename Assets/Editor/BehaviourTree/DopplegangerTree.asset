@@ -21,8 +21,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -48,8 +46,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -75,8 +71,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -105,8 +99,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -132,8 +124,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -161,8 +151,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -190,8 +178,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -216,8 +202,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -245,8 +229,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -275,8 +257,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -323,8 +303,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
 --- !u!114 &29235380410791103
@@ -348,8 +326,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -374,8 +350,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -400,8 +374,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -427,8 +399,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -454,8 +424,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -481,8 +449,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -507,8 +473,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -534,8 +498,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -561,8 +523,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -590,8 +550,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -616,8 +574,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -642,8 +598,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0

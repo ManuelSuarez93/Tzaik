@@ -1,5 +1,6 @@
 using RootMotion.Dynamics;
 using System.Collections;
+using System.Collections.Generic;
 using Tzaik.Player;
 using UnityEngine;
 using UnityEngine.Events;
@@ -22,8 +23,12 @@ namespace Tzaik.General
         [SerializeField] float cooldownTime; 
         [SerializeField] bool detectCollisions; 
         [SerializeField] float stunTime;
-        [SerializeField] float invicibilityTime;
-        [SerializeField] PuppetMaster puppetMaster;
+        [SerializeField] float invicibilityTime; 
+        [SerializeField] Renderer renderer;
+        [SerializeField] [GradientUsage(true)] Gradient gradient;
+        [SerializeField] float outlineThicknessOnLook;
+        [SerializeField] float outlineThicknessNormal;
+        [SerializeField] List<GameObject> objectToInstance;
 
         [System.Serializable]
         public class DamageEvent : UnityEvent<float> { } 
@@ -33,7 +38,8 @@ namespace Tzaik.General
         public bool Damaged;
         float currentCooldown;
         bool isDead;
-        bool canBeDamaged;
+        bool canBeDamaged; 
+        bool isBeingLooked;
 
         #endregion
 
@@ -62,9 +68,39 @@ namespace Tzaik.General
                 CheckHealth(); 
             HealthChangeCooldown();
         }
+        
+        private void OnControllerColliderHit(ControllerColliderHit hit)
+        {
+            if (detectCollisions)
+            {
+                if (layerMask == (layerMask | (1 << hit.gameObject.layer)))
+                {
+                    if (HealthCooldownCheck())
+                    {
+                        Damage(1);
+                        currentCooldown = cooldownTime;
+                    }
+
+                }
+            }
+        }
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (detectCollisions)
+            {
+                if (layerMask == (layerMask | (1 << collision.gameObject.layer)))
+                {
+                    if (HealthCooldownCheck())
+                    {
+                        Damage(1);
+                        currentCooldown = cooldownTime;
+                    }
+                }
+            }
+        }
         #endregion
 
-        #region Methods
+        #region Class Methods
         public bool AddHealth(float h)
         {
             if (CurrentHealth + h <= MaxHealth)
@@ -88,15 +124,39 @@ namespace Tzaik.General
                     parentHealthScript.Damage(h);
                 else
                     Damaged = true;
-            }
-        }   
 
-        public void CheckHealth()
+                UpdateOutlineDamage();
+            } 
+        }   
+        public void UpdateOutlineDamage()
         {
-            if (CurrentHealth <= 0)
+            if(renderer == null) return;
+
+            renderer.material.SetColor("_OutlineColor", gradient.Evaluate(CurrentHealth/MaxHealth));
+        }
+
+        public void SetOutlineThickness(bool set)
+        {
+            if(renderer == null) return; 
+            renderer.material.SetFloat("_OutlineThickness", set ? outlineThicknessOnLook : outlineThicknessNormal); 
+        }
+        private void SetColorNotDamagable(bool damagable)
+        {
+            if(renderer == null) return; 
+
+            if(!damagable)
+                renderer.material.SetColor("_OutlineColor", Color.gray);
+            else
+                UpdateOutlineDamage(); 
+                    
+        }
+        private void CheckHealth()
+        {
+            if (CurrentHealth <= 0 && !isDead)
             { 
                 deathEvent.Invoke();
                 isDead = true;
+                Debug.Log($"{name} is dead", this);
             }
         }   
         public void AddKill()
@@ -107,43 +167,26 @@ namespace Tzaik.General
                 GameManager.Instance.AddKill();
             }
         }
-        private void OnControllerColliderHit(ControllerColliderHit hit)
-        {
-            if (detectCollisions)
-            {
-                if (layerMask == (layerMask | (1 << hit.gameObject.layer)))
-                {
-                    if (HealthCooldownCheck())
-                    {
-                        Damage(1);
-                        currentCooldown = cooldownTime;
-                    }
 
-                }
-            }
-        }
+        public void Instantiate(int id) => Instantiate(objectToInstance[id], transform.position, Quaternion.identity);
         public void RemoveHealth(float h)
             => CurrentHealth -= h;
-        private void OnCollisionEnter(Collision collision)
-        {
-            if (detectCollisions)
-            {
-                if (layerMask == (layerMask | (1 << collision.gameObject.layer)))
-                {
-                    if (HealthCooldownCheck())
-                    {
-                        Damage(1);
-                        currentCooldown = cooldownTime;
-                    }
-                }
-            }
-        }
         public bool HealthCooldownCheck() 
             => currentCooldown <= 0;
         public void HealthChangeCooldown() 
             => currentCooldown -= currentCooldown > 0 ? Time.deltaTime : 0; 
         public void PerformDamageByTime(float damage, float time, float rate)
             => StartCoroutine(DamageByTime(damage, time, rate));
+
+        public void SetDamagable(bool can) 
+        {
+            canBeDamaged = can;
+            SetColorNotDamagable(can);
+        }         
+        public void SetStunned() => StartCoroutine(StunnedCoroutine());
+        #endregion
+
+        #region Coroutines
         IEnumerator DamageByTime(float damage, float time, float rate)
         {
             float totalTimer = 0;
@@ -159,17 +202,13 @@ namespace Tzaik.General
                 yield return null;
             }
         }
-        public void SetStunned() => StartCoroutine(StunnedCoroutine());
-
         IEnumerator StunnedCoroutine()
         {
             canBeDamaged = false;
             yield return new WaitForSeconds(invicibilityTime);
             canBeDamaged = true;
         }
-
-        public void SetDamagable(bool can) => canBeDamaged = can;
-
         #endregion
+
     }
 }

@@ -56,7 +56,7 @@ namespace Tzaik.General
         [SerializeField] UnityEvent levelCompleteEvent;
         [SerializeField] GameObject player;
         [SerializeField] LevelCreator levelCreator;
-        [SerializeField] Area currentArea;
+        [SerializeField] Area CurrentArea;
         [SerializeField] int levelsPerArea;
         [SerializeField] List<string> bosses;
         [SerializeField] string currentScene;
@@ -68,7 +68,8 @@ namespace Tzaik.General
         static bool startAgain;
         static int totalEnemiesKilled;
         static Dictionary<CoinType, int> coinsAmount;
-        int currentLevel;
+        static int currentLevel;
+        static Area currentArea;
 
         #endregion
 
@@ -89,8 +90,12 @@ namespace Tzaik.General
             coinsAmount = player.GetComponent<PlayerCoins>().CoinsAmount;
             AudioManager.Instance.InitializeManager(); 
             UIManager.Instance.LoadingScreen.SetActive(true);
-            if (startAgain && currentScene != Levels.DUNGEON_LEVEL) 
+            CurrentArea = currentArea;
+            if (startAgain && currentScene != Levels.DUNGEON_LEVEL)  
+            {
                 currentLevel = 0;
+                currentArea = Area.Temple;
+            }
             
             Load(false);
             if(levelCreator != null)
@@ -103,16 +108,6 @@ namespace Tzaik.General
 
         #region Methods
         void Coins() => coinsAmount = Player.GetComponent<PlayerCoins>().CoinsAmount;
-        public void DebugText(string debugText)
-        {
-            if(debug != null) 
-                debug.text = debugText + "\n" + debug.text;
-        }
-        public void StateText(string state)
-        {
-            if(stateText != null) 
-                stateText.text = state;
-        }
         public void AddKill()
         { 
             enemiesKilled++;
@@ -131,18 +126,28 @@ namespace Tzaik.General
             if(currentLevel < levelsPerArea)
             { 
                 currentLevel++;
+                Save();
                 RestartLevel();
             }
             else
             {
                 currentLevel = 0;
-                LoadScene(currentArea == Area.Temple ? bosses[0] :
-                    currentArea == Area.Jungle ? bosses[1] :
-                    currentArea == Area.CrystalCave ? bosses[2] : bosses[0]); 
+                LoadScene(SelectBoss());
             }
         }
-        public void SaveAndGoToLevel(string level)
+
+        private string SelectBoss()
         {
+            return currentArea == Area.Temple ? bosses[0] :
+                    currentArea == Area.Jungle ? bosses[1] :
+                    currentArea == Area.CrystalCave ? bosses[2] : bosses[0];
+        }
+
+        public void ChangeAreaTemple() => currentArea = Area.Temple; 
+        public void ChangeAreaJungle() => currentArea = Area.Jungle;
+        public void ChangeAreaCrystalCave() => currentArea = Area.CrystalCave;
+        public void SaveAndGoToLevel(string level)
+        { 
             Save();
             LoadScene(level);
         }
@@ -164,6 +169,7 @@ namespace Tzaik.General
                 weapons = playerWeapons,
                 name = playerName 
             };
+            
             SaveManager.Save(save, $"Player");
         }  
         public void Load(bool goToLevel)
@@ -192,8 +198,8 @@ namespace Tzaik.General
             PlayerPrefs.SetInt("CoinsAmountTablet", coinsAmount[CoinType.CrystalTablet]);
             PlayerPrefs.SetInt("CoinsAmountIdol",  coinsAmount[CoinType.GoldenIdol]);
             PlayerPrefs.SetInt("EnemiesKilled", totalEnemiesKilled);
-            startAgain = scene != SceneManager.GetActiveScene().name;
-            SceneManager.LoadSceneAsync(scene);
+            startAgain = scene != SceneManager.GetActiveScene().name;  
+            SceneManager.LoadSceneAsync(scene); 
             startAgain = scene == SceneManager.GetActiveScene().name;
             yield return null;
         }

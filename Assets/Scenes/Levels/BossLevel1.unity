@@ -142,7 +142,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &8985046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +171,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: DungeonLevel
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 895738235}
+        m_TargetAssemblyTypeName: Tzaik.General.GameManager, Assembly-CSharp
+        m_MethodName: ChangeArea
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &8985047
@@ -6824,7 +6836,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122714
+  m_Name: pb_Mesh43002
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9212,7 +9224,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122562
+  m_Name: pb_Mesh42848
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11193,18 +11205,6 @@ MonoBehaviour:
   onTimedEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 895738235}
-        m_TargetAssemblyTypeName: Tzaik.General.GameManager, Assembly-CSharp
-        m_MethodName: SaveAndGoToLevel
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: StartingHub
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 417522448}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -11215,6 +11215,30 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 895738235}
+        m_TargetAssemblyTypeName: Tzaik.General.GameManager, Assembly-CSharp
+        m_MethodName: ChangeAreaJungle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 895738235}
+        m_TargetAssemblyTypeName: Tzaik.General.GameManager, Assembly-CSharp
+        m_MethodName: SaveAndGoToLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: DungeonLevel
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &417522451
@@ -13358,7 +13382,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 391443695763289100, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
       propertyPath: meleeAttackForce
-      value: 500
+      value: 2500
       objectReference: {fileID: 0}
     - target: {fileID: 7055678417254675091, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
       propertyPath: m_RootOrder
@@ -13409,47 +13433,51 @@ PrefabInstance:
       value: Leech
       objectReference: {fileID: 0}
     - target: {fileID: 8670752243021083963, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
+      propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670752243021083963, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
       propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 8985045}
+      objectReference: {fileID: 417522448}
     - target: {fileID: 8670752243021083963, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
       propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
-      objectReference: {fileID: 417522448}
+      objectReference: {fileID: 721144213}
+    - target: {fileID: 8670752243021083963, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
+      propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 721144208}
+    - target: {fileID: 8670752243021083963, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
+      propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670752243021083963, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
+      propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670752243021083963, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
+      propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
---- !u!1 &721144207 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7055678417254675183, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
-  m_PrefabInstance: {fileID: 721144206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &721144208 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8670752243021083963, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
   m_PrefabInstance: {fileID: 721144206}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721144207}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8af3aba1a12b6a646957b6f861ac5efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &721144209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!95 &721144213 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 945840774, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
+  m_PrefabInstance: {fileID: 721144206}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721144207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b217f7440dee1f9419bab1f5147c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  meleeAttackCooldown: 0
-  rangedAttackCooldown: 0
-  meleeAttackPerformed: 0
-  rangedAttackPerformed: 0
 --- !u!1001 &755507155
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13649,7 +13677,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122652
+  m_Name: pb_Mesh42940
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13873,7 +13901,7 @@ MonoBehaviour:
       m_Calls: []
   player: {fileID: 2046335616}
   levelCreator: {fileID: 0}
-  currentArea: 1
+  CurrentArea: 0
   levelsPerArea: 0
   bosses:
   - BossLevel1
@@ -14000,7 +14028,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122760
+  m_Name: pb_Mesh43052
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15752,9 +15780,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8b28c9add78c764185f12a419428671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  img: {fileID: 296886060}
-  health: {fileID: 721144208}
 --- !u!114 &1097587322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18307,7 +18332,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-284160
+  m_Name: pb_Mesh-22144
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18471,7 +18496,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122602
+  m_Name: pb_Mesh42888
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19125,7 +19150,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122776
+  m_Name: pb_Mesh43068
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19289,7 +19314,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122692
+  m_Name: pb_Mesh42980
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19524,7 +19549,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122500
+  m_Name: pb_Mesh42788
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19688,7 +19713,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122532
+  m_Name: pb_Mesh42816
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19892,7 +19917,7 @@ LightingSettings:
   m_PVREnvironmentReferencePointCount: 2048
   m_LightProbeSampleCountMultiplier: 4
   m_PVRBounces: 2
-  m_PVRMinBounces: 1
+  m_PVRMinBounces: 2
   m_PVREnvironmentMIS: 1
   m_PVRFilteringMode: 1
   m_PVRDenoiserTypeDirect: 1
@@ -24875,7 +24900,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1122790
+  m_Name: pb_Mesh43082
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25049,7 +25074,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-282592
+  m_Name: pb_Mesh-20576
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25245,7 +25270,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-284098
+  m_Name: pb_Mesh-22082
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25609,7 +25634,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-282766
+  m_Name: pb_Mesh-20750
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

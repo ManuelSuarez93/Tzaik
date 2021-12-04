@@ -21,8 +21,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -42,14 +40,12 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 338fdb9ac05b44c418ef045699e6c6ba
-  position: {x: 353.00003, y: 1707.0001}
+  position: {x: 365, y: 1847}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -74,8 +70,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -101,14 +95,37 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
   childNodes:
   - {fileID: -2969614589412849968}
   - {fileID: 9034306589478446184}
+--- !u!114 &-5703031709051526426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d162c5f78989aa74382d680ad099dffc, type: 3}
+  m_Name: CanMeleeAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 9e7535ac0eb0e3e439daeb875c8b5a1e
+  position: {x: -130.00008, y: 1585.9998}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: 1652134827945942036}
 --- !u!114 &-4810152210574421725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,8 +147,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -157,8 +172,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -186,8 +199,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -213,8 +224,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -239,8 +248,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -270,8 +277,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -296,12 +301,10 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
-  childNode: {fileID: 1652134827945942036}
+  childNode: {fileID: -5703031709051526426}
 --- !u!114 &-1714255863951450342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,8 +326,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -370,13 +371,13 @@ MonoBehaviour:
   - {fileID: 3918323149104985141}
   - {fileID: -3151983290443026283}
   - {fileID: 4849483018009017676}
+  - {fileID: -5703031709051526426}
+  - {fileID: 2873926755524894430}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
 --- !u!114 &239827433608509151
@@ -400,8 +401,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -421,14 +420,12 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: e93c14e308a67a942a3177b0bcee3012
-  position: {x: -150.13246, y: 1598.5}
+  position: {x: -151, y: 1742}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -453,12 +450,35 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
   childNode: {fileID: 3918323149104985141}
+--- !u!114 &2873926755524894430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9122d00f7870fa47afda50cad7a0501, type: 3}
+  m_Name: CanRangeAttack
+  m_EditorClassIdentifier: 
+  state: 0
+  started: 0
+  guid: 4c2dc66557fa6f74891253f8e526815e
+  position: {x: 365, y: 1717}
+  blackboard:
+    currentDetectState: 0
+    currentHealth: 0
+    currentPosition: {x: 0, y: 0, z: 0}
+    nextPosition: {x: 0, y: 0, z: 0}
+    isStunned: 0
+    Context: {fileID: 0}
+  isStunned: 0
+  childNode: {fileID: -8690075543078195994}
 --- !u!114 &3731867996696679887
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,8 +500,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -507,8 +525,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -537,8 +553,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -565,8 +579,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -594,8 +606,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -621,8 +631,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -647,8 +655,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
@@ -674,12 +680,10 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
-  childNode: {fileID: -8690075543078195994}
+  childNode: {fileID: 2873926755524894430}
 --- !u!114 &9034306589478446184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,8 +705,6 @@ MonoBehaviour:
     currentHealth: 0
     currentPosition: {x: 0, y: 0, z: 0}
     nextPosition: {x: 0, y: 0, z: 0}
-    CanMelee: 0
-    CanRanged: 0
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0

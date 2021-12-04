@@ -17,7 +17,7 @@ namespace Tzaik.Enemy
 
     [RequireComponent(typeof(EnemyAgent), typeof(EnemyDetect))] 
     [Serializable]
-    public class EnemyContext : Spawnable
+    public class EnemyContext : MonoBehaviour   
     {
         #region Fields
         [SerializeField] bool enableDebug;
@@ -63,7 +63,7 @@ namespace Tzaik.Enemy
             if(detect != null)
                 attack.MeleeDistance = detect.MeleeDistance;
         }
-          
+        void Start() => blackboard.Context = this;
         void Update() => SetContext();
         private void LateUpdate()
         {
@@ -100,17 +100,12 @@ namespace Tzaik.Enemy
         void SetContext()
         {
             enemyAnimator.Animations(agent);
-            blackboard.CurrentDetectState = detect.CurrentState;
-            blackboard.CanMelee = !attack.MeleeAttackPerformed;
-            blackboard.CanRanged = !attack.RangedAttackPerformed;
+            blackboard.CurrentDetectState = detect.CurrentState; 
             blackboard.CurrentHealth = health.CurrentHealth;
             blackboard.CurrentPosition = transform.position;
             blackboard.isStunned = health.Damaged;
-            blackboard.NextPosition = detect.playerTransform != null ? detect.playerTransform.position : blackboard.NextPosition;
-            //if (detect.playerTransform != null)
-            //    detect.LookAtPlayer();
-            Attack.Objective = detect.playerTransform != null ? detect.playerTransform : null;
-            blackboard.Context = this;
+            blackboard.NextPosition = detect.playerTransform != null ? detect.playerTransform.position : blackboard.NextPosition; 
+            Attack.Objective = detect.playerTransform != null ? detect.playerTransform : null; 
         }
          
         #endregion

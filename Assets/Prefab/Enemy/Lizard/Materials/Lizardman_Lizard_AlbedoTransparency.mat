@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Lizardman_Lizard_AlbedoTransparency
   m_Shader: {fileID: 4800000, guid: 9c489164c87123b4db23de8938d36698, type: 3}
-  m_ShaderKeywords: ENABLEDITHER_ON ENABLEFRESNEL_OFF ENABLEOUTLINE_OFF
+  m_ShaderKeywords: ENABLEDITHER_ON ENABLEFRESNEL_OFF ENABLEOUTLINE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -35,7 +35,7 @@ Material:
     m_Floats:
     - ENABLEDITHER: 1
     - ENABLEFRESNEL: 0
-    - ENABLEOUTLINE: 0
+    - ENABLEOUTLINE: 1
     - _FresnelExponent: 1
     - _OutlineThickness: 0.03
     - _SpecularFalloff: 1
@@ -47,7 +47,7 @@ Material:
     - _DitherColor: {r: 0.5188679, g: 0.50152576, b: 0, a: 1}
     - _Emission: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 0.028681755, g: 0, b: 1, a: 1}
     - _ShadowTint: {r: 0.077830195, g: 0.103773594, b: 0.0785732, a: 1}
     - _Specular: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

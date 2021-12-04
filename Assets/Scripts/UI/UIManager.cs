@@ -91,7 +91,7 @@ namespace Tzaik.UI
 
         public void Update()
         {
-            //ammo.ShowAmmo(playerInventory.CurrentWeapon);
+            ammo.ShowAmmo(playerInventory.CurrentWeapon);
             coins.ShowCoins(playerCoins);
             health.ShowHealth(playerHealth);
             special.ShowSpecial(playerSpecial);
@@ -102,7 +102,7 @@ namespace Tzaik.UI
         }
         #endregion
 
-        #region Methods
+        #region Class Methods
         public void ShowInfoText(string text)
         {
             if(InfoText != null)

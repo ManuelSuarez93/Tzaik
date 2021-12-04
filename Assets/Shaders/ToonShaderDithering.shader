@@ -125,7 +125,8 @@ Shader "Custom/ToonShaderOutline"
 			Pass
 			{
 
-				Cull front
+				Cull front 
+				Blend SrcAlpha OneMinusSrcAlpha 
 				CGPROGRAM
 
 				#include "UnityCG.cginc"
@@ -133,9 +134,6 @@ Shader "Custom/ToonShaderOutline"
 				#pragma fragment frag
 				#pragma multi_compile ENABLEOUTLINE_OFF     ENABLEOUTLINE_ON
 
-				sampler2D _MainTex;
-				float4 _MainTex_ST;
-				fixed4 _Color;
 				fixed4 _OutlineColor;
 				float _OutlineThickness;
 

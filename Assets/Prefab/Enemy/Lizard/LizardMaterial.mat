@@ -79,7 +79,7 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineThickness: 0.025
+    - _OutlineThickness: 0.01
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularFalloff: 2
@@ -96,7 +96,7 @@ Material:
     - _Emission: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+    - _OutlineColor: {r: 0, g: 0.0074772835, b: 1, a: 0.078431375}
     - _ShadowTint: {r: 0.16945532, g: 0.3018868, b: 0.17607689, a: 1}
     - _Specular: {r: 0.43574226, g: 0.6037736, b: 0.47714913, a: 1}
   m_BuildTextureStacks: []

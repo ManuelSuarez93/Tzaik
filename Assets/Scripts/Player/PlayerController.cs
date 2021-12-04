@@ -56,6 +56,7 @@ namespace Tzaik.Player
         public PlayerSpecial Special => special;
         public HealthScript Health => health;
         public bool IsTimerOver => isTimerOver;  
+        HealthScript target;
 
         #endregion
 
@@ -74,28 +75,22 @@ namespace Tzaik.Player
             currentState = new IdleState(this);
         }
 
-        private void Update()
-        {
-            currentState.Update();
-            if (DebugEnable) { Debugging(); }
-             
-        }
-         
+        private void Update() => currentState.Update();
+
         private void FixedUpdate()
             => currentState.FixedUpdate(); 
         #endregion
 
-        public void Debugging()
-        {
-            Debug.Log($"<color=green>Current state:</color> <color=cyan>{CurrentState}</color>");
-            GameManager.Instance.StateText($"<color=green>Current state:</color> <color=cyan>{CurrentState}</color>");
-        }
+        #region Class Methods 
         public void ChangeState(State newState) => currentState.ChangeState(newState);
         public void PlayerMove(float speed)
             => Movement.RigidMovement(InputManager.Movement.ReadValue<Vector2>().x, 
                                         InputManager.Movement.ReadValue<Vector2>().y, 
                                         speed, MouseLook.GetCamForward, MouseLook.GetCamRight, checks.IsGrounded());
-        #region Coroutines
+     
+        
+        #endregion  
+         #region Coroutines
         public void DoTimerCoroutine(float time)
             => StartCoroutine(TimerCoroutine(time));
         public void DoCoroutine(string routine)
@@ -110,21 +105,33 @@ namespace Tzaik.Player
             {
                 RaycastHit hit;
                 Physics.Raycast(transform.position, mouseLook.GetCamForward, out hit, checks.MaxDistanceToDetectObject);
+                SetTarget(hit.collider);
                 if (hit.collider != null)
-                {
-                    if (Vector3.Distance(transform.position, hit.collider.transform.position) > 5f)
+                { 
+                    if (Vector3.Distance(transform.position, hit.collider.transform.position) <= 5f)
                         UIManager.Instance.Crosshair.color = Color.blue;
                     else if (hit.collider.tag == "Enemy/Controller")
                         UIManager.Instance.Crosshair.color = Color.red;
                 }
-                else
-                {
-                    UIManager.Instance.Crosshair.color = Color.green;
-                }
+                else 
+                    UIManager.Instance.Crosshair.color = Color.green; 
+
+                
                 yield return new WaitForSeconds(0.1f);
             }
 
         }
+
+        private void SetTarget(Collider collider)
+        {
+            if (target != null) target.SetOutlineThickness(false);
+            if(collider != null)
+            {
+                target = collider.GetComponent<HealthScript>(); 
+                target.SetOutlineThickness(true); 
+            }
+        }
+
         IEnumerator TimerCoroutine(float time)
         {
             isTimerOver = false; 

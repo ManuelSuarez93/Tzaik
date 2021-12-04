@@ -99,9 +99,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _CellSize: {r: 4, g: 4, b: 4, a: 0}
-    - _Color: {r: 0.4339623, g: 0.1780883, b: 0.1780883, a: 1}
+    - _Color: {r: 0.43396226, g: 0.17808828, b: 0.17808828, a: 1}
     - _DitherColor: {r: 0, g: 0, b: 0, a: 1}
-    - _Emission: {r: 8, g: 0.3137255, b: 0, a: 1}
+    - _Emission: {r: 8.264302, g: 0.1730744, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 0.4433962, g: 0.15686187, b: 0.15686187, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
