@@ -14,6 +14,7 @@ namespace Tzaik.Enemy
         [Header("RangedAttack")]
         [SerializeField] bool isRanged;
         [SerializeField] float speed;
+        [SerializeField] float lookAtHeight = 4f;
         [SerializeField] Transform shootPoint;
         [SerializeField] protected GameObject projectile;
         [SerializeField] bool isMultipleProjectile = false;
@@ -77,7 +78,7 @@ namespace Tzaik.Enemy
         {
             GameObject o = Instantiate(projectile, shootPoint);
             o.transform.forward = Objective.position;
-            o.transform.LookAt(Objective.position + (Vector3.up * 4));
+            o.transform.LookAt(Objective.position + (Vector3.up * lookAtHeight));
             o.transform.parent = null;
             if(isMultipleProjectile)
             { 

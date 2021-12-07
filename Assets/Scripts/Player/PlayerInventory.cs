@@ -141,21 +141,35 @@ namespace Tzaik.Player
         public Weapon CheckForWeaponInInventory(WeaponType type)
             => weapons.FirstOrDefault(x => x != null && x.Type == type);  
         public void LoadInventory(List<WeaponType> weapons)
-        {
+        { 
+            var loadedweapons = new List<Weapon>();
             if(weapons.Count > 0) 
                 foreach (WeaponType w in weapons)
                 {
                     var weapon = InstantiateItem(weaponList.weapon.Where(x => x.Type == w).FirstOrDefault().gameObject);
-                    weapon.LoadWeaponObject();
-                    weapon.Initialize();
-                    AddToInventory(weapon.WeaponUI.InventorySlot, weapon);
-                    AddWeaponToUISlot(weapon);
+                    weapon.LoadWeaponObject(); 
+                    loadedweapons.Add(weapon);
                 } 
+            if(loadedweapons.FirstOrDefault(x => x.WeaponUI.InventorySlot >= 2) != null)
+            {
+                for(int i = 0; i < loadedweapons.Count; i++)
+                    loadedweapons[i].WeaponUI.InventorySlot = i;
+            }
+
+            if(loadedweapons.Count > 0)
+            { 
+                foreach (Weapon w in loadedweapons)
+                { 
+                    w.Initialize();
+                    AddToInventory(w.WeaponUI.InventorySlot, w);
+                    AddWeaponToUISlot(w); 
+                }
+                  
+            }
 
         } 
         public void PerformAttack() => currentWeapon?.PerformAttack();
-        public void PerformRelease() => currentWeapon?.ReleaseShot(); 
-        public void PerformSpecial(PlayerSpecial special) => currentWeapon?.PerformSpecial(special);
+        public void PerformRelease() => currentWeapon?.ReleaseShot();  
         
         #endregion
     }

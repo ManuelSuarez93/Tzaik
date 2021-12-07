@@ -60,27 +60,16 @@ namespace Tzaik.Player
 
             playerControls.Player.Shoot.Enable();
             playerControls.Player.Shoot.performed += PerformAttack;
-            playerControls.Player.Shoot.canceled += PerformRelease;
-
-            playerControls.Player.Special.Enable();
-            playerControls.Player.Special.performed += PerformSpecial; 
-
+            playerControls.Player.Shoot.canceled += PerformRelease; 
             playerControls.Player.Escape.Enable();
             playerControls.Player.Escape.performed += Escape_performed;
             playerControls.UI.Exit.Enable();
-            playerControls.UI.Exit.performed += Escape_performed;
-
-            playerControls.Player.Crouch.Enable();
-            playerControls.Player.Crouch.performed += CrouchPerformed;
-            playerControls.Player.Crouch.canceled += CrouchCanceled;
-
+            playerControls.UI.Exit.performed += Escape_performed; 
             playerControls.Player.Sprint.Enable();
             playerControls.Player.Sprint.performed += SprintPerformed;
-            playerControls.Player.Sprint.canceled += SprintCanceled;
-
+            playerControls.Player.Sprint.canceled += SprintCanceled; 
             PlayerControls.Player.SwitchWeapon.Enable();
-            PlayerControls.Player.SwitchWeapon.performed += SwitchWeaponPerformed;
-
+            PlayerControls.Player.SwitchWeapon.performed += SwitchWeaponPerformed; 
             PlayerControls.Player.Weapon1.Enable();
             PlayerControls.Player.Weapon1.performed += Weapon1Performed;
             PlayerControls.Player.Weapon2.Enable();
@@ -124,9 +113,7 @@ namespace Tzaik.Player
         private static void PerformAttack(InputAction.CallbackContext obj)
            => playerController.Inventory.PerformAttack(); 
         private static void PerformRelease(InputAction.CallbackContext obj)
-            => playerController.Inventory.PerformRelease();
-        private static void PerformSpecial(InputAction.CallbackContext obj) 
-            => playerController.Inventory.PerformSpecial(playerController.Special);
+            => playerController.Inventory.PerformRelease(); 
 
         private static void DashingCanceled(InputAction.CallbackContext obj)
             => IsDashing = false;
@@ -147,11 +134,7 @@ namespace Tzaik.Player
             IsJumping = false;
             Debug.Log("JUMP CANCELLED;");
         }
-
-        private static void CrouchPerformed(InputAction.CallbackContext obj)
-            => IsCrouching = true;
-        private static void CrouchCanceled(InputAction.CallbackContext obj)
-            => IsCrouching = false;
+ 
         private static void Interact(InputAction.CallbackContext obj)
             => playerController.Interact.Interact(playerController.Checks.GetInteractable()); 
         private static void SwitchWeaponPerformed(InputAction.CallbackContext obj)

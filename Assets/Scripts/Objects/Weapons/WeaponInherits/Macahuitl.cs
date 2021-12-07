@@ -21,6 +21,7 @@ namespace Tzaik.Items.Weapons
         {
             if (AttackConidition)
             {  
+                attackEvent.Invoke();
                 animator.SetFloat("Attack", Random.Range(1, 3));
                 animator.SetTrigger("AttackTrigger"); 
                 rate = 0;
@@ -32,11 +33,10 @@ namespace Tzaik.Items.Weapons
             foreach (var e in enemy)
                 if (damageTags.Contains(e.tag))
                 { 
+                    hitEvent.Invoke();
                     e.GetComponent<HealthScript>().Damage(attack.BaseDamage + attack.AdditionalDamage);  
                     e.GetComponent<Rigidbody>().AddForce(transform.forward * (attack.BaseForce + attack.AdditionalForce), ForceMode.Impulse);
-                }
-
-            attackEvent.Invoke();
+                } 
         } 
 
         public void InstantiateWave()

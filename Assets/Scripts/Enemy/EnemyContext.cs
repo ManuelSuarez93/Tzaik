@@ -25,8 +25,7 @@ namespace Tzaik.Enemy
         [SerializeField] GameObject sounds;
         [SerializeField] bool doBehaviorTree; 
         [SerializeField] UnityEvent stunEvent;
-        [SerializeField] UnityEvent stunExitEvent;
-        [SerializeField] LookAtIK lookAtIk;
+        [SerializeField] UnityEvent stunExitEvent; 
 
         public Blackboard blackboard = new Blackboard();
         EnemyDetect detect; 
@@ -55,9 +54,7 @@ namespace Tzaik.Enemy
             enemyAnimator.SetAnimator(GetComponentInChildren<Animator>());
 
             attack.PlayerRigidbody = GameManager.Instance.Player.GetComponent<Rigidbody>();
-            attack.PlayerHealthScript = GameManager.Instance.Player.GetComponent<PlayerController>().Health;
-            if (lookAtIk != null)
-                lookAtIk.solver.target = GameManager.Instance.Player.transform;
+            attack.PlayerHealthScript = GameManager.Instance.Player.GetComponent<PlayerController>().Health; 
             if (enemyAnimator != null)
                 attack.SetAnimator(enemyAnimator);
             if(detect != null)

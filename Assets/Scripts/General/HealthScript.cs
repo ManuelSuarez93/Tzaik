@@ -27,7 +27,7 @@ namespace Tzaik.General
         [SerializeField] Renderer renderer;
         [SerializeField] [GradientUsage(true)] Gradient gradient;
         [SerializeField] float outlineThicknessOnLook;
-        [SerializeField] float outlineThicknessNormal;
+        [SerializeField] float outlineThicknessNormal; 
         [SerializeField] List<GameObject> objectToInstance;
 
         [System.Serializable]
@@ -56,7 +56,7 @@ namespace Tzaik.General
 
         #region Unity Methods
         private void Start()
-        {
+        {  
             currentCooldown = cooldownTime;
             CurrentHealth = MaxHealth;
             isDead = false;
@@ -106,7 +106,7 @@ namespace Tzaik.General
             if (CurrentHealth + h <= MaxHealth)
             {
                 healEvent.Invoke(MaxHealth/CurrentHealth);
-                CurrentHealth++; return true;
+                CurrentHealth += h; return true;
             }
             else return false;
         }
@@ -169,6 +169,18 @@ namespace Tzaik.General
         }
 
         public void Instantiate(int id) => Instantiate(objectToInstance[id], transform.position, Quaternion.identity);
+        public void InstatiateDroppables()
+        {
+            foreach (GameObject go in objectToInstance)
+                Instantiate(go, DroppablePosition(), Quaternion.identity);
+        }
+
+        private Vector3 DroppablePosition()
+        {
+            var newPos = transform.position + Random.insideUnitSphere * 3f;
+            return new Vector3(newPos.x, transform.position.y, newPos.z);
+        }
+
         public void RemoveHealth(float h)
             => CurrentHealth -= h;
         public bool HealthCooldownCheck() 

@@ -390,13 +390,15 @@ MonoBehaviour:
   - {fileID: 8246236707438921204, guid: d5f0d5cd82343ca45ba65a67df1a0394, type: 3}
   - {fileID: 8021199650328162847, guid: 2e34fae6786caba459b7d51d9bad40b6, type: 3}
   isStopped: 0
-  precisionDamage: 1
+  precisionDamage: 0
   enemyTag:
   - Enemy/Bone
   - Enemy
   moveByRigidobdy: 0
   rigid: {fileID: 0}
   forceImpactAmount: 50
+  gravityApplied: 0
+  slowDownRate: 0
 --- !u!136 &2468017990110322849
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -405,7 +407,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6075855846259887387}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 1.15

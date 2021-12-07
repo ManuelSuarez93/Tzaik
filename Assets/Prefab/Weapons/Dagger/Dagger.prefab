@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ef242dc0c581d5469d9b702eb7b5266, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootRate: 0.25
+  shootRate: 0.1
   isRanged: 0
   attackEvent:
     m_PersistentCalls:
@@ -198,7 +198,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  specialAttackEvent:
+  hitEvent:
     m_PersistentCalls:
       m_Calls: []
   animator: {fileID: 6135193311687235167}
@@ -212,7 +212,7 @@ MonoBehaviour:
     projectile: {fileID: 0}
     specialProjectile: {fileID: 0}
     shootOrigin: {fileID: 8567658762454842993}
-    baseDamage: 1
+    baseDamage: 3
     baseSpeed: 1
     baseForce: 0
     projectileAmount: 1
@@ -237,8 +237,6 @@ MonoBehaviour:
     movement: {x: -1, y: 0, z: 1}
     moveIntensity: 0.25
     moveTime: 0.25
-  specialTime: 0
-  specialCost: 0
   attackAreaSize: 3
   damageTags:
   - Enemy
@@ -353,7 +351,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: ec823d937461ff04bbc2c119b6847dfe, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fc18c6d24983e324499bdc19e080bf9f, type: 2}
+      objectReference: {fileID: 2100000, guid: 5c648db709a80b448bca2a4f07d9b5a8, type: 2}
     - target: {fileID: -5754084199372789682, guid: ec823d937461ff04bbc2c119b6847dfe, type: 3}
       propertyPath: m_Mesh
       value: 

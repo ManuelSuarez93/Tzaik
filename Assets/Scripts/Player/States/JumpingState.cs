@@ -17,16 +17,12 @@ namespace Tzaik.Player
         }
         public override void Conditions()
         { 
-            //if (context.Checks.CanWallRunLeft() && InputManager.IsLeft)
-            //    context.CurrentState.ChangeState(new WallRunState(context, false));
-            //else if (context.Checks.CanWallRunRight() && InputManager.IsRight)
-            //    context.CurrentState.ChangeState(new WallRunState(context, true));
+            if (context.Checks.CanWallRunLeft() && InputManager.IsLeft)
+               context.CurrentState.ChangeState(new WallRunState(context, false));
+            else if (context.Checks.CanWallRunRight() && InputManager.IsRight)
+               context.CurrentState.ChangeState(new WallRunState(context, true));
             if (context.Rigidbody.velocity.y < context.Jump.JumpHeight || !context.Checks.IsGrounded())
-                context.CurrentState.ChangeState(new FallingState(context, context.Movement.Speed));
-            else if (InputManager.IsDashing && InputManager.IsLeft)
-                context.CurrentState.ChangeState(new DashingState(context, false));
-            else if (InputManager.IsDashing && InputManager.IsRight)
-                context.CurrentState.ChangeState(new DashingState(context, true)); 
+                context.CurrentState.ChangeState(new FallingState(context, context.Movement.Speed)); 
             else if (context.Health.Damaged)
                 context.CurrentState.ChangeState(new HurtState(context));
         }

@@ -559,7 +559,7 @@ AnimationClip:
   - time: 0.25
     functionName: DoSpecial
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 11500000, guid: 94011ede3054635419f588749c04bd22, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

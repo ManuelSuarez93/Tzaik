@@ -26,18 +26,13 @@ namespace Tzaik.Player
             {
                 context.Jump.ResetJump();
                 context.CurrentState.ChangeState(new IdleState(context));
-            } 
-
-            else if (InputManager.IsDashing && InputManager.IsLeft)
-                context.CurrentState.ChangeState(new DashingState(context, false));
-            else if (InputManager.IsDashing && InputManager.IsRight)
-                context.CurrentState.ChangeState(new DashingState(context, true));
+            }  
             else if (InputManager.IsJumping)
                 context.CurrentState.ChangeState(new JumpingState(context, context.Movement.Speed));
-            //else if (context.Checks.CanWallRunLeft() && InputManager.IsLeft)
-            //    context.CurrentState.ChangeState(new WallRunState(context, false));
-            //else if (context.Checks.CanWallRunRight() && InputManager.IsRight)
-            //    context.CurrentState.ChangeState(new WallRunState(context, true));
+            else if (context.Checks.CanWallRunLeft() && InputManager.IsLeft)
+               context.CurrentState.ChangeState(new WallRunState(context, false));
+            else if (context.Checks.CanWallRunRight() && InputManager.IsRight)
+               context.CurrentState.ChangeState(new WallRunState(context, true));
         }
     }
 }

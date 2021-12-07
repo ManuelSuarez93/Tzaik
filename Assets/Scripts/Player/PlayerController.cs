@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using Tzaik.Player.Cameras;
 using Tzaik.Audio;
 using System.Collections;
@@ -49,8 +49,7 @@ namespace Tzaik.Player
         public PlayerMouseLook MouseLook => mouseLook;
         public PlayerSliding Sliding => sliding;
         public PlayerChecks Checks => checks; 
-        public HeadBobbing HeadBob => headBob;
-        public PlayerCrouch Crouch => crouch;
+        public HeadBobbing HeadBob => headBob; 
         public PlayerInventory Inventory => inventory;
         public PlayerInteract Interact => interact;
         public PlayerSpecial Special => special;
@@ -98,7 +97,6 @@ namespace Tzaik.Player
             StopAllCoroutines();
             StartCoroutine(routine);
         }
-
         public IEnumerator CanInteract()
         {
             while (true)

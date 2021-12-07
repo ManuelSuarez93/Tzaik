@@ -19,16 +19,14 @@ namespace Tzaik.Items.Weapons
         #region Fields
         [SerializeField] GameObject shopUI;
         [SerializeField] PlayerInventory inventory;
-        [SerializeField] Weapon weapon;
-        [SerializeField] List<UpgradeUI> upgradeUIs;
+        [SerializeField] Weapon weapon; 
         [SerializeField] int selectedSlot;
         [SerializeField] UpgradeButton addButton;
         [SerializeField] UpgradeButton removeButton;
         [SerializeField] UpgradeWeaponSlotButton selectButton;
         [SerializeField] WeaponModelsUI modelsUI;
         [SerializeField] TextMesh slotSelectorText;
-        [SerializeField] TextMesh weaponDescription;
-        [SerializeField] UpgradeText upgradeText;
+        [SerializeField] TextMesh weaponDescription; 
 
         [SerializeField] UnityEvent enableEvent;
         [SerializeField] UnityEvent disableEvent;
@@ -49,9 +47,7 @@ namespace Tzaik.Items.Weapons
                 weapon = Instantiate(weapon);
                 weapon.Initialize();
                 weapon.gameObject.SetActive(false);
-            }
-
-            coins = GameManager.Instance.Player.GetComponent<PlayerCoins>();
+            } 
             inventory = GameManager.Instance.Player.GetComponent<PlayerController>().Inventory;
             shopEnabled = false;
             EnableShop(shopEnabled); 
@@ -80,33 +76,8 @@ namespace Tzaik.Items.Weapons
             else
                 slotSelectorText.text = $"{selectedSlot} is occupied"; 
         }
-
-        public void ApplyWeaponUpgrade(int UpgradeType)
-        {
-            if (weapon.CheckAndPerformUpgrade(UpgradeType, coins) != "")
-            {
-                if ((UpgradeType)UpgradeType == Weapons.UpgradeType.StandardUpgrade1)
-                    upgradeText.UpgradeText1 = "Not enough coins";
-                if ((UpgradeType)UpgradeType == Weapons.UpgradeType.StandardUpgrade2)
-                    upgradeText.UpgradeText2 = "Not enough coins";
-                if ((UpgradeType)UpgradeType == Weapons.UpgradeType.SpecialUpgrade)
-                    upgradeText.SpecialUpgradeText = "Not enough coins";
-            }
-            else
-            {  
-                ApplyUIUpgrade((UpgradeType)UpgradeType);
-                SetWeaponDescription();
-            }
-        }
-
-        private void ApplyUIUpgrade(UpgradeType type,bool setMaxLevel = true)
-        { 
-            upgradeUIs.FirstOrDefault(x => x.UpgradeType == type).
-                ChangeColorToLevel (weapon.Upgrades.UpgradesLevel[type]);
-
-            upgradeUIs.FirstOrDefault(x => x.UpgradeType == type).
-                SetInteractable(weapon.Upgrades.ReachedMaxLevel(type)); 
-        }
+ 
+ 
 
         public void SaveWeapon()
             => weapon.SaveWeaponObject();
@@ -118,9 +89,7 @@ namespace Tzaik.Items.Weapons
         public void DoInteraction()
         {
             shopEnabled = !shopEnabled;
-            EnableShop(shopEnabled);
-
-            SetUIUpgrades();
+            EnableShop(shopEnabled); 
             SetUIButtonOnClickEvent();
             SetWeaponDescription();
             InputManager.ShowMouse(shopEnabled);
@@ -141,33 +110,14 @@ namespace Tzaik.Items.Weapons
                "Max ammo = N/A";
             weaponDescription.text += weapon.WeaponAttack.Projectile != null ?
                 $"Projectile speed = {weapon.WeaponAttack.BaseSpeed + weapon.WeaponAttack.AdditionalForce}\n" : 
-                "Projectile speed = N/A";
-
-
-            upgradeText.UpgradeText1 = weapon.Upgrades.UpgradeText1;
-            upgradeText.UpgradeText2 = weapon.Upgrades.UpgradeText2; 
-            upgradeText.SpecialUpgradeText = weapon.Upgrades.SpecialUpgradeText;
+                "Projectile speed = N/A"; 
         }
-
-        private void SetUIUpgrades()
-        {
-            if (shopEnabled)
-                foreach (UpgradeType type in Enum.GetValues(typeof(UpgradeType)))
-                    ApplyUIUpgrade(type, false);
-            else
-                foreach (UpgradeUI ui in upgradeUIs)
-                    ui.ResetButtons();
-        }
+ 
 
         private void SetUIButtonOnClickEvent()
         {
             if(shopEnabled)
-            {
-                foreach (UpgradeType type in Enum.GetValues(typeof(UpgradeType)))
-                    upgradeUIs.FirstOrDefault(x => x.UpgradeType == type).
-                        UpgradeBtn.
-                        ClickEvent.AddListener(() => ApplyWeaponUpgrade((int)type));
-
+            {  
                 addButton.ClickEvent.AddListener(() => AddWeaponInShopToInventory());
                 removeButton.ClickEvent.AddListener(() => RemoveFromInventory()); 
                 selectButton.SetSlotEvent.AddListener(() => SetSlot(selectButton.CurrentSlot));
@@ -175,12 +125,7 @@ namespace Tzaik.Items.Weapons
                 modelsUI.SetWeaponModel(weapon.Type);
             }
             else
-            {
-                foreach (UpgradeType type in Enum.GetValues(typeof(UpgradeType)))
-                    upgradeUIs.FirstOrDefault(x => x.UpgradeType == type).
-                        UpgradeBtn.
-                        ClickEvent.RemoveAllListeners();
-
+            {  
                 addButton.ClickEvent.RemoveAllListeners();
                 removeButton.ClickEvent.RemoveAllListeners();
             }

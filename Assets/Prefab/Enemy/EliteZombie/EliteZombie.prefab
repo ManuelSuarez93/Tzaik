@@ -175,7 +175,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 082206cabb99e1640b240948dea3e450, type: 3}
+  - {fileID: 2100000, guid: c17d184161170f24da7a546582206a38, type: 2}
   - {fileID: 6271573414225017425, guid: 082206cabb99e1640b240948dea3e450, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -835,7 +835,6 @@ MonoBehaviour:
   stunExitEvent:
     m_PersistentCalls:
       m_Calls: []
-  lookAtIk: {fileID: 0}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -974,6 +973,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 3697907301472750849}
+        m_TargetAssemblyTypeName: Tzaik.General.HealthScript, Assembly-CSharp
+        m_MethodName: InstatiateDroppables
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   damagedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -993,8 +1004,8 @@ MonoBehaviour:
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
+    key0: {r: 0.040607214, g: 1, b: 0, a: 0.29411766}
+    key1: {r: 1, g: 0, b: 0, a: 0.49019608}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1020,11 +1031,11 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  outlineThicknessOnLook: 0
-  outlineThicknessNormal: 0
+  outlineThicknessOnLook: 0.06
+  outlineThicknessNormal: 0.01
   objectToInstance:
-  - {fileID: 4685167752482362737, guid: 15e571718a0b76a4992913845a09b303, type: 3}
   - {fileID: 1596019652509256615, guid: 1f7ed5af5814ad2428cae85dddb2051d, type: 3}
+  - {fileID: 4685167752482362737, guid: 15e571718a0b76a4992913845a09b303, type: 3}
   Damaged: 0
   MaxHealth: 10
 --- !u!114 &6814537420373844369
@@ -1137,6 +1148,7 @@ MonoBehaviour:
   meleeAttackForce: 0
   isRanged: 0
   speed: 0
+  lookAtHeight: 4
   shootPoint: {fileID: 0}
   projectile: {fileID: 2287872489135306608, guid: 0a057b02d48ea3941918b913221be364, type: 3}
   isMultipleProjectile: 0

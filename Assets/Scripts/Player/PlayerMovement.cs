@@ -38,7 +38,7 @@ namespace Tzaik.Player
             rigid.velocity = Sideways + Forwards + downwards;
         }
 
-        public void Gravity() => rigid.AddForce(Vector3.up * gravity);
+        public void Gravity() => rigid.AddForce(Vector3.up * gravity, ForceMode.Acceleration);
 
         #endregion
     }

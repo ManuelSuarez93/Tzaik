@@ -15,7 +15,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 8b9ef4e9f6d63e94bb75fc9b581fc674
-  position: {x: 1317.7755, y: 894.5209}
+  position: {x: 1113, y: 909}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 338fdb9ac05b44c418ef045699e6c6ba
-  position: {x: 365, y: 1847}
+  position: {x: 35.21581, y: 1489.9999}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -64,7 +64,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 5d1ea89d4e896184083ad13ddf9f1e09
-  position: {x: -395, y: 1124}
+  position: {x: -154.65944, y: 1124}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 482099c595083324dbe1856b058611ae
-  position: {x: 70.98004, y: 1341.9999}
+  position: {x: 158.21574, y: 1282}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -99,33 +99,8 @@ MonoBehaviour:
     Context: {fileID: 0}
   isStunned: 0
   childNodes:
-  - {fileID: -2969614589412849968}
+  - {fileID: 2435010432436159422}
   - {fileID: 9034306589478446184}
---- !u!114 &-5703031709051526426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d162c5f78989aa74382d680ad099dffc, type: 3}
-  m_Name: CanMeleeAttack
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 9e7535ac0eb0e3e439daeb875c8b5a1e
-  position: {x: -130.00008, y: 1585.9998}
-  blackboard:
-    currentDetectState: 0
-    currentHealth: 0
-    currentPosition: {x: 0, y: 0, z: 0}
-    nextPosition: {x: 0, y: 0, z: 0}
-    isStunned: 0
-    Context: {fileID: 0}
-  isStunned: 0
-  childNode: {fileID: 1652134827945942036}
 --- !u!114 &-4810152210574421725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,7 +116,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 05565938482ae594d881489b94bbe1e2
-  position: {x: -320.26825, y: 890.99994}
+  position: {x: -181.65947, y: 891}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -166,7 +141,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: d0996fc333fb8e3448d9c735065fbeec
-  position: {x: -395.00018, y: 1014}
+  position: {x: -217.65945, y: 1014}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -218,7 +193,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 7159822c129854e45a72eab58f958e13
-  position: {x: 1037, y: 1070.482}
+  position: {x: 867, y: 1161}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -271,7 +246,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: aac2f0efe0385384e9c3a5fd05bedf40
-  position: {x: 770.26843, y: 1238}
+  position: {x: 663.99994, y: 1161}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -295,7 +270,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 3298bdf75ffb5df41bc6af5553e7ca4d
-  position: {x: -176.09747, y: 1450.0002}
+  position: {x: 335.99997, y: 1586}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -304,7 +279,7 @@ MonoBehaviour:
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
-  childNode: {fileID: -5703031709051526426}
+  childNode: {fileID: 1652134827945942036}
 --- !u!114 &-1714255863951450342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +295,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 7c9991f56074d2b4da5735a6a0c085e8
-  position: {x: -561.75006, y: 1124.0001}
+  position: {x: -304.6594, y: 1124}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -371,8 +346,6 @@ MonoBehaviour:
   - {fileID: 3918323149104985141}
   - {fileID: -3151983290443026283}
   - {fileID: 4849483018009017676}
-  - {fileID: -5703031709051526426}
-  - {fileID: 2873926755524894430}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -395,7 +368,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: a1b151b7f55170b4f8da19ef85dd52d9
-  position: {x: 1058.7754, y: 894.5209}
+  position: {x: 867.29474, y: 909}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -420,7 +393,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: e93c14e308a67a942a3177b0bcee3012
-  position: {x: -151, y: 1742}
+  position: {x: 366.06165, y: 1685.1869}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -444,32 +417,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 6087fe60d0f29c548922f395927f0644
-  position: {x: 525.35187, y: 1238}
-  blackboard:
-    currentDetectState: 0
-    currentHealth: 0
-    currentPosition: {x: 0, y: 0, z: 0}
-    nextPosition: {x: 0, y: 0, z: 0}
-    isStunned: 0
-    Context: {fileID: 0}
-  isStunned: 0
-  childNode: {fileID: 3918323149104985141}
---- !u!114 &2873926755524894430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9122d00f7870fa47afda50cad7a0501, type: 3}
-  m_Name: CanRangeAttack
-  m_EditorClassIdentifier: 
-  state: 0
-  started: 0
-  guid: 4c2dc66557fa6f74891253f8e526815e
-  position: {x: 365, y: 1717}
+  position: {x: 47.215755, y: 1398}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -494,7 +442,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 34f8c8cd4f0f5574eb7f8ec555a6b345
-  position: {x: 71.000015, y: 1238}
+  position: {x: 482.5, y: 1161}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -503,7 +451,7 @@ MonoBehaviour:
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
-  childNode: {fileID: -6075833290601367603}
+  childNode: {fileID: 3918323149104985141}
 --- !u!114 &3845483174781261517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,8 +477,8 @@ MonoBehaviour:
     Context: {fileID: 0}
   isStunned: 0
   childNodes:
+  - {fileID: 8785810890809832847}
   - {fileID: 3731867996696679887}
-  - {fileID: 2435010432436159422}
   - {fileID: -3151983290443026283}
 --- !u!114 &3918323149104985141
 MonoBehaviour:
@@ -583,7 +531,7 @@ MonoBehaviour:
     Context: {fileID: 0}
   isStunned: 0
   childNodes:
-  - {fileID: 8785810890809832847}
+  - {fileID: -2969614589412849968}
   - {fileID: 6000331103983885720}
 --- !u!114 &5206616853479569755
 MonoBehaviour:
@@ -625,7 +573,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: 5f5522bf5211a5748876c014019f7797
-  position: {x: 603.9002, y: 1586.0001}
+  position: {x: 594, y: 1586}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -674,7 +622,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: ddea29851fc238348a6e0ba38ea6bbf2
-  position: {x: 303.00003, y: 1586.0001}
+  position: {x: 158.21574, y: 1161}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -683,7 +631,7 @@ MonoBehaviour:
     isStunned: 0
     Context: {fileID: 0}
   isStunned: 0
-  childNode: {fileID: 2873926755524894430}
+  childNode: {fileID: -6075833290601367603}
 --- !u!114 &9034306589478446184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,7 +647,7 @@ MonoBehaviour:
   state: 0
   started: 0
   guid: e4a7d8ab01e5bd84c8438307d7f1117d
-  position: {x: 94.98013, y: 1449.9999}
+  position: {x: 215, y: 1398}
   blackboard:
     currentDetectState: 0
     currentHealth: 0

@@ -458,7 +458,6 @@ MonoBehaviour:
   stunExitEvent:
     m_PersistentCalls:
       m_Calls: []
-  lookAtIk: {fileID: 0}
   blackboard:
     currentDetectState: 4
     currentHealth: 12
@@ -631,8 +630,8 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  outlineThicknessOnLook: 0
-  outlineThicknessNormal: 0
+  outlineThicknessOnLook: 0.06
+  outlineThicknessNormal: 0.01
   objectToInstance: []
   Damaged: 0
   MaxHealth: 12
@@ -687,6 +686,7 @@ MonoBehaviour:
   meleeAttackForce: 25
   isRanged: 1
   speed: 20
+  lookAtHeight: 4
   shootPoint: {fileID: 3671029076876701231}
   projectile: {fileID: 1112449278758036996, guid: 8ac08c809ea59d44c8d5258aa521fc41, type: 3}
   isMultipleProjectile: 0

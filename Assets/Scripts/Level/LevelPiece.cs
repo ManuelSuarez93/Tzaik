@@ -18,9 +18,7 @@ namespace Tzaik.Level
 
         #region Properties
         public List<Transform> Connectors => connectors; 
-        public List<Transform> EnemySpawnPoints => enemySpawnPoints;
-        public List<Transform> ItemSpawnPoints => itemSpawnPoints;
-        public List<Transform> CoinSpawnPoints => coinSpawnPoints;
+        public List<Transform> EnemySpawnPoints => enemySpawnPoints; 
         public List<Transform> DecorationSpawnPoints => decorationSpawnPoints;
         public List<Transform> TrapSpawnPoints => trapSpawnPoints;
         public BoxCollider Collider => collider; 

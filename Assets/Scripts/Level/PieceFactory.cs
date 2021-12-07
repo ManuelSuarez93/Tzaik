@@ -7,20 +7,14 @@ namespace Tzaik.Level
     public class PieceFactory : MonoBehaviour
     {
         #region Fields
-        [SerializeField] PrefabPool itemPool;
         [SerializeField] PrefabPool enemyPool;
-        [SerializeField] PrefabPool coinPool;
         [SerializeField] PrefabPool decorationPool;
-        [SerializeField] PrefabPool trapPool;
         
         #endregion
 
-        #region Properties
-        public PrefabPool ItemPool => itemPool;
-        public PrefabPool EnemyPool => enemyPool;
-        public PrefabPool CoinPool => coinPool; 
-        public PrefabPool DecorationPool => decorationPool;
-        public PrefabPool TrapPool => trapPool;
+        #region Properties 
+        public PrefabPool EnemyPool => enemyPool; 
+        public PrefabPool DecorationPool => decorationPool; 
         #endregion  
 
         #region Methods

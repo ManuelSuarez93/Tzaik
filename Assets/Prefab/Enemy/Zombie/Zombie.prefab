@@ -5330,7 +5330,6 @@ MonoBehaviour:
   stunExitEvent:
     m_PersistentCalls:
       m_Calls: []
-  lookAtIk: {fileID: 1995234355, guid: 262e4c2cf8f7a764b84597f49d00bd30, type: 3}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -5474,6 +5473,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 5247067949669947651}
+        m_TargetAssemblyTypeName: Tzaik.General.HealthScript, Assembly-CSharp
+        m_MethodName: InstatiateDroppables
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8184094610108912246}
+        m_TargetAssemblyTypeName: RootMotion.Dynamics.PuppetMaster, Assembly-CSharp-firstpass
+        m_MethodName: Kill
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   damagedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -5493,8 +5516,8 @@ MonoBehaviour:
   renderer: {fileID: 9030517141113260888}
   gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
+    key0: {r: 0.040607214, g: 1, b: 0, a: 0.29411766}
+    key1: {r: 1, g: 0, b: 0, a: 0.49019608}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -5520,9 +5543,11 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  outlineThicknessOnLook: 0
-  outlineThicknessNormal: 0
-  objectToInstance: []
+  outlineThicknessOnLook: 0.06
+  outlineThicknessNormal: 0.01
+  objectToInstance:
+  - {fileID: 1596019652509256615, guid: 1f7ed5af5814ad2428cae85dddb2051d, type: 3}
+  - {fileID: 4685167752482362737, guid: 15e571718a0b76a4992913845a09b303, type: 3}
   Damaged: 0
   MaxHealth: 10
 --- !u!114 &883694516798782320
@@ -5556,6 +5581,7 @@ MonoBehaviour:
   meleeAttackForce: 500
   isRanged: 0
   speed: 0
+  lookAtHeight: 4
   shootPoint: {fileID: 0}
   projectile: {fileID: 0}
   isMultipleProjectile: 0

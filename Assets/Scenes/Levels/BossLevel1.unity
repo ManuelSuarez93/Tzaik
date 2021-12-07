@@ -13384,6 +13384,14 @@ PrefabInstance:
       propertyPath: meleeAttackForce
       value: 2500
       objectReference: {fileID: 0}
+    - target: {fileID: 391443695763289100, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
+      propertyPath: meleeAttackCooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 391443695763289100, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
+      propertyPath: rangedAttackCooldown
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7055678417254675091, guid: e3410f3583a315f41a5910241177dc5f, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -15777,9 +15785,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1097587319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8b28c9add78c764185f12a419428671, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e68e53ad88aa354ab1b302a119882ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: {fileID: 721144208}
+  img: {fileID: 296886060}
 --- !u!114 &1097587322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19003,6 +19013,14 @@ PrefabInstance:
     - target: {fileID: 6129096974592853177, guid: 16c8fb57e959e5b40b5c8bf7dc30b4b2, type: 3}
       propertyPath: m_Name
       value: PlayerObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6129096974869124632, guid: 16c8fb57e959e5b40b5c8bf7dc30b4b2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 895738235}
+    - target: {fileID: 6129096974869124632, guid: 16c8fb57e959e5b40b5c8bf7dc30b4b2, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Save
       objectReference: {fileID: 0}
     - target: {fileID: 6129096975749471559, guid: 16c8fb57e959e5b40b5c8bf7dc30b4b2, type: 3}
       propertyPath: stunTime

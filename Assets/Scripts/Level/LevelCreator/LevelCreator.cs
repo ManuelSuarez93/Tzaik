@@ -21,8 +21,7 @@ namespace Tzaik.Level
         [SerializeField] int maxPiecesPerPath;
         [SerializeField] int maxPathNumber;
         [SerializeField] int maxItemsPerRoom;
-        [SerializeField] int maxEnemiesPerRoom;
-        [SerializeField] int maxCoinsPerRoom;
+        [SerializeField] int maxEnemiesPerRoom; 
         [SerializeField] int maxDecorationsPerRoom;
         [SerializeField] int maxTrapsPerRoom;
         [SerializeField] PieceFactory factory;

@@ -172,6 +172,11 @@ namespace Tzaik.General
             
             SaveManager.Save(save, $"Player");
         }  
+
+        public void SetMouseSensitivity(float x)
+        {
+            Player.GetComponent<PlayerController>().MouseLook.SetSensitivity(x);
+        }
         public void Load(bool goToLevel)
         { 
             if(goToLevel) LoadScene("StartingHub");

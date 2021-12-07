@@ -5,8 +5,7 @@ namespace Tzaik.SaveSystem
 {
     public class SaveWeaponObject
     {
-        public string name;
-        public Dictionary<UpgradeType, int> upgradesLevel;
+        public string name; 
         public int slot;
     }
  

@@ -13,8 +13,9 @@ namespace Tzaik
         [SerializeField] string triggerName;
         float traptimer;
         void Start() => traptimer = Time.time;
-         
-        void Update()
+        
+
+        public void SetTrigger()
         {
             if (traptimer + trapCooldown <= Time.time)
             {

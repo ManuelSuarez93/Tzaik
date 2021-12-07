@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
+  m_Shader: {fileID: 4800000, guid: 9c489164c87123b4db23de8938d36698, type: 3}
+  m_ShaderKeywords: ENABLEDITHER_ON ENABLEFRESNEL_OFF ENABLEOUTLINE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -35,16 +35,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DitherPattern:
+        m_Texture: {fileID: 2800000, guid: 0366b4b0663ef124f8dbdf6da80b327d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 39208a2aa502f834b950e2a1d89d47cc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 80378e754423c3a4abd8b0b0ede858a6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -57,23 +65,45 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - ENABLEDITHER: 1
+    - ENABLEFRESNEL: 0
+    - ENABLEOUTLINE: 1
+    - _Amplitude: 0.4
+    - _AnimationSpeed: 1
     - _BumpScale: 1
+    - _CellSize: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Frequency: 2
+    - _FresnelExponent: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _OutlineThickness: 0.005
     - _Parallax: 0.02
+    - _Persistance: 0.4
+    - _Roughness: 3
+    - _ScrollSpeed: 1
     - _SmoothnessTextureChannel: 0
+    - _SpecularFalloff: 1
     - _SpecularHighlights: 1
+    - _SpecularSize: 0.1
     - _SrcBlend: 1
+    - _StepAmount: 2
+    - _StepWidth: 0.25
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DitherColor: {r: 0.7075472, g: 0.6703584, b: 0, a: 1}
+    - _Emission: {r: 0.0018382353, g: 0.0018382353, b: 0.0018382353, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShadowTint: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
+    - _Specular: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

@@ -133,8 +133,6 @@ MonoBehaviour:
     movement: {x: 0, y: 0, z: 0}
     moveIntensity: 0
     moveTime: 0
-  specialTime: 5
-  specialCost: 50
   additionalSpeed: 100
   additionalDamage: 3
   maxHoldShot: 1
@@ -265,27 +263,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
-      propertyPath: m_LocalRotation.y
       value: 0.9914449
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.13052624
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.13052616
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 15
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ce7a45669b7f1574dbc9c6184610c540, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z

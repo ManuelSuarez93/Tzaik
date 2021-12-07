@@ -58,7 +58,11 @@ namespace Tzaik.Player.Cameras
             if (!IsWallRun && !IsSliding)
                 sideways.SidewaysLeft(ref zRotation, zRotationMax, sidewaysRate);
         }
-
+        public void SetSensitivity(float x)
+        {
+            sensitivityXAxis = x;
+            sensitivityYAxis = x;
+        }
         public void CenterCamera() => sideways.CenterCamera(ref zRotation, sidewaysRate);
 
         public void InputSidewaysLeft() => sideways.SidewaysRight(ref zRotation, zRotationMax, sidewaysRate); 

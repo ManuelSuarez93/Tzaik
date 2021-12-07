@@ -35,7 +35,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: LaserMaterial2
   m_Shader: {fileID: 4800000, guid: 9c489164c87123b4db23de8938d36698, type: 3}
-  m_ShaderKeywords: ENABLEDITHER_OFF ENABLEFRESNEL_ON ENABLEOUTLINE_OFF _EMISSION
+  m_ShaderKeywords: ENABLEDITHER_OFF ENABLEFRESNEL_OFF ENABLEOUTLINE_ON _EMISSION
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -130,6 +130,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -189,8 +193,8 @@ Material:
     m_Ints: []
     m_Floats:
     - ENABLEDITHER: 0
-    - ENABLEFRESNEL: 1
-    - ENABLEOUTLINE: 0
+    - ENABLEFRESNEL: 0
+    - ENABLEOUTLINE: 1
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -334,14 +338,14 @@ Material:
     - _DiffusionProfileAsset: {r: 0, g: 0, b: 0, a: 0}
     - _DitherColor: {r: 0, g: 0, b: 0, a: 1}
     - _DoubleSidedConstants: {r: 1, g: 1, b: -1, a: 0}
-    - _Emission: {r: 0, g: 0, b: 0, a: 1}
+    - _Emission: {r: 0.3018868, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 4.0156865, g: 0, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 0, b: 0, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
     - _ShadowTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Specular: {r: 1, g: 1, b: 1, a: 1}

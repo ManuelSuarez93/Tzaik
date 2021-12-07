@@ -45,13 +45,7 @@ namespace Tzaik.Level
                 yield return null;
             }
             SetEndPiece();
-            UIManager.Instance.LoadingBar.fillAmount = 0.75f; 
-
-            //foreach (LevelPiece p in totalPieces)
-            //{
-            //    p.NavMeshSurface.BuildNavMesh();
-            //    yield return null;
-            //}
+            UIManager.Instance.LoadingBar.fillAmount = 0.75f;  
 
             AddElementsToPieces();
             DestroyPieces();
@@ -86,7 +80,10 @@ namespace Tzaik.Level
             SetCurrentType();
             SetRemainingConnectorList(TotalRemainingConnectors);
             SetCurrentConnector(currentRemainingConnectors); 
-            return SetPieceOnLevel(GetPiecePrefabFromList());  
+            if(currentConnector != null)
+                return SetPieceOnLevel(GetPiecePrefabFromList());  
+            else 
+                return null;
         } 
         void CreateNewPieceIfNotReachedEnd()
         {
@@ -144,7 +141,7 @@ namespace Tzaik.Level
         }
         bool CheckCurrentPieceConnectors(LevelPiece newPiecePrefab)
         { 
-            var cont = 0;
+            var cont = 0; 
             var newPieceCollider = Instantiate(newPiecePrefab.Collider, currentConnector);
 
             while (CheckIfSpaceOccupied(newPieceCollider) && currentRemainingConnectors.Count > 0)
@@ -179,10 +176,8 @@ namespace Tzaik.Level
         void AddElementsToPieces()
         {
             foreach (LevelPiece p in totalPieces)
-            { 
-                AddItems(p);
-                AddEnemies(p);
-                AddCoins(p);
+            {  
+                AddEnemies(p); 
                 AddDecorations(p);
             }
         }

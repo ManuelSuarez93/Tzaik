@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469ebdfbfb43d7142b0e5599027f3d23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootRate: 0.85
+  shootRate: 0.25
   isRanged: 1
   attackEvent:
     m_PersistentCalls:
@@ -90,7 +90,7 @@ MonoBehaviour:
           m_StringArgument: Attack
           m_BoolArgument: 0
         m_CallState: 2
-  specialAttackEvent:
+  hitEvent:
     m_PersistentCalls:
       m_Calls: []
   animator: {fileID: 40702332}
@@ -239,8 +239,6 @@ MonoBehaviour:
     movement: {x: 0, y: 0, z: -2}
     moveIntensity: 1
     moveTime: 0.1
-  specialTime: 5
-  specialCost: 10
 --- !u!82 &1925290698276292482
 AudioSource:
   m_ObjectHideFlags: 0

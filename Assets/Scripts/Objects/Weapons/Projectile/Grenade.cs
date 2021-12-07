@@ -21,8 +21,8 @@ namespace Tzaik.Items
             {
                 var hs = GetHealthScript(c.gameObject);
                 if (enemyTag.Contains(c.tag) && hs != null)
-                {
-                    c.GetComponent<Rigidbody>().AddExplosionForce(forceImpactAmount, transform.position, sphereRadius, ForceImpactAmount , ForceMode.Impulse);
+                { 
+                    c.GetComponent<Rigidbody>().AddForce(c.transform.forward  * -1 * forceImpactAmount, ForceMode.Impulse);
                     DoDamage(hs, Damage);
                 } 
             }

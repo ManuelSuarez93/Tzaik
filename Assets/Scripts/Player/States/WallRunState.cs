@@ -15,7 +15,11 @@
         public override void OnStateExit()
         {
             context.WallRun.WallRunExitEvent.Invoke();
-            context.Movement.RestrictDownwards = false;
+            context.Movement.RestrictDownwards = false; 
+            if(isRight)
+                context.DoCoroutine("CenterCameraFromLeft");
+            else
+                context.DoCoroutine("CenterCameraFromRight");
         }
         public override void Update()
         {
@@ -41,13 +45,7 @@
             {
                 if (!context.Checks.CanWallRunLeft() || InputManager.IsRight)
                 { context.CurrentState.ChangeState(new FallingState(context, context.Movement.SprintSpeed)); }
-            }
-
-            if (InputManager.IsDashing && InputManager.IsLeft)
-                context.CurrentState.ChangeState(new DashingState(context, false));
-            else if (InputManager.IsDashing && InputManager.IsRight)
-                context.CurrentState.ChangeState(new DashingState(context, true));
-
+            } 
             if (InputManager.IsJumping)
                 context.CurrentState.ChangeState(new JumpingState(context, context.Movement.SprintSpeed));
             if (context.IsTimerOver)

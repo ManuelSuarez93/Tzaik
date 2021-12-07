@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 82321221675130689}
   - component: {fileID: 6519843573428748865}
   - component: {fileID: -4763120621465725298}
+  - component: {fileID: 3172705633256348833}
   m_Layer: 0
   m_Name: AmmoPickup
   m_TagString: Untagged
@@ -142,6 +143,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  destroyEvent:
+    m_PersistentCalls:
+      m_Calls: []
   instantiableObjects:
   - {fileID: 8624824407237537662, guid: a6bbbad46510a1b4f95dc200a99ebbf5, type: 3}
   type: 0
@@ -159,6 +163,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   typeId: 0
+--- !u!95 &3172705633256348833
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82321221675130686}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 037b387a7370afd44b796aeab46de3ec, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4096452144127373453
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +466,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.25
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4919,7 +4942,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 244260763e1957d489b44bbf418c3b8d, type: 2}
+  - {fileID: 2100000, guid: ab15d84879728b646ae9f1aef9f1b78f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

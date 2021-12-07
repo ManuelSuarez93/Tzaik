@@ -15,8 +15,9 @@ namespace Tzaik
         float traptimer;
         void Start() => traptimer = Time.time;
 
-        // Update is called once per frame
-        void Update()
+        // Update is called once per frame 
+
+        public void SetTrigger()
         {
             if (traptimer + trapCooldown <= Time.time)
             {

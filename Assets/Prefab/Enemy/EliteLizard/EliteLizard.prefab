@@ -4061,7 +4061,6 @@ MonoBehaviour:
   stunExitEvent:
     m_PersistentCalls:
       m_Calls: []
-  lookAtIk: {fileID: 0}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -4200,6 +4199,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8937872308711822120}
+        m_TargetAssemblyTypeName: Tzaik.General.HealthScript, Assembly-CSharp
+        m_MethodName: InstatiateDroppables
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   damagedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -4219,7 +4230,7 @@ MonoBehaviour:
   renderer: {fileID: 8937872310574760871}
   gradient:
     serializedVersion: 2
-    key0: {r: 0, g: 0.046749115, b: 1, a: 0.49019608}
+    key0: {r: 0.040607214, g: 1, b: 0, a: 0.29411766}
     key1: {r: 1, g: 0, b: 0, a: 0.49019608}
     key2: {r: 1, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -4350,6 +4361,7 @@ MonoBehaviour:
   meleeAttackForce: 2500
   isRanged: 0
   speed: 0
+  lookAtHeight: 4
   shootPoint: {fileID: 0}
   projectile: {fileID: 0}
   isMultipleProjectile: 0

@@ -42,11 +42,9 @@ namespace Tzaik.UI
         [SerializeField] GameObject PlayerUI;
 
         [Header("UI Elements")]
-        [SerializeField] UIHealth health;
-        [SerializeField] UISpecial special;
+        [SerializeField] UIHealth health; 
         [SerializeField] UIInventory inventory;
-        [SerializeField] UIAmmo ammo;
-        [SerializeField] UICoins coins;
+        [SerializeField] UIAmmo ammo; 
         [SerializeField] UIKillCount kills;
         [SerializeField] UICurrentLevel currentLevel;
         [SerializeField] Image crosshair;
@@ -80,10 +78,8 @@ namespace Tzaik.UI
 
         private void Awake()
         {
-            playerInventory = GameManager.Instance.Player.GetComponent<PlayerController>().Inventory;
-            playerCoins = GameManager.Instance.Player.GetComponent<PlayerCoins>();
-            playerHealth = GameManager.Instance.Player.GetComponent<PlayerController>().Health;
-            playerSpecial = GameManager.Instance.Player.GetComponent<PlayerController>().Special;
+            playerInventory = GameManager.Instance.Player.GetComponent<PlayerController>().Inventory; 
+            playerHealth = GameManager.Instance.Player.GetComponent<PlayerController>().Health; 
         }
 
         private void Start() 
@@ -91,11 +87,8 @@ namespace Tzaik.UI
 
         public void Update()
         {
-            ammo.ShowAmmo(playerInventory.CurrentWeapon);
-            coins.ShowCoins(playerCoins);
-            health.ShowHealth(playerHealth);
-            special.ShowSpecial(playerSpecial);
-            special.ShowCharge(playerInventory.CurrentWeapon);
+            ammo.ShowAmmo(playerInventory.CurrentWeapon); 
+            health.ShowHealth(playerHealth); 
             kills.ShowKillCount(); 
             currentLevel.ShowCurrentLevel();
             Timer();

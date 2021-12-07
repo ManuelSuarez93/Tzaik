@@ -5924,7 +5924,6 @@ MonoBehaviour:
   stunExitEvent:
     m_PersistentCalls:
       m_Calls: []
-  lookAtIk: {fileID: 0}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -6051,6 +6050,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8842388652371174245}
+        m_TargetAssemblyTypeName: Tzaik.General.HealthScript, Assembly-CSharp
+        m_MethodName: InstatiateDroppables
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   damagedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -6070,8 +6081,8 @@ MonoBehaviour:
   renderer: {fileID: 8842388650824765349}
   gradient:
     serializedVersion: 2
-    key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 1, g: 1, b: 1, a: 1}
+    key0: {r: 0.040607214, g: 1, b: 0, a: 0.29411766}
+    key1: {r: 1, g: 0, b: 0, a: 0.49019608}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -6097,9 +6108,11 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  outlineThicknessOnLook: 0
-  outlineThicknessNormal: 0
-  objectToInstance: []
+  outlineThicknessOnLook: 0.06
+  outlineThicknessNormal: 0.01
+  objectToInstance:
+  - {fileID: 1596019652509256615, guid: 1f7ed5af5814ad2428cae85dddb2051d, type: 3}
+  - {fileID: 4685167752482362737, guid: 15e571718a0b76a4992913845a09b303, type: 3}
   Damaged: 0
   MaxHealth: 12
 --- !u!114 &8842388652371174244
@@ -6153,6 +6166,7 @@ MonoBehaviour:
   meleeAttackForce: 250
   isRanged: 1
   speed: 20
+  lookAtHeight: 4
   shootPoint: {fileID: 8842388652698405565}
   projectile: {fileID: 1112449278758036996, guid: 8ac08c809ea59d44c8d5258aa521fc41, type: 3}
   isMultipleProjectile: 0
