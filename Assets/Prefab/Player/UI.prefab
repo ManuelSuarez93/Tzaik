@@ -4412,7 +4412,7 @@ MonoBehaviour:
     wheel: {fileID: 6484492924070519768}
   ammo:
     ammoText: {fileID: 0}
-    ammoImg: {fileID: 4544166783370242660}
+    ammoImg: {fileID: 3534530675342708422}
   kills:
     killCount: {fileID: 6094858922820966255}
   currentLevel:
@@ -9745,6 +9745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9221afa33dc6e2a44a9c6474f8ada6d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sensitivityslider: {fileID: 0}
 --- !u!1 &8252178084272728023
 GameObject:
   m_ObjectHideFlags: 0

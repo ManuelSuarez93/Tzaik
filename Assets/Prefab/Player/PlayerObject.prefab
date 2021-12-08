@@ -43,6 +43,50 @@ PrefabInstance:
       propertyPath: damageImg
       value: 
       objectReference: {fileID: 3439668636144376102}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: special
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: headBob.minX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: headBob.minY
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: movement.gravity
+      value: -150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: headBob.walkSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: jump.jumpHeightdouble
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: checks.maxDistanceToGround
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: jump.jumpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7053524229765931454}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: jump.jumpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayClip
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: jump.jumpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Tzaik.Audio.AudioSourceObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766749827, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: jump.jumpEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2015876197, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
       propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -50,6 +94,14 @@ PrefabInstance:
     - target: {fileID: 298627197613389626, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005651724806431114, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7396848739436599938, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+      propertyPath: m_Name
+      value: JumpSound
       objectReference: {fileID: 0}
     - target: {fileID: 8530974805399301919, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
       propertyPath: m_RootOrder
@@ -95,7 +147,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 484756670, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+    - {fileID: 604653241, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
 --- !u!4 &2552117513998689853 stripped
 Transform:
@@ -111,6 +165,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8af3aba1a12b6a646957b6f861ac5efe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7053524229765931454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3813928570453960860, guid: d1b5bc09c9f67f4499c1d08e39ec4d40, type: 3}
+  m_PrefabInstance: {fileID: 6129096974538901794}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695cd238d57d8d343b5ea0af7dd7721e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &6129096976159657253

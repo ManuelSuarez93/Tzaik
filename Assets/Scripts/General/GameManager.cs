@@ -66,8 +66,7 @@ namespace Tzaik.General
 
         string playerName;
         static bool startAgain;
-        static int totalEnemiesKilled;
-        static Dictionary<CoinType, int> coinsAmount;
+        static int totalEnemiesKilled; 
         static int currentLevel;
         static Area currentArea;
 
@@ -85,9 +84,7 @@ namespace Tzaik.General
         private void Awake()
         {
             currentScene = SceneManager.GetActiveScene().name; 
-            playerName = PlayerPrefs.GetString("PlayerName");
-            player.GetComponent<PlayerCoins>().InitializeDictionary();
-            coinsAmount = player.GetComponent<PlayerCoins>().CoinsAmount;
+            playerName = PlayerPrefs.GetString("PlayerName"); 
             AudioManager.Instance.InitializeManager(); 
             UIManager.Instance.LoadingScreen.SetActive(true);
             CurrentArea = currentArea;
@@ -106,8 +103,7 @@ namespace Tzaik.General
         }  
         #endregion
 
-        #region Methods
-        void Coins() => coinsAmount = Player.GetComponent<PlayerCoins>().CoinsAmount;
+        #region Methods 
         public void AddKill()
         { 
             enemiesKilled++;
@@ -163,8 +159,7 @@ namespace Tzaik.General
                 }
 
             var save = new SavePlayerObject()
-            {
-                coinsAmount = coinsAmount,
+            { 
                 enemiesKilled = totalEnemiesKilled,
                 weapons = playerWeapons,
                 name = playerName 
@@ -189,19 +184,14 @@ namespace Tzaik.General
             Player.GetComponent<PlayerController>().Inventory.LoadInventory(load.weapons);
             if(load != null)
             { 
-                PlayerPrefs.SetString("PlayerName", load.name);
-                coinsAmount = load.coinsAmount;
+                PlayerPrefs.SetString("PlayerName", load.name); 
                 totalEnemiesKilled = load.enemiesKilled;
             } 
         } 
         public void LoadScene(string level) => StartCoroutine(LoadSceneAsync(level));
         public void RestartLevel() => StartCoroutine(LoadSceneAsync(SceneManager.GetActiveScene().name));
         IEnumerator LoadSceneAsync(string scene)
-        { 
-            Coins(); 
-            PlayerPrefs.SetInt("CoinsAmountJade", coinsAmount[CoinType.JadeCoin]);
-            PlayerPrefs.SetInt("CoinsAmountTablet", coinsAmount[CoinType.CrystalTablet]);
-            PlayerPrefs.SetInt("CoinsAmountIdol",  coinsAmount[CoinType.GoldenIdol]);
+        {  
             PlayerPrefs.SetInt("EnemiesKilled", totalEnemiesKilled);
             startAgain = scene != SceneManager.GetActiveScene().name;  
             SceneManager.LoadSceneAsync(scene); 

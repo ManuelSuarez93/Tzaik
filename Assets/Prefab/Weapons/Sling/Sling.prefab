@@ -94,15 +94,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  specialAttackEvent:
+  hitEvent:
     m_PersistentCalls:
       m_Calls: []
   animator: {fileID: 4260989743843960427}
   type: 3
   ammo:
-    maxAmmo: 30
+    maxAmmo: 18
     usedAmmo: 1
-    totalAmmo: 30
+    totalAmmo: 18
     usesAmmo: 1
   attack:
     projectile: {fileID: 5958040058897813090, guid: 1013afb397f484947a9f8ecbda476028, type: 3}

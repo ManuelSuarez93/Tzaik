@@ -5425,18 +5425,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2952443786819708394, guid: 262e4c2cf8f7a764b84597f49d00bd30, type: 3}
-        m_TargetAssemblyTypeName: RootMotion.Dynamics.PuppetMaster, Assembly-CSharp-firstpass
-        m_MethodName: Kill
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 5247067949669947651}
         m_TargetAssemblyTypeName: Tzaik.General.HealthScript, Assembly-CSharp
         m_MethodName: AddKill
@@ -5448,18 +5436,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 7200465416490018861, guid: 262e4c2cf8f7a764b84597f49d00bd30, type: 3}
-        m_TargetAssemblyTypeName: Tzaik.General.TimeEvent, Assembly-CSharp
-        m_MethodName: SetTimer
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1979391337}
         m_TargetAssemblyTypeName: Tzaik.General.TimeEvent, Assembly-CSharp
@@ -5549,7 +5525,7 @@ MonoBehaviour:
   - {fileID: 1596019652509256615, guid: 1f7ed5af5814ad2428cae85dddb2051d, type: 3}
   - {fileID: 4685167752482362737, guid: 15e571718a0b76a4992913845a09b303, type: 3}
   Damaged: 0
-  MaxHealth: 10
+  MaxHealth: 7
 --- !u!114 &883694516798782320
 MonoBehaviour:
   m_ObjectHideFlags: 0

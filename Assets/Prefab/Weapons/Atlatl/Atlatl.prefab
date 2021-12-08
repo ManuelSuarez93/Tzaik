@@ -76,26 +76,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc0904e759e4a6468045df6bf4a2372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootRate: 0.1
+  shootRate: 2
   isRanged: 1
   attackEvent:
     m_PersistentCalls:
       m_Calls: []
-  specialAttackEvent:
+  hitEvent:
     m_PersistentCalls:
       m_Calls: []
   animator: {fileID: 6038171928358628986}
   type: 4
   ammo:
-    maxAmmo: 250
+    maxAmmo: 8
     usedAmmo: 1
-    totalAmmo: 250
+    totalAmmo: 8
     usesAmmo: 1
   attack:
     projectile: {fileID: 234228189532770505, guid: 5903366b4dd122b45b5b70c70f8848da, type: 3}
     specialProjectile: {fileID: 0}
     shootOrigin: {fileID: 417479476337163514}
-    baseDamage: 100
+    baseDamage: 20
     baseSpeed: 100
     baseForce: 0
     projectileAmount: 1
@@ -120,8 +120,6 @@ MonoBehaviour:
     movement: {x: 0, y: 0, z: 0}
     moveIntensity: 0
     moveTime: 0
-  specialTime: 0
-  specialCost: 0
 --- !u!95 &6038171928358628986
 Animator:
   serializedVersion: 3

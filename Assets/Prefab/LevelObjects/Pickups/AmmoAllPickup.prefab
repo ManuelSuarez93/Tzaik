@@ -137,10 +137,10 @@ MonoBehaviour:
       m_Calls: []
   instantiableObjects: []
   type: 0
-  ammoBlowgun: 5
+  ammoBlowgun: 10
   ammoBoleadora: 1
   ammoAltatl: 1
-  ammoSling: 5
+  ammoSling: 3
 --- !u!95 &2995901955523098481
 Animator:
   serializedVersion: 3

@@ -26,9 +26,7 @@ namespace Tzaik.Items.Weapons
         [Header("Weapon Attack")]
         [SerializeField] protected WeaponAttack attack;
         [Header("Weapon UI")]
-        [SerializeField] protected WeaponUI ui;
-        [Header("Weapon Upgrades")]
-        [SerializeField] protected WeaponUpgrades upgrades;
+        [SerializeField] protected WeaponUI ui; 
         [Header("Weapon Effects")]
         [SerializeField] protected WeaponEffects effects; 
         #endregion 

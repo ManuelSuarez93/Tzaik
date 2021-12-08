@@ -24,6 +24,7 @@ namespace Tzaik.General
         [SerializeField] bool detectCollisions; 
         [SerializeField] float stunTime;
         [SerializeField] float invicibilityTime; 
+        [SerializeField] int maxExclusive = 5;
         [SerializeField] Renderer renderer;
         [SerializeField] [GradientUsage(true)] Gradient gradient;
         [SerializeField] float outlineThicknessOnLook;
@@ -161,18 +162,16 @@ namespace Tzaik.General
         }   
         public void AddKill()
         {
-            if(isEnemy && !isDead)
-            {
-                GameManager.Instance.Player.GetComponent<PlayerSpecial>().CurrentSpecial += 10;
-                GameManager.Instance.AddKill();
-            }
+            if(isEnemy && !isDead) 
+                GameManager.Instance.AddKill(); 
         }
 
         public void Instantiate(int id) => Instantiate(objectToInstance[id], transform.position, Quaternion.identity);
         public void InstatiateDroppables()
         {
-            foreach (GameObject go in objectToInstance)
-                Instantiate(go, DroppablePosition(), Quaternion.identity);
+            if(Random.Range(0, maxExclusive) < 2) 
+                foreach (GameObject go in objectToInstance)
+                    Instantiate(go, DroppablePosition(), Quaternion.identity);
         }
 
         private Vector3 DroppablePosition()

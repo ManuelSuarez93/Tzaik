@@ -223,15 +223,15 @@ MonoBehaviour:
   animator: {fileID: 7486283517361488312}
   type: 5
   ammo:
-    maxAmmo: 50
+    maxAmmo: 6
     usedAmmo: 1
-    totalAmmo: 50
+    totalAmmo: 6
     usesAmmo: 1
   attack:
     projectile: {fileID: 9149933736760015711, guid: 080d7766fc7256244b3aa964d59bf975, type: 3}
     specialProjectile: {fileID: 5856908878830154411, guid: bfb8588274ac6a342906a71ebd69c829, type: 3}
     shootOrigin: {fileID: 1922195150815638401}
-    baseDamage: 100
+    baseDamage: 25
     baseSpeed: 75
     baseForce: 10000
     projectileAmount: 1

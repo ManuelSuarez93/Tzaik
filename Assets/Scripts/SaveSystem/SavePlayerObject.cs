@@ -7,8 +7,7 @@ namespace Tzaik.SaveSystem
     public class SavePlayerObject
     {
         public string name;
-        public int enemiesKilled;
-        public Dictionary<CoinType, int> coinsAmount;
+        public int enemiesKilled; 
         public List<WeaponType> weapons;
     }
  

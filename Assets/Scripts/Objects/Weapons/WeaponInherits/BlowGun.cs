@@ -6,6 +6,14 @@ namespace Tzaik.Items.Weapons
 {
     public class BlowGun : Weapon
     { 
+        public override void PerformAttack()
+        { 
+            if (AttackConidition)
+            {
+                animator.SetTrigger("Attack");
+                Attack();
+            }
+        }
     }
      
 }

@@ -236,7 +236,6 @@ GameObject:
   - component: {fileID: 4795048353059975311}
   - component: {fileID: 7966110585333416014}
   - component: {fileID: 391443695763289100}
-  - component: {fileID: 945840774}
   - component: {fileID: 9048046815735465553}
   - component: {fileID: 1975713998}
   - component: {fileID: 6772724284848146504}
@@ -308,7 +307,6 @@ MonoBehaviour:
   stunExitEvent:
     m_PersistentCalls:
       m_Calls: []
-  lookAtIk: {fileID: 0}
   blackboard:
     currentDetectState: 0
     currentHealth: 0
@@ -333,7 +331,7 @@ MonoBehaviour:
   attackRadius: 40
   meleeDistance: 15
   lookAtSmoothing: 1
-  anim: {fileID: 945840774}
+  anim: {fileID: 0}
   tags:
   - Player
   - ProjectilePlayer
@@ -412,18 +410,6 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 945840774}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -463,6 +449,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0.5
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -549,32 +536,14 @@ MonoBehaviour:
   meleeAttackForce: 2500
   isRanged: 1
   speed: 40
+  lookAtHeight: 4
   shootPoint: {fileID: 4639117104035084405}
   projectile: {fileID: 497776767457293472, guid: bb5633dd698847d46bc71a163e8c18fd, type: 3}
   isMultipleProjectile: 1
-  meleeAttackCooldown: 0
-  rangedAttackCooldown: 0
+  meleeAttackCooldown: 1
+  rangedAttackCooldown: 1
   meleeAttackPerformed: 0
   rangedAttackPerformed: 0
---- !u!95 &945840774
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7055678417254675183}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: a7fe8ee6b34d33b4fa6e173c9298fa74, type: 3}
-  m_Controller: {fileID: 9100000, guid: a942fa0eacee0da46b9eb6a5ca452ba1, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!64 &9048046815735465553
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -614,7 +583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a25d6e22ee9c4ec4fbd92ef295665044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 945840774}
+  animator: {fileID: 0}
 --- !u!1001 &3094581130909559673
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1558,6 +1527,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a942fa0eacee0da46b9eb6a5ca452ba1, type: 2}
+    - target: {fileID: 5866666021909216657, guid: a7fe8ee6b34d33b4fa6e173c9298fa74, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5937346306886286173, guid: a7fe8ee6b34d33b4fa6e173c9298fa74, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.3578405

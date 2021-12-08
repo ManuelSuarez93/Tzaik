@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4431346274259217514}
   - component: {fileID: 1925290698276292482}
   - component: {fileID: 6087758401381228193}
-  - component: {fileID: 40702332}
+  - component: {fileID: 5303073260194336268}
   m_Layer: 3
   m_Name: Blowgun
   m_TagString: Untagged
@@ -78,7 +78,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 40702332}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: SetTrigger
         m_Mode: 5
@@ -93,12 +93,12 @@ MonoBehaviour:
   hitEvent:
     m_PersistentCalls:
       m_Calls: []
-  animator: {fileID: 40702332}
+  animator: {fileID: 5303073260194336268}
   type: 2
   ammo:
-    maxAmmo: 30
+    maxAmmo: 100
     usedAmmo: 1
-    totalAmmo: 30
+    totalAmmo: 100
     usesAmmo: 1
   attack:
     projectile: {fileID: 4784335971950985999, guid: bbb0a74f185b21d48a79ce46e718c1fc, type: 3}
@@ -115,121 +115,6 @@ MonoBehaviour:
     hasInventorySlot: 0
     sprite: {fileID: 21300000, guid: b628c8539429b564791f6ebcaa07af1d, type: 3}
     text: 
-  upgrades:
-    upgradeText1: Improve ammo
-    upgradeText2: Improve shoto rate
-    specialUpgradeText: Improve special's poison damage
-    upgrades:
-    - upgradeType: 0
-      level: 0
-      updateId: 0
-      maxAmmoUpgrade: 15
-      shootingRateUpgrade: 0
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
-    - upgradeType: 0
-      level: 1
-      updateId: 0
-      maxAmmoUpgrade: 20
-      shootingRateUpgrade: 0
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
-    - upgradeType: 0
-      level: 2
-      updateId: 0
-      maxAmmoUpgrade: 20
-      shootingRateUpgrade: 0
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
-    - upgradeType: 0
-      level: 3
-      updateId: 0
-      maxAmmoUpgrade: 25
-      shootingRateUpgrade: 0
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
-    - upgradeType: 0
-      level: 4
-      updateId: 0
-      maxAmmoUpgrade: 30
-      shootingRateUpgrade: 0
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
-    - upgradeType: 1
-      level: 0
-      updateId: 0
-      maxAmmoUpgrade: 0
-      shootingRateUpgrade: -0.15
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
-    - upgradeType: 1
-      level: 1
-      updateId: 0
-      maxAmmoUpgrade: 0
-      shootingRateUpgrade: -0.12
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
-    - upgradeType: 1
-      level: 2
-      updateId: 0
-      maxAmmoUpgrade: 0
-      shootingRateUpgrade: -0.13
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
-    - upgradeType: 1
-      level: 3
-      updateId: 0
-      maxAmmoUpgrade: 0
-      shootingRateUpgrade: -0.12
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
-    - upgradeType: 1
-      level: 4
-      updateId: 0
-      maxAmmoUpgrade: 0
-      shootingRateUpgrade: -0.25
-      damageUpgrade: 0
-      speedUpgrade: 0
-      forceUpgrade: 0
-      newProjectile: {fileID: 0}
-      coinCost: 0
-      coinType: 0
   effects:
     swayIntenisty: 25
     swaySmoothing: 25
@@ -354,7 +239,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7e12ce637423df8418eb21dc71ac0b39, type: 3}
   - {fileID: 8300000, guid: 33384177525b65e46b5c6211173bc19e, type: 3}
   playOnAwake: 0
---- !u!95 &40702332
+--- !u!95 &5303073260194336268
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -364,7 +249,7 @@ Animator:
   m_GameObject: {fileID: 2757828129236753079}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: 3b78ac143fe8a1b418dcfa9b13997970, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4166f566f42ae414b855d9b628233d3f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
