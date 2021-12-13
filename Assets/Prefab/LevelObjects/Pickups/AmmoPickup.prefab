@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c40b91fc80c26de4f82e7d3dc0e8ac94, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -119,18 +119,6 @@ MonoBehaviour:
   collisionEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -4763120621465725298}
-        m_TargetAssemblyTypeName: Tzaik.General.Spawnable, Assembly-CSharp
-        m_MethodName: Deactivation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 6519843573428748865}
         m_TargetAssemblyTypeName: Tzaik.Items.Misc.TriggerCollisionObject, Assembly-CSharp
         m_MethodName: InstantiateObject

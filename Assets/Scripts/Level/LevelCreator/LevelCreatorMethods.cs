@@ -162,7 +162,7 @@ namespace Tzaik.Level
         }
         GameObject InstantiatePiece(LevelPiece newPiecePrefab)
             => Instantiate(newPiecePrefab.gameObject, currentConnector);
-        void DiscardColliderAndAddRemainingConnectors(BoxCollider newPieceCollider)
+        void DiscardColliderAndAddRemainingConnectors(Collider newPieceCollider)
         {
             currentRemainingConnectors.Remove(currentConnector);
 
@@ -175,11 +175,8 @@ namespace Tzaik.Level
         }
         void AddElementsToPieces()
         {
-            foreach (LevelPiece p in totalPieces)
-            {  
-                AddEnemies(p); 
-                AddDecorations(p);
-            }
+            foreach (LevelPiece p in totalPieces) 
+                AddEnemies(p);   
         }
         #endregion
     }

@@ -16,13 +16,25 @@ namespace Tzaik.Level
             => currentList.Walls[Random.Range(0, currentList.Walls.Count)].LevelPiece;
         void GetLongestDistance()
         {
-            var distances = new Dictionary<Transform, float>();
-            foreach (Transform t in TotalRemainingConnectors)
-            {
-                if (!distances.ContainsKey(t))
-                    distances.Add(t, Vector3.Distance(GameManager.Instance.playerPosition, t.position)); 
+            var distances = new Dictionary<Transform, float>(); 
+            if(TotalRemainingConnectors.Count != 0) 
+            { 
+                foreach (Transform t in TotalRemainingConnectors)
+                {
+                    if (!distances.ContainsKey(t))
+                        distances.Add(t, Vector3.Distance(GameManager.Instance.playerPosition, t.position)); 
+                } 
+               
             }
-            currentConnector = distances.OrderByDescending(x => x.Value).First().Key; 
+            else
+            {
+                var connectors = GameObject.FindGameObjectsWithTag("Connector");  
+                foreach (var connector in connectors)
+                    if (connector.transform.childCount == 0) 
+                        distances.Add(connector.transform, Vector3.Distance(GameManager.Instance.playerPosition, connector.transform.position)); 
+            }
+             currentConnector = distances.OrderByDescending(x => x.Value).First().Key; 
+           
         }
         void SetCurrentConnector(List<Transform> connectorList) =>
             currentConnector = connectorList.Count > 0 ? connectorList[Random.Range(0, connectorList.Count)] : null;
@@ -42,7 +54,7 @@ namespace Tzaik.Level
             foreach(LevelPiece p in totalPieces)
                 p.NavMeshSurface.BuildNavMesh();
         } 
-        bool CheckIfSpaceOccupied(BoxCollider collider)
+        bool CheckIfSpaceOccupied(Collider collider)
         {
             var total = totalPieces.Any(x => x.Collider.bounds.Intersects(collider.bounds));
             return total;
@@ -77,8 +89,7 @@ namespace Tzaik.Level
                 currentArea == Area.CrystalCave ? listCave :
                 currentArea == Area.Jungle ? listJungle : listTemple;
         void SetCurrentType() => currentType = currentType == LevelPieceType.Room ? LevelPieceType.Hallway : LevelPieceType.Room;
-        void AddEnemies(LevelPiece p) => factory.SpawnItems(p.EnemySpawnPoints, Random.Range(0, maxEnemiesPerRoom + 1), factory.EnemyPool); 
-        void AddDecorations(LevelPiece p) => factory.SpawnItems(p.DecorationSpawnPoints, Random.Range(0, maxDecorationsPerRoom + 1), factory.DecorationPool); 
+        void AddEnemies(LevelPiece p) => factory.SpawnItems(p.EnemySpawnPoints, Random.Range(0, maxEnemiesPerRoom + 1), factory.EnemyPool);  
 
         #endregion
     }

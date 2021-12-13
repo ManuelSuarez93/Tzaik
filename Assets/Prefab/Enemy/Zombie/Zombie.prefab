@@ -197,6 +197,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -428,6 +429,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -659,6 +661,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -888,6 +891,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -1118,6 +1122,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -1347,6 +1352,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -1578,6 +1584,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -1809,6 +1816,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -2039,6 +2047,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -2270,6 +2279,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -2501,6 +2511,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -2732,6 +2743,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -2962,6 +2974,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -3192,6 +3205,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -4013,6 +4027,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2
@@ -5201,6 +5216,8 @@ GameObject:
   - component: {fileID: 883694516798782320}
   - component: {fileID: 496057610818220635}
   - component: {fileID: 1979391337}
+  - component: {fileID: 3359536499675904147}
+  - component: {fileID: 7011509520517176560}
   m_Layer: 11
   m_Name: UndeadController
   m_TagString: Enemy/Controller
@@ -5473,6 +5490,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7011509520517176560}
+        m_TargetAssemblyTypeName: Tzaik.Audio.AudioSourceObject, Assembly-CSharp
+        m_MethodName: PlayClip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   damagedEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -5489,6 +5518,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0.5
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 9030517141113260888}
   gradient:
     serializedVersion: 2
@@ -5595,6 +5625,120 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!82 &3359536499675904147
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9030517140283500713}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7011509520517176560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9030517140283500713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 695cd238d57d8d343b5ea0af7dd7721e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  maxPitch: 0.65
+  minPitch: 0.5
+  audioClips:
+  - {fileID: 8300000, guid: 7c0c4224e25a61a4ebe1ef85959b1b03, type: 3}
+  playOnAwake: 0
 --- !u!1 &9030517140312535760
 GameObject:
   m_ObjectHideFlags: 0
@@ -6397,6 +6541,7 @@ MonoBehaviour:
   detectCollisions: 0
   stunTime: 0
   invicibilityTime: 0
+  maxExclusive: 5
   renderer: {fileID: 0}
   gradient:
     serializedVersion: 2

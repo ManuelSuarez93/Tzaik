@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4935888702069567793}
   m_Layer: 0
   m_Name: pCube29
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 6658625097321787405}
   m_Layer: 0
   m_Name: Connector
-  m_TagString: Connector
+  m_TagString: Obstacle
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,10 +161,6 @@ MonoBehaviour:
   connectors:
   - {fileID: 6658625097321787405}
   enemySpawnPoints: []
-  itemSpawnPoints: []
-  coinSpawnPoints: []
-  decorationSpawnPoints: []
-  trapSpawnPoints: []
   collider: {fileID: 3061745628867487598}
   walls:
   - {fileID: 11400000, guid: ebba546d2caf94c439b59d63d305dbc3, type: 2}

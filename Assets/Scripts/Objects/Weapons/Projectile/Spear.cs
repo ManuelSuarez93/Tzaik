@@ -6,6 +6,7 @@ using Tzaik.Player;
 using UnityEngine;
 using System.Linq;
 using Tzaik.Items.Weapons;
+using UnityEngine.Events;
 
 namespace Tzaik.Items
 {
@@ -13,6 +14,7 @@ namespace Tzaik.Items
     {
         [SerializeField] int PassThroughEnemiesAmount;
         [SerializeField] GameObject point; 
+        [SerializeField] protected UnityEvent spearCollisionEvent;
         public List<EnemyContext> enemies;
         public List<Joint> joints; 
         int currentPassThrough;
@@ -27,14 +29,14 @@ namespace Tzaik.Items
                     {
                         if (obj.GetComponent<HealthScript>() != null)
                             obj.GetComponent<HealthScript>().Damage(Damage);
-                        AddJointToSpear(obj);
-                        collisionEnterEvent.Invoke();
+                        AddJointToSpear(obj);;
                     }
                     else if(CompareTagsWithList(obj.tag))
                     {
                         currentPassThrough = PassThroughEnemiesAmount;
                         isStopped = true;
                     }
+                    spearCollisionEvent.Invoke();
                 }
                 else
                 { 

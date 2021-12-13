@@ -10079,6 +10079,8 @@ MonoBehaviour:
   moveByRigidobdy: 0
   rigid: {fileID: 8965988419167605459}
   forceImpactAmount: 20
+  gravityApplied: 0
+  slowDownRate: 0
 --- !u!136 &366507704998956797
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10189,6 +10191,8 @@ MonoBehaviour:
   moveByRigidobdy: 0
   rigid: {fileID: 1163286630018983012}
   forceImpactAmount: 20
+  gravityApplied: 0
+  slowDownRate: 0
 --- !u!136 &8013413898283072748
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -10270,6 +10274,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4513305529867002845, guid: 579c411973e1da04084a8539ac96717d, type: 3}
+      propertyPath: instantiableObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 4695455568046935005, guid: 381de0cd15a7f244da986865cb086f28, type: 3}
     - target: {fileID: 7251632604198708255, guid: 579c411973e1da04084a8539ac96717d, type: 3}
       propertyPath: m_Name
       value: Spit1

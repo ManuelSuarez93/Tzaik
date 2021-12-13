@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1596019652509256614}
   - component: {fileID: 1596019652509256664}
-  - component: {fileID: 5582606403817887448}
   - component: {fileID: 3091645115115356695}
   - component: {fileID: 3903080398840345987}
   - component: {fileID: 2995901955523098481}
@@ -48,58 +47,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2, y: 2, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5582606403817887448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1596019652509256615}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb4fbecdc54ea348b6ae3d409a7d5b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tags:
-  - Player
-  destroyOnCollision: 0
-  checkDoActionReturnsBool: 0
-  collisionEnterEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3091645115115356695}
-        m_TargetAssemblyTypeName: Tzaik.General.Spawnable, Assembly-CSharp
-        m_MethodName: Deactivation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 5582606403817887448}
-        m_TargetAssemblyTypeName: Tzaik.Items.Misc.TriggerCollisionObject, Assembly-CSharp
-        m_MethodName: InstantiateObject
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  destroyEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  instantiableObjects:
-  - {fileID: 8624824407237537662, guid: a6bbbad46510a1b4f95dc200a99ebbf5, type: 3}
-  type: 0
-  ammoAmount: 0
 --- !u!114 &3091645115115356695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,11 +80,36 @@ MonoBehaviour:
   checkDoActionReturnsBool: 1
   collisionEnterEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3903080398840345987}
+        m_TargetAssemblyTypeName: Tzaik.Items.Misc.TriggerCollisionObject, Assembly-CSharp
+        m_MethodName: InstantiateObject
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3091645115115356695}
+        m_TargetAssemblyTypeName: Tzaik.General.Spawnable, Assembly-CSharp
+        m_MethodName: Deactivation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   destroyEvent:
     m_PersistentCalls:
       m_Calls: []
-  instantiableObjects: []
+  instantiableObjects:
+  - {fileID: 109267721112681165, guid: a3cfd0cd99ad1494fa2a3185b046c264, type: 3}
   type: 0
   ammoBlowgun: 10
   ammoBoleadora: 1
